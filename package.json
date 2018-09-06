@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/junaidnz97/LIBRARY_MANAGEMENT/issues"
   },
-  "homepage": "https://github.com/junaidnz97/LIBRARY_MANAGEMENT#readme"
+  "homepage": "https://github.com/junaidnz97/LIBRARY_MANAGEMENT#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.4"
+  }
 }

@@ -18,9 +18,12 @@
   "homepage": "https://github.com/junaidnz97/LIBRARY_MANAGEMENT#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "mysql": "^2.16.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "urlencoded-parser": "^1.0.0"
   }
 }

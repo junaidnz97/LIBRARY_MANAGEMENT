@@ -75,21 +75,18 @@ app.post("/login",urlencodedParser,function(req,res){
 				res.send("already logged in");
 		else{
 				console.log(req.body.password)
-				var q = "select password from Authorization where UserName ='" + req.body.username + "'";
+				var q = "select * from Authorization where UserName ='" + req.body.username + "' and Password = '"+req.body.password+"'";
 				console.log(q)
 				con.query(q,function(err,resp){
-					if(err)
-						throw err;
-					console.log(resp);
-					var output = JSON.parse(JSON.stringify(resp))[0].password;
-					console.log(output)
-					if(output == req.body.password){
-						req.session.username=req.body.username;
-	 					console.log(req.body.username,req.session.username);
-						res.send("login successful");
-					}
-					else
+					if(err){
 						res.send("login unsuccessful");
+						throw err;
+					}
+					console.log(resp);
+					req.session.username=req.body.username;
+	 				console.log(req.body.username,req.session.username);
+					res.send("login successful");
+						
 				});
 		}
 		

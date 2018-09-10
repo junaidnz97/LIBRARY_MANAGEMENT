@@ -3,7 +3,7 @@ var app = express();
 var bodyParser=require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mysql=require("mysql");
-var signup=require("./database/signup.js");
+//var signup=require("./database/signup.js");
 var session = require('express-session');
 
 app.use(session({
@@ -21,7 +21,7 @@ app.use(session({
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "junaid123$",
+    password: "Ad_07_",
     database: "LibraryManagement"
   	});
 
@@ -70,9 +70,27 @@ app.post("/signup",urlencodedParser,function(req,res){
 
 app.post("/login",urlencodedParser,function(req,res){
 
+		//console.log(req.session)
 		if(req.session.username)
 				res.send("already logged in");
-		else
-			res.send("login");
+		else{
+				console.log(req.body.password)
+				var q = "select password from Authorization where UserName ='" + req.body.username + "'";
+				console.log(q)
+				con.query(q,function(err,resp){
+					if(err)
+						throw err;
+					console.log(resp);
+					var output = JSON.parse(JSON.stringify(resp))[0].password;
+					console.log(output)
+					if(output == req.body.password){
+						req.session.username=req.body.username;
+	 					console.log(req.body.username,req.session.username);
+						res.send("login successful");
+					}
+					else
+						res.send("login unsuccessful");
+				});
+		}
+		
 });
-

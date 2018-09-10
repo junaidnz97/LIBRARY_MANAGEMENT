@@ -78,14 +78,16 @@ app.post("/login",urlencodedParser,function(req,res){
 				var q = "select * from Authorization where UserName ='" + req.body.username + "' and Password = '"+req.body.password+"'";
 				console.log(q)
 				con.query(q,function(err,resp){
-					if(err){
-						res.send("login unsuccessful");
+					if(err)
 						throw err;
-					}
-					console.log(resp);
+					console.log(JSON.parse(JSON.stringify(resp)).length);
+					if(!JSON.parse(JSON.stringify(resp)).length)
+						res.send("login unsuccessful");
+					else{
 					req.session.username=req.body.username;
 	 				console.log(req.body.username,req.session.username);
 					res.send("login successful");
+				}
 						
 				});
 		}

@@ -3,8 +3,12 @@ var app = express();
 var bodyParser=require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mysql=require("mysql");
-//var signup=require("./database/signup.js");
+var signup=require("./routes/signup.js");
 var session = require('express-session');
+var cookieParser=require("cookie-parser");
+
+
+app.use(cookieParser());
 
 app.use(session({
     key: 'user_sid',
@@ -16,12 +20,18 @@ app.use(session({
     }
 }));
 
+app.use((req, res, next) => {
+    if (req.cookies.user_sid && !req.session.username) {
+        res.clearCookie('user_sid');        
+    }
+    next();
+});
 
 
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Ad_07_",
+    password: "junaid123$",
     database: "LibraryManagement"
   	});
 
@@ -36,60 +46,4 @@ var server=app.listen("9090",function(){
 	console.log("server working");
 });
 
-app.post("/signup",urlencodedParser,function(req,res){
-
-	var query='select count(*) as count from Authorization where UserName="'+req.body.username+'" or EmailId="'+req.body.emailid+'"';
-	var x=0;
-	console.log(query);
-	con.query(query,function(err,resp){
-
-		if(err)
-			throw err;
-		x=JSON.parse(JSON.stringify(resp))[0].count;
-		
-		if(x==0)
-		{
-			var query='insert into Authorization(UserName,EmailId,Password) values("'+req.body.username+'","'+req.body.emailid+'","'+req.body.password+'")';
-			console.log(query);
-			con.query(query,function(err,resp2){
-				if(err)
-					throw err;
-				req.session.username=req.body.username;
-	 			console.log(req.body.username,req.session.username);
-	 			res.send({"hello":"welcome"});
-				
-			});
-		}
-
-		else
-		{
-			res.send("already present");
-		}
-	});
-});
-
-app.post("/login",urlencodedParser,function(req,res){
-
-		//console.log(req.session)
-		if(req.session.username)
-				res.send("already logged in");
-		else{
-				console.log(req.body.password)
-				var q = "select * from Authorization where UserName ='" + req.body.username + "' and Password = '"+req.body.password+"'";
-				console.log(q)
-				con.query(q,function(err,resp){
-					if(err)
-						throw err;
-					console.log(JSON.parse(JSON.stringify(resp)).length);
-					if(!JSON.parse(JSON.stringify(resp)).length)
-						res.send("login unsuccessful");
-					else{
-					req.session.username=req.body.username;
-	 				console.log(req.body.username,req.session.username);
-					res.send("login successful");
-				}
-						
-				});
-		}
-		
-});
+signup.signup(app,urlencodedParser,con)

@@ -70,6 +70,32 @@ LOCK TABLES `BookDetail` WRITE;
 INSERT INTO `BookDetail` VALUES (1,'ASE_TEST','TEST',1,3,3,'TEST BOOK',1);
 /*!40000 ALTER TABLE `BookDetail` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `CurrentBookStatus`
+--
+
+DROP TABLE IF EXISTS `CurrentBookStatus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `CurrentBookStatus` (
+  `HBookId` int(11) NOT NULL,
+  `BookId` int(11) DEFAULT NULL,
+  `UserId` int(11) DEFAULT NULL,
+  `IssueDate` date DEFAULT NULL,
+  `EReturnDate` date DEFAULT NULL,
+  PRIMARY KEY (`HBookId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `CurrentBookStatus`
+--
+
+LOCK TABLES `CurrentBookStatus` WRITE;
+/*!40000 ALTER TABLE `CurrentBookStatus` DISABLE KEYS */;
+/*!40000 ALTER TABLE `CurrentBookStatus` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -80,4 +106,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-11 19:13:47
+-- Dump completed on 2018-10-11 20:01:50

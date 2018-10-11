@@ -32,6 +32,8 @@ app.post("/signup",urlencodedParser,function(req,res){
 
 app.post("/login",urlencodedParser,function(req,res){
 
+		console.log(req.session.username);
+		console.log(req.cookies.user_sid);
 		if(req.session.username && req.cookies.user_sid)
 				res.send("already logged in");
 		else{

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.23, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.21, for osx10.13 (x86_64)
 --
 -- Host: localhost    Database: LibraryManagement
 -- ------------------------------------------------------
--- Server version	5.7.23-0ubuntu0.16.04.1
+-- Server version	5.7.19
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,7 +37,7 @@ CREATE TABLE `Authorization` (
 
 LOCK TABLES `Authorization` WRITE;
 /*!40000 ALTER TABLE `Authorization` DISABLE KEYS */;
-INSERT INTO `Authorization` VALUES (27,'junaidasads','lol','adssadsad');
+INSERT INTO `Authorization` VALUES (7,'AdMenon','gold','ghfishf'),(27,'junaidasads','lol','adssadsad');
 /*!40000 ALTER TABLE `Authorization` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -67,8 +67,36 @@ CREATE TABLE `BookDetail` (
 
 LOCK TABLES `BookDetail` WRITE;
 /*!40000 ALTER TABLE `BookDetail` DISABLE KEYS */;
-INSERT INTO `BookDetail` VALUES (1,'ASE_TEST','TEST',1,3,3,'TEST BOOK',1);
+INSERT INTO `BookDetail` VALUES (1,'ASE_TEST','TEST',1,3,3,'TEST BOOK',1),(2,'ASE_TEST2','TEST',1,3,3,'TEXT',0);
 /*!40000 ALTER TABLE `BookDetail` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `CurrentBookStatus`
+--
+
+DROP TABLE IF EXISTS `CurrentBookStatus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `CurrentBookStatus` (
+  `HBookId` int(11) NOT NULL,
+  `BookId` int(11) DEFAULT NULL,
+  `UserId` int(11) DEFAULT NULL,
+  `IssueDate` date DEFAULT NULL,
+  `EReturnDate` date DEFAULT NULL,
+  `ApprovedByAdmin` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`HBookId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `CurrentBookStatus`
+--
+
+LOCK TABLES `CurrentBookStatus` WRITE;
+/*!40000 ALTER TABLE `CurrentBookStatus` DISABLE KEYS */;
+INSERT INTO `CurrentBookStatus` VALUES (1,1,NULL,NULL,NULL,NULL),(2,1,NULL,NULL,NULL,NULL),(3,1,NULL,NULL,NULL,NULL),(4,2,NULL,NULL,NULL,NULL),(5,2,NULL,NULL,NULL,NULL),(6,2,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `CurrentBookStatus` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -80,4 +108,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-11 19:13:47
+-- Dump completed on 2018-10-11 22:50:30

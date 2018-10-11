@@ -4,6 +4,7 @@ var bodyParser=require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mysql=require("mysql");
 var signup=require("./routes/signup.js");
+var borrow = require("./routes/borrow.js");
 var session = require('express-session');
 var cookieParser=require("cookie-parser");
 var booksummary=require("./routes/booksummary.js");
@@ -31,7 +32,7 @@ app.use((req, res, next) => {
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "junaid123$",
+    password: "Ad_07_",
     database: "LibraryManagement"
   	});
 
@@ -48,3 +49,5 @@ var server=app.listen("9090",function(){
 
 signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
+borrow.borrow(app,urlencodedParser,con);
+

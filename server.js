@@ -6,7 +6,7 @@ var mysql=require("mysql");
 var signup=require("./routes/signup.js");
 var session = require('express-session');
 var cookieParser=require("cookie-parser");
-
+var booksummary=require("./routes/booksummary.js");
 
 app.use(cookieParser());
 
@@ -46,4 +46,5 @@ var server=app.listen("9090",function(){
 	console.log("server working");
 });
 
-signup.signup(app,urlencodedParser,con)
+signup.signup(app,urlencodedParser,con);
+booksummary.booksummary(app,urlencodedParser,con);

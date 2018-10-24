@@ -54,7 +54,7 @@ var borrow = function(app,urlencodedParser,con){
 						con.query(q4,function(err,resp4){
 							if(err)
 								throw err;
-							output = JSON.parse(JSON.stringify(resp4s));
+							output = JSON.parse(JSON.stringify(resp4));
 							console.log(output);
 						});
 						res.send({"status":"borrow request successfull","bid":bookid,"HBookId":HBookId.HBookId,"uid":userid});

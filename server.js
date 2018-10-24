@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Ad_07_",
+    password: "junaid123$",
     database: "LibraryManagement"
   	});
 
@@ -46,8 +46,6 @@ var server=app.listen("9090",function(){
 
 	console.log("server working");
 });
-
 signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
-

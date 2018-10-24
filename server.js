@@ -31,10 +31,9 @@ app.use((req, res, next) => {
 
 
 var con = mysql.createConnection({
-    host: "10.0.33.106",
-    port: "3306",
-    user: "root",
-    password: "junaid123$",
+    host: "10.0.32.32",
+    user: "libUser",
+    password: "Ad_07_",
     database: "LibraryManagement"
   	});
 

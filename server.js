@@ -9,6 +9,7 @@ var catalogue = require("./routes/catalogue.js")
 var session = require('express-session');
 var cookieParser=require("cookie-parser");
 var booksummary=require("./routes/booksummary.js");
+var rate_review = require("./routes/rate_review.js");
 
 app.use(cookieParser());
 
@@ -52,4 +53,4 @@ signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
 catalogue.catalogue(app,urlencodedParser,con);
-
+rate_review.rate_review(app,urlencodedParser,con);

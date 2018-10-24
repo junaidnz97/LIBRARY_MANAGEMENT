@@ -9,6 +9,8 @@ var catalogue = require("./routes/catalogue.js")
 var session = require('express-session');
 var cookieParser=require("cookie-parser");
 var booksummary=require("./routes/booksummary.js");
+var displayuserprofile=require("./routes/displayuserprofile");
+
 
 app.use(cookieParser());
 
@@ -34,6 +36,7 @@ var con = mysql.createConnection({
     host: "10.0.32.32",
     user: "libUser",
     password: "Ad_07_",
+    database:"LibraryManagement"
   	});
 
 con.connect(function(err) {
@@ -50,3 +53,4 @@ signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
 catalogue.catalogue(app,urlencodedParser,con);
+displayuserprofile.displayuserprofile(app,con);

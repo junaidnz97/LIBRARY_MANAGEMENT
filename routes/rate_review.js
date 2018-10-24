@@ -14,7 +14,7 @@ var rate_review = function(app,urlencodedParser,con){
 				if(err)
 					throw err;
 				console.log(resp);
-				res.send("Rating and review stored successfully") 
+				res.send("Rating and review stored successfully"); 
 			}); 
 		}
 		else

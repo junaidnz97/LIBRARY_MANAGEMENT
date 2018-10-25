@@ -11,9 +11,13 @@ var catalogue = require("./routes/catalogue.js")
 var session = require('express-session');
 var cookieParser=require("cookie-parser");
 var booksummary=require("./routes/booksummary.js");
+
 var displayuserprofile=require("./routes/displayuserprofile");
 var rate_review = require("./routes/rate_review.js");
 var adminlog=require("./routes/adminlog.js");
+
+var updateBookRecord = require("./routes/updateBookRecord.js")
+var deleteBookRecord = require("./routes/deleteBookRecord.js")
 
 
 app.use(cookieParser());
@@ -30,7 +34,7 @@ app.use(session({
 
 app.use((req, res, next) => {
     if (req.cookies.user_sid && !req.session.username) {
-        res.clearCookie('user_sid');        
+        res.clearCookie('user_sid');
     }
     if (req.cookies.user_sid && !req.session.adminusername) {
         res.clearCookie('user_sid');
@@ -63,8 +67,12 @@ signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
 catalogue.catalogue(app,urlencodedParser,con);
+
 displayuserprofile.displayuserprofile(app,con);
 rate_review.rate_review(app,urlencodedParser,con);
 adminlog.adminlog(app,urlencodedParser,con);
 rate_review.rate_review(app,urlencodedParser,con);
 
+
+updateBookRecord.updateBookRecord(app,urlencodedParser,con);
+//deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);

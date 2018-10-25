@@ -41,7 +41,7 @@ const Navigation = () => {
 			    <Nav pullRight>
 			    	<NavDropdown eventKey={3} 
 			    		title={ <span>
-			    				<i class="fa fa-user"></i> Welcome, User!
+			    				<i className="fa fa-user"></i> Welcome, User!
 			    			</span>
 			    		} 
 			    		id="basic-nav-dropdown">
@@ -52,7 +52,7 @@ const Navigation = () => {
 				        <MenuItem eventKey={3.3}>Separated link</MenuItem>
 			      	</NavDropdown>
 			    	<NavItem eventKey={2} href="#">
-			    		<i class="fa fa-user-times"></i> Logout
+			    		<i className="fa fa-user-times"></i> Logout
 			    	</NavItem>
 			    </Nav>
 	  		</Navbar.Collapse>

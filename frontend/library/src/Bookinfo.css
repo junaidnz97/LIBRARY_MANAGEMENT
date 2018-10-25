@@ -1,0 +1,38 @@
+.card {
+  height: 310px;
+  background-color: #FEFEFE;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+}
+
+.card__img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.card__content {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: calc(100% - 260px);
+  height: 300px;
+  padding-left: 15px;
+}
+
+.card__content h3 {
+  margin: 0;
+}
+
+.card__rating {
+  position: absolute;
+  bottom: 0;
+}
+
+.card__stars--active {
+  color: #41377C;
+}
+.card__stars--inactive {
+  color: #CCCCCC;
+}

@@ -10,9 +10,7 @@ app.post("/signup",urlencodedParser,function(req,res){
 		if(err)
 			throw err;
 		x=JSON.parse(JSON.stringify(resp))[0].count;
-		console.log(req.session);
-
-		console.log(req.cookies);
+		
 		if(x==0)
 		{
 			var query='insert into Authorization(UserName,EmailId,Password) values("'+req.body.username+'","'+req.body.emailid+'","'+req.body.password+'")';
@@ -32,8 +30,6 @@ app.post("/signup",urlencodedParser,function(req,res){
 
 app.post("/login",urlencodedParser,function(req,res){
 
-		console.log(req.session.username);
-		console.log(req.cookies.user_sid);
 		if(req.session.username && req.cookies.user_sid)
 				res.send("already logged in");
 		else{
@@ -57,6 +53,7 @@ app.post("/logout",urlencodedParser,function(req,res){
 
 			res.clearCookie('user_sid');
 			res.send("logut successful");
+
 });
 
 app.get("/",function(req,res){

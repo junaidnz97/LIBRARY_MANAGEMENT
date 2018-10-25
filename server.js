@@ -46,7 +46,7 @@ app.use((req, res, next) => {
 var con = mysql.createConnection({
 
     host: "0.tcp.ngrok.io",
-    port: "15079",
+    port: "14616",
     user: "root",
     password: "Ad_07_",
     database:"LibraryManagement"
@@ -75,4 +75,4 @@ rate_review.rate_review(app,urlencodedParser,con);
 
 
 updateBookRecord.updateBookRecord(app,urlencodedParser,con);
-//deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);
+deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);

@@ -42,7 +42,6 @@ app.use((req, res, next) => {
 
 
 var con = mysql.createConnection({
-
     host: "0.tcp.ngrok.io",
     port: "10632",
     user: "root",

@@ -53,8 +53,8 @@ signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
 catalogue.catalogue(app,urlencodedParser,con);
-<<<<<<< HEAD
+
 displayuserprofile.displayuserprofile(app,con);
-=======
+
 rate_review.rate_review(app,urlencodedParser,con);
->>>>>>> AdM
+

@@ -64,3 +64,5 @@ catalogue.catalogue(app,urlencodedParser,con);
 displayuserprofile.displayuserprofile(app,con);
 rate_review.rate_review(app,urlencodedParser,con);
 adminlog.adminlog(app,urlencodedParser,con);
+rate_review.rate_review(app,urlencodedParser,con);
+

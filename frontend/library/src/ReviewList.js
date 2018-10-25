@@ -14,22 +14,23 @@ class ReviewList extends Component {
 
 
     render() {
-        const Reviewarray = robots.map((user, i) =>{
-            return (
-                <Review 
-                    // key={robots[i].id} 
-                    // id={robots[i].id} 
-                    // name={robots[i].name} 
-                    // email={robots[i].email} 
-                />
-            );
-        });
+        // const Reviewarray = robots.map((user, i) =>{
+        //     return (
+        //         <Review 
+        //             // key={robots[i].id} 
+        //             // id={robots[i].id} 
+        //             // name={robots[i].name} 
+        //             // email={robots[i].email} 
+        //         />
+        //     );
+        // });
 
         return (
             <div>
-                <Listcontainer>
-                    {Reviewarray}
-                </Listcontainer>
+                <h3 style={{textAlign:"center"}}> Reviews & Ratings </h3>
+                <Review />
+                <Review />
+                <Review />
             </div>
         );
     }

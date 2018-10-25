@@ -4,6 +4,7 @@ import Bookcontainer from './Bookcontainer.js';
 import Bookinfo from './Bookinfo.js';
 import Bookdynamic from './Bookdynamic.js';
 import Listcontainer from './Listcontainer.js';
+import ReviewList from './ReviewList.js';
 import Footer from './Footer.js';  
 
 class Book extends Component {
@@ -24,7 +25,7 @@ class Book extends Component {
                 	<Bookdynamic />
                 </Bookcontainer>
                 <Listcontainer>
-
+                    <ReviewList />
                 </Listcontainer>
                 <Footer />
             </div>

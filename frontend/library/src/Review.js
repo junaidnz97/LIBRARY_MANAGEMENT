@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = (props) => {
+const Review = (props) => {
 	
 	return (
 		<div className="br3 pa3 ma3 dib grow bw2 shadow-5" style={{width:'200px'}}>
@@ -13,4 +13,4 @@ const Card = (props) => {
 	);
 }
 
-export default Card;
+export default Review;

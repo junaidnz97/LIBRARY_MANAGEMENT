@@ -8,7 +8,11 @@ const Navigation = () => {
 		<Navbar inverse collapseOnSelect fixedTop>
 	  		<Navbar.Header>
 	    		<Navbar.Brand>
-	      			<a href="#brand">React-Bootstrap</a>
+	      			<a href="#brand">
+	      				<img className="sricity" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/IIIT_Sri_City_Logo.png/220px-IIIT_Sri_City_Logo.png"  />
+	      				Project B-02
+	      			</a>
+
 	    		</Navbar.Brand>
 	    		<Navbar.Toggle />
 	 		</Navbar.Header>
@@ -17,28 +21,38 @@ const Navigation = () => {
 			      	<NavItem eventKey={1} href="#">
 			        	Link
 			      	</NavItem>
-			      	<NavItem eventKey={2} href="#">
-			       		Link
-			      	</NavItem>
-				    <Navbar.Form pullLeft>
-				     	<FormGroup>
-				    		<FormControl type="text" placeholder="Search" />
-				    	</FormGroup>{' '}
-				    </Navbar.Form>
-			      	<NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+			      	<NavDropdown eventKey={3} title="Categories" id="basic-nav-dropdown">
 			        	<MenuItem eventKey={3.1}>Action</MenuItem>
 				        <MenuItem eventKey={3.2}>Another action</MenuItem>
 				        <MenuItem eventKey={3.3}>Something else here</MenuItem>
 				        <MenuItem divider />
 				        <MenuItem eventKey={3.3}>Separated link</MenuItem>
 			      	</NavDropdown>
+			      	
+				    <Navbar.Form pullLeft>
+				     	<FormGroup>
+				    		<FormControl type="text" placeholder="Search" />
+				    	</FormGroup>{' '}
+				    </Navbar.Form>
+				    <NavItem eventKey={2} href="#">
+			       		Link
+			      	</NavItem>
 			    </Nav>
 			    <Nav pullRight>
-			    	<NavItem eventKey={1} href="#">
-			        	Link Right
-			    	</NavItem>
+			    	<NavDropdown eventKey={3} 
+			    		title={ <span>
+			    				<i className="fa fa-user"></i> Welcome, User!
+			    			</span>
+			    		} 
+			    		id="basic-nav-dropdown">
+			        	<MenuItem eventKey={3.1}>Action</MenuItem>
+				        <MenuItem eventKey={3.2}>Another action</MenuItem>
+				        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+				        <MenuItem divider />
+				        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+			      	</NavDropdown>
 			    	<NavItem eventKey={2} href="#">
-			    		Link Right
+			    		<i className="fa fa-user-times"></i> Logout
 			    	</NavItem>
 			    </Nav>
 	  		</Navbar.Collapse>

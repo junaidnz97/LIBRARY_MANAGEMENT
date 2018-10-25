@@ -1,0 +1,23 @@
+.btn {
+    background-color: #3498DB; 
+    color: white;
+    padding: 16px;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 2px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #2980B9;
+    color: white;
+}
+
+.btn {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

@@ -19,6 +19,7 @@ var adminlog=require("./routes/adminlog.js");
 var updateBookRecord = require("./routes/updateBookRecord.js")
 var deleteBookRecord = require("./routes/deleteBookRecord.js")
 
+var pay_fine = require("./routes/pay-fine");
 
 app.use(cookieParser());
 
@@ -76,3 +77,5 @@ rate_review.rate_review(app,urlencodedParser,con);
 
 updateBookRecord.updateBookRecord(app,urlencodedParser,con);
 deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);
+
+pay_fine.pay_fine(app,urlencodedParser,con);

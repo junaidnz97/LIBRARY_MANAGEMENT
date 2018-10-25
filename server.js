@@ -3,6 +3,8 @@ var app = express();
 var bodyParser=require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mysql=require("mysql");
+
+
 var signup=require("./routes/signup.js");
 var borrow = require("./routes/borrow.js");
 var catalogue = require("./routes/catalogue.js")
@@ -11,6 +13,8 @@ var cookieParser=require("cookie-parser");
 var booksummary=require("./routes/booksummary.js");
 var displayuserprofile=require("./routes/displayuserprofile");
 var rate_review = require("./routes/rate_review.js");
+var adminlog=require("./routes/adminlog.js");
+
 
 app.use(cookieParser());
 
@@ -27,6 +31,9 @@ app.use(session({
 app.use((req, res, next) => {
     if (req.cookies.user_sid && !req.session.username) {
         res.clearCookie('user_sid');        
+    }
+    if (req.cookies.user_sid && !req.session.adminusername) {
+        res.clearCookie('user_sid');
     }
     next();
 });
@@ -49,12 +56,11 @@ var server=app.listen("9090",function(){
 
 	console.log("server working");
 });
+
 signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
 catalogue.catalogue(app,urlencodedParser,con);
-<<<<<<< HEAD
 displayuserprofile.displayuserprofile(app,con);
-=======
 rate_review.rate_review(app,urlencodedParser,con);
->>>>>>> AdM
+adminlog.adminlog(app,urlencodedParser,con);

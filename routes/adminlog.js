@@ -17,6 +17,7 @@ var adminlog=function (app,urlencodedParser,con) {
                     res.send("login unsuccessful");
                 else{
                     req.session.adminusername=req.body.username;
+                    req.session.username=null;
                     res.send("login successful");
                 }
             });

@@ -1,7 +1,7 @@
 var deleteBookRecord = function(app,urlencodedParser,con){
 
 	app.post("/delete-book-record",urlencodedParser,function(req,res){
-		if(req.session.username && req.cookies.user_sid)
+		if(req.session.adminusername && req.cookies.user_sid)
 		{
       bookid = req.body.bid;
 

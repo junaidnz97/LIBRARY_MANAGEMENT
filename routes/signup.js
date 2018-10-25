@@ -44,7 +44,9 @@ app.post("/login",urlencodedParser,function(req,res){
 					if(!JSON.parse(JSON.stringify(resp)).length)
 						res.send("login unsuccessful");
 					else{
+
 					req.session.username=req.body.username;
+					req.session.adminusername=null;
 					res.send("login successful");
 				}
 						

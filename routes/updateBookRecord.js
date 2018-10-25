@@ -1,7 +1,7 @@
 var updateBookRecord = function(app,urlencodedParser,con){
 
 	app.post("/update-book-record",urlencodedParser,function(req,res){
-		if(req.session.username && req.cookies.user_sid)
+		if(req.session.adminusername && req.cookies.user_sid)
 		{
       bookid = req.body.bid;
       bookname = req.body.bname;

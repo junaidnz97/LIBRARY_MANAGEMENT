@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Listcontainer from './Listcontainer.js';
+import Review from './Review.js';
 
 class ReviewList extends Component {
     // constructor() {
@@ -9,10 +11,25 @@ class ReviewList extends Component {
     //     }
     // }
 
+
+
     render() {
+        const Reviewarray = robots.map((user, i) =>{
+            return (
+                <Review 
+                    // key={robots[i].id} 
+                    // id={robots[i].id} 
+                    // name={robots[i].name} 
+                    // email={robots[i].email} 
+                />
+            );
+        });
+
         return (
             <div>
-                
+                <Listcontainer>
+                    {Reviewarray}
+                </Listcontainer>
             </div>
         );
     }

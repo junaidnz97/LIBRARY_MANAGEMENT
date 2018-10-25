@@ -21,7 +21,7 @@ var pay_fine = function(app,urlencodedParser,con){
 		}
 	});
 	app.post("/pay-fine",urlencodedParser,function(req,res){
-		if(req.session.username && req.cookies.user_sid)
+		if(req.session.adminusername && req.cookies.user_sid)
 		{
 			userId = req.body.userId;
 			dueAmount = req.body.DueAmount;

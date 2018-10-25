@@ -24,6 +24,8 @@
     "express-session": "^1.15.6",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.4",
+    "random-number": "0.0.9",
+    "randomstring": "^1.1.5",
     "request": "^2.88.0",
     "urlencoded-parser": "^1.0.0"
   }

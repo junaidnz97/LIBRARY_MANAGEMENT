@@ -8,34 +8,43 @@ var updateBookRecord = function(app,urlencodedParser,con){
       booktype = req.body.btype;
       bookedition = req.body.bedition;
       quantity = req.body.quantity;
-      bookdesc = req.body.bdesc;
+      // bookdesc = req.body.bdesc;
       premium = req.body.premium;
+
+			console.log(bookid);
+			console.log(bookname);
+			console.log(booktype);
+			console.log(bookedition);
+			console.log(quantity);
+			// console.log(bookdesc);
+			console.log(premium);
 
       var param = 'BookId=' + bookid;
 
       if(bookname != '')
-        param += ',BookName=' + bookname;
+        param += ',BookName=' + "'" + bookname + "'";
       if(booktype != '')
-        param += ',BookType=' + booktype;
+        param += ',BookType=' + "'" + booktype + "'" ;
       if(bookedition != '')
         param += ',BookEdition=' + bookedition;
       if(quantity != '')
         param += ',TotalQuantity=' + quantity;
-      if(bookdesc != '')
-        param += ',BookDescription=' + bookdesc;
+      // if(bookdesc != '')
+        // param += ',BookDescription=' + bookdesc;
       if(premium != '')
         param += ',Premium=' + premium;
 
+			console.log(param);
 
-			var q = "update BookDetail set " + param;
+
+			var q = "update BookDetail set " + param + " where BookId=" + bookid;
+			console.log(q);
 			con.query(q,function(err,resp){
 				if(err)
 					throw err;
 				output = JSON.parse(JSON.stringify(resp));
-				if(output.length == 0)
-					res.send("No books found");
-				else
-					res.send({"book-details":output});
+				
+				res.send(output);
 			});
 		}
 		else

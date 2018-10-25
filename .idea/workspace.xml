@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e20c0aa-5790-489c-9c69-40555413c9cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="8e20c0aa-5790-489c-9c69-40555413c9cd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="129">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -192,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540446313918" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540446794533" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -239,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540361722143</updated>
-      <workItem from="1540361723843" duration="14413000" />
+      <workItem from="1540361723843" duration="14859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14413000" />
+    <option name="totallyTimeSpent" value="14859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1299" height="744" extended-state="4" />
@@ -343,8 +340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="129">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="23" />
         </state>
       </provider>
     </entry>

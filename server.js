@@ -9,6 +9,9 @@ var catalogue = require("./routes/catalogue.js")
 var session = require('express-session');
 var cookieParser=require("cookie-parser");
 var booksummary=require("./routes/booksummary.js");
+var updateBookRecord = require("./routes/updateBookRecord.js")
+var deleteBookRecord = require("./routes/deleteBookRecord.js")
+
 
 app.use(cookieParser());
 
@@ -24,15 +27,16 @@ app.use(session({
 
 app.use((req, res, next) => {
     if (req.cookies.user_sid && !req.session.username) {
-        res.clearCookie('user_sid');        
+        res.clearCookie('user_sid');
     }
     next();
 });
 
 
 var con = mysql.createConnection({
-    host: "10.0.32.32",
-    user: "libUser",
+    host: "0.tcp.ngrok.io",
+    port: "14739",
+    user: "root",
     password: "Ad_07_",
     database: "LibraryManagement"
   	});
@@ -52,4 +56,5 @@ signup.signup(app,urlencodedParser,con);
 booksummary.booksummary(app,urlencodedParser,con);
 borrow.borrow(app,urlencodedParser,con);
 catalogue.catalogue(app,urlencodedParser,con);
-
+updateBookRecord.updateBookRecord(app,urlencodedParser,con);
+//deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);

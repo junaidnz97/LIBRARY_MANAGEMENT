@@ -24,49 +24,7 @@ const {query} = require('../database/db');
 			}
 				console.log(Details);
 				res.send({"Dues":dues,"Details":Details});
-			// con.query(q,function(err,resp){
-			// 	if(err)
-			// 		throw err;
-			// 	var dues = JSON.parse(JSON.stringify(resp))[0];
-			// 	console.log(dues);
-			// 	var q1 = "select * from DuesDetail where UserId ="+userId+
-			// 			" and DuesPaid = 0"
-			// 	con.query(q1,function(err,resp1){
-			// 		if(err)
-			// 			throw err;
-			// 		var result = JSON.parse(JSON.stringify(resp1));
-			// 		console.log(result);
-			// 		//setTimeout(function(){
-			// 		var Details = [];
-			// 			for (var i = 0; i < result.length; i++) {
-			// 				console.log(result[i].HbookId);
-
-			// 				qpromise(userId,result[i].HbookId).then((res)=>{
-			// 					console.log(res);
-			// 					var output = JSON.parse(JSON.stringify(res))[0];
-			// 					Details.push(output)
-			// 				},(err)=>{
-			// 					console.log(err);
-			// 				});
-			// 			}
-			// 			setTimeout(()=>{res.send({"Dues":dues,"details":Details});},5000);
-			// 		//},500);
-			// 	});
-
-
-
-
-			// 	/*var q1 = "select * from CurrentBookStatus,(select BookId,BookName from BookDetail) as T where UserId = "+
-			// 				userId + " and DuesGenerated > 0 and DuesPaid = 0 and T.BookId = CurrentBookStatus.BookId";
-			// 	console.log(q1);
-			// 	con.query(q1,function(err,resp1){
-			// 		if(err)
-			// 			throw err;
-			// 		var result = JSON.parse(JSON.stringify(resp1));
-			// 		console.log(result);
-			// 		res.send({"DueAmount":dues,"Details":result});
-			// 	});*/ 
-			// });
+			
 		}
 		else
 		{
@@ -90,23 +48,6 @@ const {query} = require('../database/db');
 			let resp1 = await query(q1,con);
 			console.log(resp1);
 			res.send("payment successfully recorded");
-			// con.query(q0,function(err,resp0){
-			// 	if(err)
-			// 		throw err;
-			// 	console.log(resp0);
-
-			// 	var q1 = "insert into DuesBill(UserId,AmountPaid,PaymentMethod,Timestamp) values ("+
-			// 			userId+","+paidAmount+","+paymentMethod+",NOW())";
-			// 	console.log(q1);
-			// 	con.query(q1,function(err,resp1){
-			// 		if(err)
-			// 			throw err;
-			// 		console.log(resp1);
-			// 		res.send("payment successfully recorded");
-			// 	});
-
-				
-			//});
 		}
 		else
 		{

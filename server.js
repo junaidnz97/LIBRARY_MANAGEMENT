@@ -42,10 +42,10 @@ app.use((req, res, next) => {
 
 
 var con = mysql.createConnection({
-    host: "0.tcp.ngrok.io",
-    port: "10632",
-    user: "root",
-    password: "Ad_07_",
+    host: "addbinstance.cfdhbd9aqiv2.us-east-1.rds.amazonaws.com",
+    port: "3306",
+    user: "libUser",
+    password: "letmepass",
     database:"LibraryManagement"
   	});
 

@@ -27,6 +27,7 @@
     "random-number": "0.0.9",
     "randomstring": "^1.1.5",
     "request": "^2.88.0",
+    "url-pattern": "^1.0.3",
     "urlencoded-parser": "^1.0.0"
   }
 }

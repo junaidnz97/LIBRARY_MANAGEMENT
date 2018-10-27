@@ -1,22 +1,5 @@
 var pay_fine = function(app,urlencodedParser,con){
 const {query} = require('../database/db');
-	var qpromise = (uid,hid) => {
-		return new Promise((resolve,reject) =>{
-			if(uid != undefined && hid != undefined)
-			{
-				
-				con.query(q,function(err,resp){
-						console.log(q);
-						if(err)
-							throw err;
-						resolve(resp);
-				});
-			}
-			else{
-				reject("error");
-			}
-		})
-	}
 	app.post("/fine-amount",urlencodedParser,async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
@@ -90,7 +73,7 @@ const {query} = require('../database/db');
 			res.send({"output":"notloggedin"});
 		}
 	});
-	app.post("/pay-fine",urlencodedParser,function(req,res){
+	app.post("/pay-fine",urlencodedParser,async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
 		{
 			userId = req.body.userId;
@@ -100,23 +83,30 @@ const {query} = require('../database/db');
 			var q0 = "update student set Dues = Dues - "+paidAmount
 					+" where UserId = " + userId;
 			console.log(q0);
-			con.query(q0,function(err,resp0){
-				if(err)
-					throw err;
-				console.log(resp0);
-
-				var q1 = "insert into DuesBill(UserId,AmountPaid,PaymentMethod,Timestamp) values ("+
+			let resp0 = await query(q0,con);
+			var q1 = "insert into DuesBill(UserId,AmountPaid,PaymentMethod,Timestamp) values ("+
 						userId+","+paidAmount+","+paymentMethod+",NOW())";
-				console.log(q1);
-				con.query(q1,function(err,resp1){
-					if(err)
-						throw err;
-					console.log(resp1);
-					res.send("payment successfully recorded");
-				});
+			console.log(q1);
+			let resp1 = await query(q1,con);
+			console.log(resp1);
+			res.send("payment successfully recorded");
+			// con.query(q0,function(err,resp0){
+			// 	if(err)
+			// 		throw err;
+			// 	console.log(resp0);
+
+			// 	var q1 = "insert into DuesBill(UserId,AmountPaid,PaymentMethod,Timestamp) values ("+
+			// 			userId+","+paidAmount+","+paymentMethod+",NOW())";
+			// 	console.log(q1);
+			// 	con.query(q1,function(err,resp1){
+			// 		if(err)
+			// 			throw err;
+			// 		console.log(resp1);
+			// 		res.send("payment successfully recorded");
+			// 	});
 
 				
-			});
+			//});
 		}
 		else
 		{

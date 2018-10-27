@@ -11,4 +11,4 @@ const Listcontainer = (props) => {
 	);
 }
 
-export default Listcontainer
+export default Listcontainer;

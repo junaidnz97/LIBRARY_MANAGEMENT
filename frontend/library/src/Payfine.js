@@ -1,34 +1,33 @@
 import React, { Component } from 'react';
+import { Table,thead } from 'react-bootstrap';
+import { Form, Col, Checkbox, Button, FormControl, FormExample, FormGroup, HelpBlock, ControlLabel } from 'react-bootstrap';
 import Navbar from './Navbar.js'
 import Header from './Header.js'
-import {PageHeader, Button, Table} from 'react-bootstrap'
 import Listcontainer from './Listcontainer.js'
 //import Cardlist from './Cardlist.js';
 import Footer from './Footer.js'
 import Historytable from './Historytable.js'
 import ProfileDetails from './ProfileDetails.js'
-//import Searchbox from './Searchbox,js';
-import {robots} from './robots.js';
+import {PageHeader} from 'react-bootstrap'
 
-class Profile extends Component {
-    constructor() {
-        super();
-        this.state = {
-            robots : robots,
-            //searchfield = ''
-        }
+
+class Payfine extends React.Component {
+    constructor(props, context) {
+      super(props, context);
+  
     }
-
     render() {
-        return (
-            <div>
+      return (
+        <div>
                 <Navbar />
-                <Header />
+                <div className='bg-success'>
+                    <PageHeader>
+                    Pay Fine <small>Total Pending in INR: 20</small>
+                    </PageHeader>
+                </div>
                 <Listcontainer>
-                    <ProfileDetails />
-                    <Historytable />   
-                    <div>
-                <h2>Previous books in Possession </h2>
+                <div>
+                <h2>History of Books <Button bsStyle="primary" className="pull-right">Visit the librarian to pay your dues</Button> </h2>
                 <Table responsive>
                     <thead>
                         <tr>
@@ -38,6 +37,7 @@ class Profile extends Component {
                         <th>Publisher</th>
                         <th>Date of issue</th>
                         <th>Date of return</th>
+                        <th>Pending Fine in INR</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,7 +48,7 @@ class Profile extends Component {
                         <td>Hawk Books</td>
                         <td>22/10/2018</td>
                         <td>24/10/2018</td>
-                        
+                        <td>10</td>
                         </tr>
                         <tr>
                         <td>2</td>
@@ -57,7 +57,7 @@ class Profile extends Component {
                         <td>Hawk Books</td>
                         <td>22/10/2018</td>
                         <td>24/10/2018</td>
-                            </tr>
+                        <td>10</td>    </tr>
                         <tr>
                         <td>3</td>
                         <td>Theory of Everything</td>
@@ -65,17 +65,21 @@ class Profile extends Component {
                         <td>Hawk Books</td>
                         <td>22/10/2018</td>
                         <td>24/10/2018</td>
-                           </tr>
+                        <td>15</td>    </tr>
                     </tbody>
                 </Table>
-            </div>
+            </div>   
 
                 </Listcontainer>
-                <Footer />    
-            </div>
-        );
+                <br/><br/><br/><br/><br/>
+                <Footer /> 
+        </div>
+        
+        
 
+      );
     }
-}
+  }
+  
 
-export default Profile;
+  export default Payfine;

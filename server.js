@@ -4,7 +4,7 @@ var bodyParser=require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mysql=require("mysql");
 
-var apilogin = require("./routes/apilogin.js");
+
 var signup=require("./routes/signup.js");
 var borrow = require("./routes/borrow.js");
 var catalogue = require("./routes/catalogue.js")
@@ -46,9 +46,7 @@ var con = mysql.createConnection({
     port: "3306",
     user: "libUser",
     password: "letmepass",
-    database:"LibraryManagement",
-    timeout: 6000
-
+    database:"LibraryManagement"
   	});
 
 con.connect(function(err) {
@@ -77,4 +75,3 @@ updateBookRecord.updateBookRecord(app,urlencodedParser,con);
 deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);
 
 pay_fine.pay_fine(app,urlencodedParser,con);
-apilogin.apilogin(app,urlencodedParser,con);

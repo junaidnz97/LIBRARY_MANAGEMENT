@@ -45,7 +45,7 @@ var con = mysql.createConnection({
     host: "addbinstance2.cfdhbd9aqiv2.us-east-1.rds.amazonaws.com",
     port: "3306",
     user: "AdMenon",
-    password: "letmepass",
+    password: "qwertyuiop",
     database:"LibraryManagement",
     timeout: 6000
 

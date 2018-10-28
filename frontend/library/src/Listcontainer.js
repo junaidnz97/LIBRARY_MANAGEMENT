@@ -4,7 +4,7 @@ import './Listcontainer.css'
 const Listcontainer = (props) => {
 
 	return (
-		<div >
+		<div className="Listcontainer shadow-5" >
 			{props.children}
 		</div>
 

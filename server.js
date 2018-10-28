@@ -4,7 +4,7 @@ var bodyParser=require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mysql=require("mysql");
 
-
+var apilogin = require("./routes/apilogin.js");
 var signup=require("./routes/signup.js");
 var borrow = require("./routes/borrow.js");
 var catalogue = require("./routes/catalogue.js")
@@ -42,12 +42,10 @@ app.use((req, res, next) => {
 
 
 var con = mysql.createConnection({
-
-    host: "0.tcp.ngrok.io",
-    port: "10632",
-    user: "root",
-    password: "Ad_07_",
-    database:"LibraryManagement"
+    host: "us-cdbr-iron-east-01.cleardb.net",
+    user: "bfd712e27d3e0e",
+    password: "141a123b",
+    database:"heroku_2460774cb2e36e4",
   	});
 
 con.connect(function(err) {
@@ -76,3 +74,4 @@ updateBookRecord.updateBookRecord(app,urlencodedParser,con);
 deleteBookRecord.deleteBookRecord(app,urlencodedParser,con);
 
 pay_fine.pay_fine(app,urlencodedParser,con);
+apilogin.apilogin(app,urlencodedParser,con);

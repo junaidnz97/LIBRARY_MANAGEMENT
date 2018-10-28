@@ -1,0 +1,21 @@
+/*.reviewer {
+	width: 75%;
+	display: inline-block;
+}*/
+
+.contain {
+	display: inline-block;
+	width: 80%;
+}
+
+.card__ {
+  position: relative;
+  bottom: 0;
+}
+
+.card__stars--active {
+  color: #41377C;
+}
+.card__stars--inactive {
+  color: #CCCCCC;
+}

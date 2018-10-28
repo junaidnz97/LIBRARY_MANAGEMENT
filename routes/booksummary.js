@@ -1,19 +1,31 @@
-var booksummary=function (app,urlencodedParser,con) {
+const mysql = require('mysql');
+var booksummary=function (app,con) {
 
-    app.get("/booksummary",function (req,res) {
+    const {query} = require('../database/db');
+    
+    // var con = mysql.createConnection({
+    // host: "us-cdbr-iron-east-01.cleardb.net",
+    // user: "bfd712e27d3e0e",
+    // password: "141a123b",
+    // database:"heroku_2460774cb2e36e4",
+    // });
+
+    app.get("/booksummary",async(req,res)=> {
         if(req.session.username && req.cookies.user_sid)
         {
             console.log(req.query);
             var bookId=req.query.bookid;
-            var query="select * from BookDetail where BookId="+bookId;
-            con.query(query,function (err,response) {
+            var q="select * from BookDetail where BookId="+bookId;
+            var finalresp = await query(q,con);
+            res.send(finalresp);
+            // con.query(query,function (err,response) {
 
-                if(err)
-                    res.send({"output":"error"});
+            //     if(err)
+            //         res.send({"output":"error"});
 
-                var finalresp = JSON.parse(JSON.stringify(response));
-                res.send(finalresp);
-            });
+            //     var finalresp = JSON.parse(JSON.stringify(response));
+            //     res.send(finalresp);
+            // });
         }
         else
         {
@@ -22,7 +34,7 @@ var booksummary=function (app,urlencodedParser,con) {
         }
 
     });
-    app.get("/review",function(req,res){
+    app.get("/review",async(req,res)=>{
        if(req.session.username && req.cookies.user_sid)
         {
            console.log(req.query);
@@ -30,12 +42,14 @@ var booksummary=function (app,urlencodedParser,con) {
            var q = "select * from RatingAndReview,(select UserId,UserName from Student) as T where BookId="+bookId+
                     " and T.UserId=RatingAndReview.UserId";
            console.log(q);
-           con.query(q,function(err,resp){
-                if(err)
-                    throw err;
-                var result = JSON.parse(JSON.stringify(resp));
-                res.send({"details":result});
-           });
+           var result = await query(q,con);
+           res.send({"details":result});
+           // con.query(q,function(err,resp){
+           //      if(err)
+           //          throw err;
+           //      var result = JSON.parse(JSON.stringify(resp));
+           //      res.send({"details":result});
+           // });
 
         }
         else
@@ -43,6 +57,7 @@ var booksummary=function (app,urlencodedParser,con) {
             res.send({"output":"notloggedin"});
         } 
     });
+    
 
 };
 

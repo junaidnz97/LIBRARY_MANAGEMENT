@@ -1,5 +1,17 @@
-var rate_review = function(app,urlencodedParser,con){
-	app.post("/rate_review",urlencodedParser,function(req,res){
+const mysql = require('mysql');
+var rate_review = function(app,con){
+
+	const {query} = require('../database/db');
+
+	// var con = mysql.createConnection({
+ //    host: "us-cdbr-iron-east-01.cleardb.net",
+ //    user: "bfd712e27d3e0e",
+ //    password: "141a123b",
+ //    database:"heroku_2460774cb2e36e4",
+	// });
+
+
+	app.post("/rate_review",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
 			userId = req.body.userId;
@@ -10,12 +22,14 @@ var rate_review = function(app,urlencodedParser,con){
 					bookId + "," + userId + "," + rating + ",'" +
 					review + "',NOW())";
 			console.log(q);
-			con.query(q,function(err,resp){
-				if(err)
-					throw err;
-				console.log(resp);
-				res.send("Rating and review stored successfully"); 
-			}); 
+			var resp = await query(q,con);
+			res.send({"status":"Rating and review stored successfully"}); 
+			// con.query(q,function(err,resp){
+			// 	if(err)
+			// 		throw err;
+			// 	console.log(resp);
+			// 	res.send("Rating and review stored successfully"); 
+			// }); 
 		}
 		else
 		{

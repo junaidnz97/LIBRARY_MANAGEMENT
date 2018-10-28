@@ -1,15 +1,15 @@
 const mysql = require('mysql');
-var pay_fine = function(app,urlencodedParser,con){
+var pay_fine = function(app,con){
 	const {query} = require('../database/db');
 
-	var con = mysql.createConnection({
-    host: "us-cdbr-iron-east-01.cleardb.net",
-    user: "bfd712e27d3e0e",
-    password: "141a123b",
-    database:"heroku_2460774cb2e36e4",
-	});
+	// var con = mysql.createConnection({
+ //    host: "us-cdbr-iron-east-01.cleardb.net",
+ //    user: "bfd712e27d3e0e",
+ //    password: "141a123b",
+ //    database:"heroku_2460774cb2e36e4",
+	// });
 
-	app.post("/fine-amount",urlencodedParser,async(req,res)=>{
+	app.post("/fine-amount",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
 			userId = req.body.userId;
@@ -40,7 +40,7 @@ var pay_fine = function(app,urlencodedParser,con){
 			res.send({"output":"notloggedin"});
 		}
 	});
-	app.post("/pay-fine",urlencodedParser,async(req,res)=>{
+	app.post("/pay-fine",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
 		{
 			userId = req.body.userId;

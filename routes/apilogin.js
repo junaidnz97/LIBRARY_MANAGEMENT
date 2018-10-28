@@ -1,4 +1,4 @@
-var apilogin = function (app,urlencodedParser,con){
+var apilogin = function (app,con){
 	var request = require("request");
 	var userDetails;
 	app.get("/auth/callback/:id",(req,res)=>{

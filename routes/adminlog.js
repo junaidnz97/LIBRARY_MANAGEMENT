@@ -1,6 +1,6 @@
-var adminlog=function (app,urlencodedParser,con) {
+var adminlog=function (app,con) {
 
-    app.post("/admin/login",urlencodedParser,function (req,res) {
+    app.post("/admin/login",function (req,res) {
 
         if (req.session.adminusername == 'admin' && req.cookies.user_sid) {
             res.send("already logged in");
@@ -30,7 +30,7 @@ var adminlog=function (app,urlencodedParser,con) {
         res.send("logut successful");
     });
 
-    app.post("/admin/changepassword",urlencodedParser,function(req,res){
+    app.post("/admin/changepassword",function(req,res){
 
         var curPassword=req.body.currentpassword;
         var newPassword=req.body.newpassword;

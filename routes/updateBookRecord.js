@@ -1,6 +1,16 @@
-var updateBookRecord = function(app,urlencodedParser,con){
+const mysql = require('mysql');
+var updateBookRecord = function(app,con){
 
-	app.post("/update-book-record",urlencodedParser,function(req,res){
+	const {query} = require('../database/db');
+
+	// var con = mysql.createConnection({
+ //    host: "us-cdbr-iron-east-01.cleardb.net",
+ //    user: "bfd712e27d3e0e",
+ //    password: "141a123b",
+ //    database:"heroku_2460774cb2e36e4",
+	// });
+
+	app.post("/update-book-record",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
 		{
       bookid = req.body.bid;
@@ -39,13 +49,15 @@ var updateBookRecord = function(app,urlencodedParser,con){
 
 			var q = "update BookDetail set " + param + " where BookId=" + bookid;
 			console.log(q);
-			con.query(q,function(err,resp){
-				if(err)
-					throw err;
-				output = JSON.parse(JSON.stringify(resp));
+			output = await query(q,con);
+			res.send(output);
+			// con.query(q,function(err,resp){
+			// 	if(err)
+			// 		throw err;
+			// 	output = JSON.parse(JSON.stringify(resp));
 				
-				res.send(output);
-			});
+			// 	res.send(output);
+			// });
 		}
 		else
 		{

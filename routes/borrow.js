@@ -1,16 +1,16 @@
 const mysql = require('mysql');
-var borrow = function(app,urlencodedParser,con){
+var borrow = function(app,con){
 
 	const {query} = require('../database/db');
 	
-	var con = mysql.createConnection({
-    host: "us-cdbr-iron-east-01.cleardb.net",
-    user: "bfd712e27d3e0e",
-    password: "141a123b",
-    database:"heroku_2460774cb2e36e4",
-	});
+	// var con = mysql.createConnection({
+ //    host: "us-cdbr-iron-east-01.cleardb.net",
+ //    user: "bfd712e27d3e0e",
+ //    password: "141a123b",
+ //    database:"heroku_2460774cb2e36e4",
+	// });
 
-	app.post("/borrow",urlencodedParser,async(req,res)=>{
+	app.post("/borrow",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
         {
 			bookid = req.body.bid;

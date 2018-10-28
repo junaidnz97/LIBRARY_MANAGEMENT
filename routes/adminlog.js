@@ -30,6 +30,20 @@ var adminlog=function (app,urlencodedParser,con) {
         res.send("logut successful");
     });
 
+    app.post("/admin/changepassword",urlencodedParser,function(req,res){
+
+        var curPassword=req.body.currentpassword;
+        var newPassword=req.body.newpassword;
+        var confirmnewPassword=req.body.confirmpassword;
+        var q="select password from Admin where UserName='admin'";
+
+        con.query(q,function (err,response) {
+
+            var temp=JSON.parse(response);
+            console.log(temp);
+        });
+    });
+
 };
 
 module.exports={

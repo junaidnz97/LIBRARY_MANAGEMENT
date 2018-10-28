@@ -42,11 +42,12 @@ app.use((req, res, next) => {
 
 
 var con = mysql.createConnection({
-    host: "admdbinstance.cc0zo4iwt29r.ap-south-1.rds.amazonaws.com",
+    host: "addbinstance2.cfdhbd9aqiv2.us-east-1.rds.amazonaws.com",
     port: "3306",
-    user: "libUser",
+    user: "AdMenon",
     password: "letmepass",
-    database:"LibraryManagement"
+    database:"LibraryManagement",
+    timeout: 6000
 
   	});
 

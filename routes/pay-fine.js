@@ -1,5 +1,14 @@
+const mysql = require('mysql');
 var pay_fine = function(app,urlencodedParser,con){
-const {query} = require('../database/db');
+	const {query} = require('../database/db');
+
+	var con = mysql.createConnection({
+    host: "us-cdbr-iron-east-01.cleardb.net",
+    user: "bfd712e27d3e0e",
+    password: "141a123b",
+    database:"heroku_2460774cb2e36e4",
+	});
+
 	app.post("/fine-amount",urlencodedParser,async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{

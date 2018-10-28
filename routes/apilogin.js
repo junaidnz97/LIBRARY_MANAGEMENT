@@ -10,6 +10,8 @@ var apilogin = function (app,urlencodedParser,con){
         		if (!error && response.statusCode == 200) {
             		console.log(body);
             		userDetails = body;
+					console.log(userDetails.student[0].Student_ID);
+            		req.session.username=userDetails.student[0].Student_ID;
             		res.send(userDetails);
         	}
     	});

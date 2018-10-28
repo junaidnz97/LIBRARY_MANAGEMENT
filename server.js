@@ -46,6 +46,7 @@ var con = mysql.createConnection({
     user: "bfd712e27d3e0e",
     password: "141a123b",
     database:"heroku_2460774cb2e36e4",
+    timeout:99999999999999
   	});
 
 con.connect(function(err) {

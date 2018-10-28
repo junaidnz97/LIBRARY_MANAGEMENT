@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import { Table,thead } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import {Image, Col} from 'react-bootstrap';
@@ -31,7 +32,11 @@ const ProfileDetails = (props) => {
       <td>3</td>
       <td>S20160010060</td>
       <td>14</td>
-      <td><Button bsStyle="primary">PAY FINE</Button></td></tr>
+      <td>
+        <Link to='/fine'>
+          <Button bsStyle="primary">PAY FINE</Button>
+        </Link>
+      </td></tr>
     </tbody>
     </Table>
          </div>

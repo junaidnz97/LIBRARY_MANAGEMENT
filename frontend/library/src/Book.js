@@ -4,7 +4,8 @@ import Bookcontainer from './Bookcontainer.js';
 import Bookinfo from './Bookinfo.js';
 import Bookdynamic from './Bookdynamic.js';
 import Listcontainer from './Listcontainer.js';
-import Footer from './Footer.js';  
+import ReviewList from './ReviewList.js';
+import Header from './Header.js';  
 
 class Book extends Component {
     // constructor() {
@@ -18,15 +19,14 @@ class Book extends Component {
     render() {
         return (
             <div>
-                <Navbar />
+                <Header />
                 <Bookcontainer>
                 	<Bookinfo />
                 	<Bookdynamic />
                 </Bookcontainer>
                 <Listcontainer>
-
+                    <ReviewList />
                 </Listcontainer>
-                <Footer />
             </div>
         );
 

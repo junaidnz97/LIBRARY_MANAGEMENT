@@ -9,6 +9,7 @@ const Header = () => {
 		<div className='bg-success'>
 			<PageHeader>
 			  Book Catalog <small> List of all books</small>
+			  {/*Welcome to your Profile <small> Paras Dahiya</small>*/}
 			</PageHeader>
 		</div>
 	);

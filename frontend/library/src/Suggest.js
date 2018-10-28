@@ -19,7 +19,6 @@ class Suggest extends React.Component {
     render() {
       return (
         <div>
-                <Navbar />
                 <div className='bg-success'>
                     <PageHeader>
                     Suggest Books <small> Enter details of the book you want</small>
@@ -71,7 +70,6 @@ class Suggest extends React.Component {
 </Form>
 
                 </Listcontainer>
-                <Footer />    
             </div>
         
 

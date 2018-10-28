@@ -19,7 +19,6 @@ class Payfine extends React.Component {
     render() {
       return (
         <div>
-                <Navbar />
                 <div className='bg-success'>
                     <PageHeader>
                     Pay Fine <small>Total Pending in INR: 20</small>
@@ -72,7 +71,6 @@ class Payfine extends React.Component {
 
                 </Listcontainer>
                 <br/><br/><br/><br/><br/>
-                <Footer /> 
         </div>
         
         

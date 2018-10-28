@@ -8,21 +8,20 @@ import Footer from './Footer.js'
 import Historytable from './Historytable.js'
 import ProfileDetails from './ProfileDetails.js'
 //import Searchbox from './Searchbox,js';
-import {robots} from './robots.js';
+//import {robots} from './robots.js';
 
 class Profile extends Component {
-    constructor() {
-        super();
-        this.state = {
-            robots : robots,
-            //searchfield = ''
-        }
-    }
+    // constructor() {
+    //     // super();
+    //     // this.state = {
+    //     //     robots : robots,
+    //     //     //searchfield = ''
+    //     // }
+    // }
 
     render() {
         return (
             <div>
-                <Navbar />
                 <Header />
                 <Listcontainer>
                     <ProfileDetails />
@@ -71,7 +70,6 @@ class Profile extends Component {
             </div>
 
                 </Listcontainer>
-                <Footer />    
             </div>
         );
 

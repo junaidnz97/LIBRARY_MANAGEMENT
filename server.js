@@ -42,12 +42,10 @@ app.use((req, res, next) => {
 
 
 var con = mysql.createConnection({
-    host: "addbinstance2.cfdhbd9aqiv2.us-east-1.rds.amazonaws.com",
-    port: "3306",
-    user: "AdMenon",
-    password: "qwertyuiop",
-    database:"LibraryManagement",
-    timeout: 6000
+    host: "us-cdbr-iron-east-01.cleardb.net",
+    user: "bfd712e27d3e0e",
+    password: "141a123b",
+    database:"heroku_2460774cb2e36e4",
 
   	});
 

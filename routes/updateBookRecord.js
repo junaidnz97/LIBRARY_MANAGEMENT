@@ -18,16 +18,8 @@ var updateBookRecord = function(app,con){
       booktype = req.body.btype;
       bookedition = req.body.bedition;
       quantity = req.body.quantity;
-      // bookdesc = req.body.bdesc;
+      bookdesc = req.body.bdesc;
       premium = req.body.premium;
-
-			console.log(bookid);
-			console.log(bookname);
-			console.log(booktype);
-			console.log(bookedition);
-			console.log(quantity);
-			// console.log(bookdesc);
-			console.log(premium);
 
       var param = 'BookId=' + bookid;
 
@@ -39,8 +31,8 @@ var updateBookRecord = function(app,con){
         param += ',BookEdition=' + bookedition;
       if(quantity != '')
         param += ',TotalQuantity=' + quantity;
-      // if(bookdesc != '')
-        // param += ',BookDescription=' + bookdesc;
+      if(bookdesc != '')
+        param += ',BookDescription=' + bookdesc;
       if(premium != '')
         param += ',Premium=' + premium;
 
@@ -55,7 +47,7 @@ var updateBookRecord = function(app,con){
 			// 	if(err)
 			// 		throw err;
 			// 	output = JSON.parse(JSON.stringify(resp));
-				
+
 			// 	res.send(output);
 			// });
 		}

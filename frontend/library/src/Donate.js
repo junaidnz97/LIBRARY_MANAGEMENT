@@ -19,7 +19,6 @@ class Donate extends React.Component {
     render() {
       return (
         <div>
-                <Navbar />
                 <div className='bg-success'>
                     <PageHeader>
                     Donate Books <small> Enter details of the book you want to donate</small>
@@ -71,7 +70,6 @@ class Donate extends React.Component {
             </Form>
 
                 </Listcontainer>
-                <Footer />    
             </div>
         
 

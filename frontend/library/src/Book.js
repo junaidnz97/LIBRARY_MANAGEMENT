@@ -5,7 +5,7 @@ import Bookinfo from './Bookinfo.js';
 import Bookdynamic from './Bookdynamic.js';
 import Listcontainer from './Listcontainer.js';
 import ReviewList from './ReviewList.js';
-import Footer from './Footer.js';  
+import Header from './Header.js';  
 
 class Book extends Component {
     // constructor() {
@@ -19,7 +19,7 @@ class Book extends Component {
     render() {
         return (
             <div>
-                <Navbar />
+                <Header />
                 <Bookcontainer>
                 	<Bookinfo />
                 	<Bookdynamic />
@@ -27,7 +27,6 @@ class Book extends Component {
                 <Listcontainer>
                     <ReviewList />
                 </Listcontainer>
-                <Footer />
             </div>
         );
 

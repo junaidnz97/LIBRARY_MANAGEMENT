@@ -14,7 +14,8 @@ const Cardcomp = (props) => {
 			        <CardImg className="cardimg"src={`${book.Img_url_m}`} alt="Card image cap"/>
 			        <CardBody className="takeright">
 			          <CardTitle>{book.BookName}</CardTitle>
-			          <CardSubtitle>Card subtitle</CardSubtitle>
+			          <CardSubtitle>Publisher: {book.Publisher}</CardSubtitle>
+			          <CardSubtitle>Edition: {book.BookEdition}</CardSubtitle>
 			        </CardBody>
 			    </div>
 			    <CardBody>

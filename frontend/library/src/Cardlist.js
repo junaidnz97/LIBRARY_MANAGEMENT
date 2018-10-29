@@ -4,14 +4,14 @@ import {Link} from 'react-router-dom';
 
 const Cardlist = ({books}) => {
 
-	const Cardarray = books.map((user, i) =>{
+	const Cardarray = books.map((book, i) =>{
 		return (
-			<Link to='/book'>
+			<Link to={{ pathname: '/book', state: { book: book} }}>
 				<Card 
-					key={books[i].id} 
-					id={books[i].id} 
-					name={books[i].BookName} 
-					desc={books[i].BookDescription} 
+					key={book.id} 
+					id={book.id} 
+					name={book.BookName} 
+					desc={book.BookDescription} 
 				/>
 			</Link>
 		);

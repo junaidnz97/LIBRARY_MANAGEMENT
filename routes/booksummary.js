@@ -11,7 +11,7 @@ var booksummary=function (app,con) {
     // });
 
     app.get("/booksummary",async(req,res)=> {
-        if(1)//req.session.username && req.cookies.user_sid)
+        if(req.session.username && req.cookies.user_sid)
         {
             console.log(req.query);
             var bookId=req.query.bookid;
@@ -22,8 +22,10 @@ var booksummary=function (app,con) {
             var authorresp=await query(q,con);
             authorresp=JSON.parse(JSON.stringify(authorresp));
             finalresp[0].authors=authorresp;
-            console.log(authorresp);
-            console.log(finalresp);
+            //for(var i=0;i<authorresp.length;i++);
+             //   finalresp[0].authors.push(authorresp[i]);
+            //console.log(authorresp);
+            //console.log(authorresp[0]);
             res.send(finalresp);
             // con.query(query,function (err,response) {
 

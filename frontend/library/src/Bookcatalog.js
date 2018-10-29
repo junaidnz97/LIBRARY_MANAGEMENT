@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import {Container} from 'reactstrap'
 import {Link} from 'react-router-dom';
+import * as axios from 'axios';
 import Header from './Header.js'
 import Listcontainer from './Listcontainer.js'
 import Cardlist from './Cardlist.js';
@@ -10,9 +12,34 @@ class Bookcatalog extends Component {
     constructor() {
         super();
         this.state = {
-            robots : robots,
+            books : [],
             //searchfield = ''
         }
+    }
+
+    
+
+    componentDidMount() {
+        let getData = async () => {
+            let res = await axios({
+                method: 'post',
+                url: '/login',
+                data: {
+                        username: '20160010060',
+                        password: 'mynamedahiya'
+                    }
+            });
+            console.log(res);
+            let books = await axios({
+              method: 'get',
+              url: '/catalogue'
+            });
+        
+            console.log(books.data["book-details"]);
+            //let boks = books.data.bookDetails;
+            this.setState({books: books.data["book-details"]});
+        }
+        getData();
     }
 
     render() {
@@ -20,7 +47,9 @@ class Bookcatalog extends Component {
             <div>
                 <Header />
                 <Listcontainer>
-                    <Cardlist robots = {this.state.robots} />
+                <Container fluid>
+                    <Cardlist books = {this.state.books} />
+                </Container>
                 </Listcontainer>
             </div>
         );

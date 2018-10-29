@@ -1,17 +1,16 @@
 import React from 'react';
-import Card from './Card.js';
+import Cardcomp from './Card.js';
 import {Link} from 'react-router-dom';
+import {Row} from 'reactstrap'
 
-const Cardlist = ({robots}) => {
+const Cardlist = ({books}) => {
 
-	const Cardarray = robots.map((user, i) =>{
+	const Cardarray = books.map((book, i) =>{
 		return (
-			<Link to='/book'>
-				<Card 
-					key={robots[i].id} 
-					id={robots[i].id} 
-					name={robots[i].name} 
-					email={robots[i].email} 
+			<Link to={{ pathname: '/book', state: { book: book} }}>
+				<Cardcomp 
+					key={book.id} 
+					bookdesc={book} 
 				/>
 			</Link>
 		);
@@ -20,9 +19,9 @@ const Cardlist = ({robots}) => {
 
 
 	return (
-		<div>
+		<Row>
 			{Cardarray}
-		</div>
+		</Row>
 	);
 }
 

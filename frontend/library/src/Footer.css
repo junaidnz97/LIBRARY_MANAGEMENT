@@ -1,12 +1,10 @@
 .page-footer {
-	padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-    margin-top: 0px;
+	
     text-align: center;
     color: white;
     background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

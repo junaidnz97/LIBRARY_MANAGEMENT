@@ -19,9 +19,10 @@ class Book extends Component {
     render() {
         return (
             <div>
+                {console.log(this.props.location.state.book)}
                 <Header />
                 <Bookcontainer>
-                	<Bookinfo />
+                	<Bookinfo book={this.props.location.state.book}/>
                 	<Bookdynamic />
                 </Bookcontainer>
                 <Listcontainer>

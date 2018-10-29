@@ -20,8 +20,7 @@ class Bookinfo extends Component {
             <Grid>
                <Row className="show-grid">
                <Col md={6}>
- 
-                <div class="card">
+                <div class="card1">
                     <img class="card__image" src="https://placeimg.com/250/300/animals" width="240px" height="300px"/>      
                     <div class="card__content">
                       <h3>Book Name</h3>

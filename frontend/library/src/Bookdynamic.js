@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ButtonToolbar} from 'react-bootstrap';
+import {ButtonToolbar,Button} from 'react-bootstrap';
 import Sharebutton from './Sharebutton.js'
 import Borrowbutton from './Borrowbutton.js'
 
@@ -16,10 +16,9 @@ class Bookdynamic extends Component {
         return (
             <div>
                 <h3>Books available</h3>
-                <ButtonToolbar>
-                    <Borrowbutton />
-                    <Sharebutton />
-                </ButtonToolbar>
+                <br/>
+                <Button bsSize='large' bsStyle="primary">Borrow Book</Button>
+                <Button bsSize='large' bsStyle="primary">Share Books</Button>
             </div>
         );
     }

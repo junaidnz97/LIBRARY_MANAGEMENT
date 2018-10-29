@@ -18,7 +18,6 @@ class Admin extends Component {
                 <Sidenav />
                 
                 <Listcontainer>
-                  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </Listcontainer>
                 <Footer />    
                 </div>

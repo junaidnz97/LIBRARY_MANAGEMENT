@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Container} from 'reactstrap'
 import {Link} from 'react-router-dom';
 import * as axios from 'axios';
 import Header from './Header.js'
@@ -46,7 +47,9 @@ class Bookcatalog extends Component {
             <div>
                 <Header />
                 <Listcontainer>
+                <Container fluid>
                     <Cardlist books = {this.state.books} />
+                </Container>
                 </Listcontainer>
             </div>
         );

@@ -1,17 +1,16 @@
 import React from 'react';
-import Card from './Card.js';
+import Cardcomp from './Card.js';
 import {Link} from 'react-router-dom';
+import {Row} from 'reactstrap'
 
 const Cardlist = ({books}) => {
 
 	const Cardarray = books.map((book, i) =>{
 		return (
 			<Link to={{ pathname: '/book', state: { book: book} }}>
-				<Card 
+				<Cardcomp 
 					key={book.id} 
-					id={book.id} 
-					name={book.BookName} 
-					desc={book.BookDescription} 
+					bookdesc={book} 
 				/>
 			</Link>
 		);
@@ -20,9 +19,9 @@ const Cardlist = ({books}) => {
 
 
 	return (
-		<div>
+		<Row>
 			{Cardarray}
-		</div>
+		</Row>
 	);
 }
 

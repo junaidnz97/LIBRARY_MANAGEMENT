@@ -1,0 +1,11 @@
+.cont {
+	display:flex;
+}
+
+.takeright {
+	flex:1;
+}
+
+.cardimg {
+	margin-right: 10px;
+}

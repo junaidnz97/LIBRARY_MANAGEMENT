@@ -11,12 +11,19 @@ var booksummary=function (app,con) {
     // });
 
     app.get("/booksummary",async(req,res)=> {
-        if(req.session.username && req.cookies.user_sid)
+        if(1)//req.session.username && req.cookies.user_sid)
         {
             console.log(req.query);
             var bookId=req.query.bookid;
             var q="select * from BookDetail where BookId="+bookId;
             var finalresp = await query(q,con);
+            finalresp=JSON.parse(JSON.stringify(finalresp));
+            q="select BookAuthor from bookauthor where BookId = "+bookId;
+            var authorresp=await query(q,con);
+            authorresp=JSON.parse(JSON.stringify(authorresp));
+            finalresp[0].authors=authorresp;
+            console.log(authorresp);
+            console.log(finalresp);
             res.send(finalresp);
             // con.query(query,function (err,response) {
 

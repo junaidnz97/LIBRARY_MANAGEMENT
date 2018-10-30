@@ -1,10 +1,11 @@
-.page-footer {
-	
+.page-footer  {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    padding-top: 20px;
     text-align: center;
     color: white;
     background-color: black;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+
 }

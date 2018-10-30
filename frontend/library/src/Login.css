@@ -1,7 +1,6 @@
 @media all and (min-width: 480px) {
   .Login {
     padding: 60px 0;
-    
   }
 
   .Login form {
@@ -11,6 +10,15 @@
   }
 }
 
+.particles {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: blue;
+  z-index: -1
+}
 
 .center {
   display: flex;

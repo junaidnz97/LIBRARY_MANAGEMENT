@@ -24,8 +24,7 @@ var returnbook = function(app,con){
 			else{
 				var q0 = "update BookLogTrigger set DOR = NOW() where HId = "+hbookid +" and DOR is NULL";
 				var r0 = await query(q0,con);
-				var q2 = "select DuesGenerated from DuesDetail where UserId ="+userid+
-						" and DuesPaid = 0";
+				var q2 = "select DuesGenerated from CurrentBookStatus where HBookId ="+hbookid;
 				console.log(q2);
 				var r2 = await query(q2,con);
 				console.log(r2.length);

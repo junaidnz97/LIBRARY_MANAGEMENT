@@ -6,6 +6,7 @@ import Profile from './Profile.js';
 import Suggest from './Suggest.js';
 import Donate from './Donate.js';
 import Payfine from './Payfine.js';
+import './Main.css';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -15,7 +16,7 @@ import Payfine from './Payfine.js';
 const Main = () => {
 	
 	return (
-		<div>
+		<div className='Main'>
 		    <Switch>
 			    <Route exact path='/' component={Bookcatalog}/>
 			    <Route path='/book' component={Book} />

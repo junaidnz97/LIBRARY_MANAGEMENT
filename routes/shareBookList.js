@@ -5,7 +5,7 @@ var shareBookList = function(app,con){
 
 
 	app.post("/share-book-list",async(req,res)=>{
-		// if(req.session.username && req.cookies.user_sid)
+		if(req.session.username && req.cookies.user_sid)
 		{
       bookid = req.body.bid;
 
@@ -17,10 +17,10 @@ var shareBookList = function(app,con){
 					res.send({"user-details":output});
 
 		}
-		// else
-		// {
-		// 	res.send({"output":"notloggedin"});
-		// }
+		else
+		{
+			res.send({"output":"notloggedin"});
+		}
 	});
 
 }

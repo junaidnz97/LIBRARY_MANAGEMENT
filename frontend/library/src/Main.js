@@ -6,7 +6,6 @@ import Profile from './Profile.js';
 import Suggest from './Suggest.js';
 import Donate from './Donate.js';
 import Payfine from './Payfine.js';
-import Login from './Login.js';
 import './Main.css';
 
 const Main = () => {

@@ -5,20 +5,20 @@ const Bookstatic = (props) => {
 
   return (
           <div class="card1">
-              <img class="card__image" src="https://placeimg.com/250/300/animals" width="240px" height="300px"/>      
+              <img class="card__image" src={`${props.book.Img_url_l}`} width="240px" height="300px"/>      
               <div class="card__content">
-                <h3>Book Name</h3>
+                <h3>{props.book.BookName}</h3>
                 <p>
                     <strong>Author(s):</strong> Aditya
                 </p>
                 <p>
-                    <strong>Publisher(s):</strong> Junaid
+                    <strong>Publisher:</strong> {props.book.Publisher}
                 </p>
                 <p>
-                    <strong>Edition:</strong> 3
+                    <strong>Edition:</strong> {props.book.BookEdition}
                 </p>
                 <p>
-                    <strong>Total Books:</strong> 8
+                    <strong>Total Books:</strong> {props.book.TotalQuantity}
                 </p>
                 <p>Description</p>
                 <div class="card__rating">

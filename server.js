@@ -24,6 +24,15 @@ var shareBookRequest = require("./routes/shareBookRequest.js")
 
 var pay_fine = require("./routes/pay-fine");
 var returnbook = require("./routes/return");
+var cataloguesearch=require("./routes/cataloguesearch");
+
+var requestBook = require("./routes/requestBook.js");
+var requestedBookList = require("./routes/requestedBookList.js");
+var removeBookRequest = require("./routes/removeBookRequest.js");
+//var addindex=require("./routes/addindex.js");
+
+var userList = require("./routes/userlist");
+var userBookRecords = require("./routes/userBookRecords");
 
 app.use(cookieParser());
 
@@ -75,6 +84,28 @@ var server=app.listen("9090",function(){
 	console.log("server working");
 });
 
+var elasticsearch=require("elasticsearch");
+var client=new elasticsearch.Client({
+
+    host: "localhost:9200",
+    log : "trace"
+});
+
+client.ping({
+    // ping usually has a 3000ms timeout
+    requestTimeout: 1000
+}, function (error) {
+    if (error) {
+        console.trace('elasticsearch cluster is down!');
+    } else {
+        console.log('All is well');
+    }
+});
+
+
+
+
+
 signup.signup(app,con);
 booksummary.booksummary(app,con);
 borrow.borrow(app,con);
@@ -96,5 +127,17 @@ apilogin.apilogin(app,con);
 shareBookList.shareBookList(app,con);
 shareBookRequest.shareBookRequest(app,con);
 
-returnbook.returnbook(app,con)
+returnbook.returnbook(app,con);
+
+requestBook.requestBook(app,con);
+requestedBookList.requestedBookList(app,con);
+removeBookRequest.removeBookRequest(app,con);
+
+
+cataloguesearch.cataloguesearch(app,con,client);
+
+//addindex.addindex(app,con,client);
+
+userList.userList(app,con);
+userBookRecords.userBookRecords(app,con);
 

@@ -1,25 +1,44 @@
 import React, { Component } from 'react';
-import {ButtonToolbar,Button} from 'react-bootstrap';
-import Sharebutton from './Sharebutton.js'
-import Borrowbutton from './Borrowbutton.js'
+import './Bookdynamic.css';
+import Rating from './Rating.js';
+import {ButtonToolbar,Button,FormControl,FormGroup,ControlLabel} from 'react-bootstrap';
+
 
 class Bookdynamic extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         robots : robots,
-    //         //searchfield = ''
-    //     }
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            availableBooks: this.props.quantity
+        }
+    }
 
     render() {
         return (
-            <div>
-                <h3>Books available</h3>
-                <br/>
-                <Button bsSize='large' bsStyle="primary">Borrow Book</Button>
-                <Button bsSize='large' bsStyle="primary">Share Books</Button>
-            </div>
+            <div class="card">
+                    <div class="card__content2">
+                    <div>
+                        <h3>Books available: {this.state.availableBooks}</h3>
+                        <br/>
+                        <ButtonToolbar>
+                            <Button bsStyle="primary">Borrow Book</Button>
+                            <Button bsStyle="primary">Share Books</Button>
+                        </ButtonToolbar>
+                    </div>
+                      <form>
+                        <FormGroup controlId="formControlsTextarea">
+                        <ControlLabel>
+                            
+
+                        </ControlLabel>
+
+                        <FormControl bsSize="large" componentClass="textarea" placeholder="Write your review here..." />
+                        <Rating/><br/> 
+                        <Button bsStyle="primary" style={{float:"right"}} type="submit">Submit</Button>
+
+                        </FormGroup>
+                      </form>    
+                    </div>
+              </div>
         );
     }
 }

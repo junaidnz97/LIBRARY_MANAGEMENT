@@ -10,9 +10,15 @@ var apilogin = function (app,con){
         		if (!error && response.statusCode == 200) {
             		console.log(body);
             		userDetails = body;
-					console.log(userDetails.student[0].Student_ID);
+					console.log(userDetails.student[0].Student_Image);
             		req.session.username=userDetails.student[0].Student_ID;
-            		res.send(userDetails);
+            		req.session.userid=userDetails.student[0].Id;
+            		//var q="insert into StudentApi values";
+            		//q=q+"Student_ID="
+            		//res.send(userDetails);
+            		res.redirect("http://localhost:3000/catalogue");
+            		//res.redirect(302, 'http://loca');
+
         	}
     	});
 		

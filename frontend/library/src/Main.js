@@ -8,17 +8,13 @@ import Donate from './Donate.js';
 import Payfine from './Payfine.js';
 import './Main.css';
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
 const Main = () => {
 	
 	return (
 		<div className='Main'>
 		    <Switch>
 			    <Route exact path='/' component={Bookcatalog}/>
+			    <Route exact path='/catalogue' component={Bookcatalog}/>
 			    <Route path='/book' component={Book} />
 			    <Route path='/profile' component={Profile}/>
 			    <Route path='/suggest' component={Suggest} />

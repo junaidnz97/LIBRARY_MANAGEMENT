@@ -15,7 +15,7 @@ var returnbook = function(app,con){
         {
 			bookid = req.body.bid;
 			hbookid = req.body.hid;
-			userid = req.body.uid;
+			userid = req.session.userid;
 			var q = "select * from BookLogTrigger where HId = "+hbookid +" and DOR is NULL";
 			var pass = await query(q,con)
 			if(!pass.length){

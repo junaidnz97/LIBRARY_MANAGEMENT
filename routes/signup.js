@@ -61,6 +61,7 @@ app.post("/login",async(req,res)=>{
 				else{
 					req.session.username=req.body.username;
 				 	req.session.adminusername=null;
+				 	req.session.userid = resp[0].UserId;
 				 	res.send({"success":"login successful"});
 				}
 				// con.query(q,function(err,resp){

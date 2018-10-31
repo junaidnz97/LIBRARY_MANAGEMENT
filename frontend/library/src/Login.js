@@ -1,37 +1,36 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel, Well } from "react-bootstrap";
-//import Header from './Header'
-//import Footer from './Footer'
-import Logo from './Logo.png'
+import Particles from 'react-particles-js';
+//import Logo from './Logo.png'
 import "./Login.css";
 
-export default class Login extends Component {
-  constructor(props) {
-    super(props);
+const Login = () => {
 
-    this.state = {
-      email: "",
-      password: ""
-    };
-  }
-
-  
-
-  render() {
+    const particleOptions = {
+      
+    }
     return (
       <div className="Login">
-      
+        <Particles
+              className="particles" 
+              params={{particles: {
+                        number: {
+                          value: 60,
+                          density: {
+                            enable: true,
+                            value_area: 800
+                          }
+                        }
+                      }}}
+        />
         <form className="center" onSubmit={this.handleSubmit}>
         <Well>
 
-          <center><img src={Logo} width={200} height={200} /></center><br></br><br></br><br></br><br></br>
-          <FormGroup controlId="email" bsSize="large">
-            
-          </FormGroup>
+          <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/IIIT_Sri_City_Logo.png/220px-IIIT_Sri_City_Logo.png" width={200} height={200} /></center><br/>
           <Button
             block
             bsSize="large"
-            type="submit"
+            href="https://serene-wildwood-35121.herokuapp.com/login/5bd46914c77c1c0015cd830a"
           >
             Login
           </Button>
@@ -39,5 +38,5 @@ export default class Login extends Component {
         </form>
       </div>
     );
-  }
 }
+export default Login;

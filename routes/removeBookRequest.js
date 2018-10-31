@@ -5,16 +5,21 @@ var removeBookRequest = function(app,con){
 
 
 	app.post("/remove-book-request",async(req,res)=>{
-	// 	if(req.session.username && req.cookies.user_sid)
-	// 	{
-  //
-  //
-	// 	}
-	// 	else
-	// 	{
-	// 		res.send({"output":"notloggedin"});
-	// 	}
-	// });
+		if(req.session.username && req.cookies.user_sid)
+		{
+      bookname = req.body.bname;
+
+      var request_book_remove_query = "delete from RequestedBook where BookName=" + bookname;
+      var output = await query(request_book_remove_query,con);
+
+      res.send(output);
+		}
+		else
+		{
+			res.send({"output":"notloggedin"});
+		}
+
+  });
 
 }
 

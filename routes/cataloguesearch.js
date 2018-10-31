@@ -4,5 +4,5 @@ var cataloguesearch = function (app,con) {
 };
 
 module.exports={
-    cataloguesearch:cataloguesearch;
+    cataloguesearch:cataloguesearch
 }

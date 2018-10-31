@@ -30,6 +30,8 @@ var requestBook = require("./routes/requestBook.js");
 var requestedBookList = require("./routes/requestedBookList.js");
 var removeBookRequest = require("./routes/removeBookRequest.js");
 
+var userList = require("./routes/userlist");
+
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -129,4 +131,7 @@ requestBook.requestBook(app,con);
 requestedBookList.requestedBookList(app,con);
 removeBookRequest.removeBookRequest(app,con);
 
+
 cataloguesearch.cataloguesearch(app,con,client);
+userList.userList(app,con);
+

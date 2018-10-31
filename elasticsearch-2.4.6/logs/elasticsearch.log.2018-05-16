@@ -1,0 +1,19 @@
+[2018-05-16 08:52:13,966][INFO ][node                     ] [Mole Man] version[2.4.6], pid[18820], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-16 08:52:13,967][INFO ][node                     ] [Mole Man] initializing ...
+[2018-05-16 08:52:14,846][INFO ][plugins                  ] [Mole Man] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-16 08:52:15,003][INFO ][env                      ] [Mole Man] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9.6gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-16 08:52:15,003][INFO ][env                      ] [Mole Man] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-16 08:52:17,536][INFO ][node                     ] [Mole Man] initialized
+[2018-05-16 08:52:17,536][INFO ][node                     ] [Mole Man] starting ...
+[2018-05-16 08:52:17,649][INFO ][transport                ] [Mole Man] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-16 08:52:17,654][INFO ][discovery                ] [Mole Man] elasticsearch/3cKjOi50TLyBrhn8F8cTEg
+[2018-05-16 08:52:20,697][INFO ][cluster.service          ] [Mole Man] new_master {Mole Man}{3cKjOi50TLyBrhn8F8cTEg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-16 08:52:20,711][INFO ][http                     ] [Mole Man] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-16 08:52:20,711][INFO ][node                     ] [Mole Man] started
+[2018-05-16 08:52:21,608][INFO ][gateway                  ] [Mole Man] recovered [2] indices into cluster_state
+[2018-05-16 08:52:25,194][INFO ][cluster.routing.allocation] [Mole Man] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][0], [userprofile][0]] ...]).
+[2018-05-16 17:01:50,716][INFO ][cluster.metadata         ] [Mole Man] [userprofile] update_mapping [userprofile]
+[2018-05-16 21:35:20,625][INFO ][node                     ] [Mole Man] stopping ...
+[2018-05-16 21:35:20,711][INFO ][node                     ] [Mole Man] stopped
+[2018-05-16 21:35:20,712][INFO ][node                     ] [Mole Man] closing ...
+[2018-05-16 21:35:20,718][INFO ][node                     ] [Mole Man] closed

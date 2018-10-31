@@ -1,0 +1,37 @@
+[2018-05-22 09:43:53,262][INFO ][node                     ] [White Pilgrim] stopping ...
+[2018-05-22 09:43:53,339][INFO ][node                     ] [White Pilgrim] stopped
+[2018-05-22 09:43:53,339][INFO ][node                     ] [White Pilgrim] closing ...
+[2018-05-22 09:43:53,343][INFO ][node                     ] [White Pilgrim] closed
+[2018-05-22 09:48:40,252][INFO ][node                     ] [Cannonball I] version[2.4.6], pid[3158], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-22 09:48:40,292][INFO ][node                     ] [Cannonball I] initializing ...
+[2018-05-22 09:48:46,853][INFO ][plugins                  ] [Cannonball I] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-22 09:48:48,416][INFO ][env                      ] [Cannonball I] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [8.8gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-22 09:48:48,416][INFO ][env                      ] [Cannonball I] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-22 09:49:07,832][INFO ][node                     ] [Cannonball I] initialized
+[2018-05-22 09:49:07,832][INFO ][node                     ] [Cannonball I] starting ...
+[2018-05-22 09:49:09,025][INFO ][transport                ] [Cannonball I] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-22 09:49:09,103][INFO ][discovery                ] [Cannonball I] elasticsearch/BUDsCpeJQh-2Ws8JcA6Qjg
+[2018-05-22 09:49:12,143][INFO ][cluster.service          ] [Cannonball I] new_master {Cannonball I}{BUDsCpeJQh-2Ws8JcA6Qjg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-22 09:49:12,152][INFO ][http                     ] [Cannonball I] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-22 09:49:12,152][INFO ][node                     ] [Cannonball I] started
+[2018-05-22 09:49:13,820][INFO ][gateway                  ] [Cannonball I] recovered [2] indices into cluster_state
+[2018-05-22 09:49:19,862][INFO ][cluster.routing.allocation] [Cannonball I] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][3], [userprofile][3]] ...]).
+[2018-05-22 18:06:45,036][INFO ][cluster.metadata         ] [Cannonball I] [activity] update_mapping [activity]
+[2018-05-22 22:31:57,460][INFO ][node                     ] [Cannonball I] stopping ...
+[2018-05-22 22:31:57,854][INFO ][node                     ] [Cannonball I] stopped
+[2018-05-22 22:31:57,855][INFO ][node                     ] [Cannonball I] closing ...
+[2018-05-22 22:31:57,858][INFO ][node                     ] [Cannonball I] closed
+[2018-05-22 22:35:27,323][INFO ][node                     ] [Steel Serpent] version[2.4.6], pid[2597], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-22 22:35:27,338][INFO ][node                     ] [Steel Serpent] initializing ...
+[2018-05-22 22:35:28,285][INFO ][plugins                  ] [Steel Serpent] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-22 22:35:28,528][INFO ][env                      ] [Steel Serpent] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [8.8gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-22 22:35:28,528][INFO ][env                      ] [Steel Serpent] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-22 22:35:33,349][INFO ][node                     ] [Steel Serpent] initialized
+[2018-05-22 22:35:33,349][INFO ][node                     ] [Steel Serpent] starting ...
+[2018-05-22 22:35:33,513][INFO ][transport                ] [Steel Serpent] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-22 22:35:33,537][INFO ][discovery                ] [Steel Serpent] elasticsearch/p7cClW_9Thq3d2Iw27nLaw
+[2018-05-22 22:35:36,587][INFO ][cluster.service          ] [Steel Serpent] new_master {Steel Serpent}{p7cClW_9Thq3d2Iw27nLaw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-22 22:35:36,605][INFO ][http                     ] [Steel Serpent] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-22 22:35:36,605][INFO ][node                     ] [Steel Serpent] started
+[2018-05-22 22:35:37,853][INFO ][gateway                  ] [Steel Serpent] recovered [2] indices into cluster_state
+[2018-05-22 22:35:43,421][INFO ][cluster.routing.allocation] [Steel Serpent] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][0]] ...]).

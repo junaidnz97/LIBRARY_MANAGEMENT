@@ -1,0 +1,14 @@
+[2018-07-15 12:34:49,757][INFO ][node                     ] [Anti-Cap] version[2.4.6], pid[23345], build[5376dca/2017-07-18T12:17:44Z]
+[2018-07-15 12:34:49,758][INFO ][node                     ] [Anti-Cap] initializing ...
+[2018-07-15 12:34:50,733][INFO ][plugins                  ] [Anti-Cap] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-07-15 12:34:50,964][INFO ][env                      ] [Anti-Cap] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-07-15 12:34:50,964][INFO ][env                      ] [Anti-Cap] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-07-15 12:34:53,856][INFO ][node                     ] [Anti-Cap] initialized
+[2018-07-15 12:34:53,857][INFO ][node                     ] [Anti-Cap] starting ...
+[2018-07-15 12:34:54,019][INFO ][transport                ] [Anti-Cap] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-07-15 12:34:54,032][INFO ][discovery                ] [Anti-Cap] elasticsearch/6w0OV089S0ej0wTWymRd2A
+[2018-07-15 12:34:57,084][INFO ][cluster.service          ] [Anti-Cap] new_master {Anti-Cap}{6w0OV089S0ej0wTWymRd2A}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-07-15 12:34:57,093][INFO ][http                     ] [Anti-Cap] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-07-15 12:34:57,094][INFO ][node                     ] [Anti-Cap] started
+[2018-07-15 12:34:57,970][INFO ][gateway                  ] [Anti-Cap] recovered [2] indices into cluster_state
+[2018-07-15 12:35:01,731][INFO ][cluster.routing.allocation] [Anti-Cap] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][0]] ...]).

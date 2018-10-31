@@ -1,0 +1,163 @@
+[2018-10-05 12:28:51,934][INFO ][node                     ] [Namor the Sub-Mariner] version[2.4.6], pid[15338], build[5376dca/2017-07-18T12:17:44Z]
+[2018-10-05 12:28:51,936][INFO ][node                     ] [Namor the Sub-Mariner] initializing ...
+[2018-10-05 12:28:53,118][INFO ][plugins                  ] [Namor the Sub-Mariner] modules [reindex, lang-expression, lang-groovy], plugins [license, marvel-agent], sites []
+[2018-10-05 12:28:53,327][INFO ][env                      ] [Namor the Sub-Mariner] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [6.4gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-10-05 12:28:53,327][INFO ][env                      ] [Namor the Sub-Mariner] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-10-05 12:28:56,994][INFO ][node                     ] [Namor the Sub-Mariner] initialized
+[2018-10-05 12:28:56,994][INFO ][node                     ] [Namor the Sub-Mariner] starting ...
+[2018-10-05 12:28:57,223][INFO ][transport                ] [Namor the Sub-Mariner] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-10-05 12:28:57,248][INFO ][discovery                ] [Namor the Sub-Mariner] elasticsearch/Si8_m9DoShuukrrmiHqEiA
+[2018-10-05 12:29:00,280][INFO ][cluster.service          ] [Namor the Sub-Mariner] new_master {Namor the Sub-Mariner}{Si8_m9DoShuukrrmiHqEiA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-10-05 12:29:00,290][INFO ][http                     ] [Namor the Sub-Mariner] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-10-05 12:29:00,290][INFO ][node                     ] [Namor the Sub-Mariner] started
+[2018-10-05 12:29:02,173][INFO ][license.plugin.core      ] [Namor the Sub-Mariner] license [e43ea408-d45a-44f7-9405-b17fc3055484] - expired
+[2018-10-05 12:29:02,176][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 12:29:03,553][INFO ][gateway                  ] [Namor the Sub-Mariner] recovered [14] indices into cluster_state
+[2018-10-05 12:29:18,602][INFO ][cluster.routing.allocation] [Namor the Sub-Mariner] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][2], [userprofile][0], [userprofile][2], [userprofile][0]] ...]).
+[2018-10-05 17:45:09,165][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 17:55:09,166][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 18:05:09,167][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 18:15:09,168][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 18:25:08,383][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 18:35:08,385][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 18:45:08,386][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 18:55:08,387][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 19:05:08,387][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 19:15:08,388][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 19:25:08,389][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 19:35:08,389][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 19:45:08,390][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 19:55:08,390][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 20:05:08,391][ERROR][license.plugin.core      ] [Namor the Sub-Mariner] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-05 20:06:18,912][INFO ][node                     ] [Namor the Sub-Mariner] stopping ...
+[2018-10-05 20:06:21,839][INFO ][node                     ] [Namor the Sub-Mariner] stopped
+[2018-10-05 20:06:21,840][INFO ][node                     ] [Namor the Sub-Mariner] closing ...
+[2018-10-05 20:06:21,843][INFO ][node                     ] [Namor the Sub-Mariner] closed

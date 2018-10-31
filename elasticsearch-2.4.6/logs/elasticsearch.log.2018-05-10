@@ -1,0 +1,70 @@
+[2018-05-10 15:15:46,431][INFO ][node                     ] [Mister Hyde] version[2.4.6], pid[21374], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-10 15:15:46,431][INFO ][node                     ] [Mister Hyde] initializing ...
+[2018-05-10 15:15:46,869][INFO ][plugins                  ] [Mister Hyde] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-10 15:15:46,924][INFO ][env                      ] [Mister Hyde] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9.9gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-10 15:15:46,924][INFO ][env                      ] [Mister Hyde] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-10 15:15:48,381][INFO ][node                     ] [Mister Hyde] initialized
+[2018-05-10 15:15:48,381][INFO ][node                     ] [Mister Hyde] starting ...
+[2018-05-10 15:15:48,446][INFO ][transport                ] [Mister Hyde] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-10 15:15:48,450][INFO ][discovery                ] [Mister Hyde] elasticsearch/0hiQU1l7RM2HCp2a07PLMQ
+[2018-05-10 15:15:51,485][INFO ][cluster.service          ] [Mister Hyde] new_master {Mister Hyde}{0hiQU1l7RM2HCp2a07PLMQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-10 15:15:51,498][INFO ][http                     ] [Mister Hyde] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-10 15:15:51,499][INFO ][node                     ] [Mister Hyde] started
+[2018-05-10 15:15:51,635][INFO ][gateway                  ] [Mister Hyde] recovered [0] indices into cluster_state
+[2018-05-10 15:16:05,556][INFO ][node                     ] [Mister Hyde] stopping ...
+[2018-05-10 15:16:05,568][INFO ][node                     ] [Mister Hyde] stopped
+[2018-05-10 15:16:05,568][INFO ][node                     ] [Mister Hyde] closing ...
+[2018-05-10 15:16:05,573][INFO ][node                     ] [Mister Hyde] closed
+[2018-05-10 15:16:06,913][INFO ][node                     ] [Watoomb] version[2.4.6], pid[21455], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-10 15:16:06,914][INFO ][node                     ] [Watoomb] initializing ...
+[2018-05-10 15:16:07,369][INFO ][plugins                  ] [Watoomb] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-10 15:16:07,424][INFO ][env                      ] [Watoomb] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9.9gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-10 15:16:07,424][INFO ][env                      ] [Watoomb] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-10 15:16:09,035][INFO ][node                     ] [Watoomb] initialized
+[2018-05-10 15:16:09,036][INFO ][node                     ] [Watoomb] starting ...
+[2018-05-10 15:16:09,107][INFO ][transport                ] [Watoomb] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-10 15:16:09,112][INFO ][discovery                ] [Watoomb] elasticsearch/6aIzTcbWTSG-poq-vJg87Q
+[2018-05-10 15:16:12,162][INFO ][cluster.service          ] [Watoomb] new_master {Watoomb}{6aIzTcbWTSG-poq-vJg87Q}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-10 15:16:12,189][INFO ][http                     ] [Watoomb] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-10 15:16:12,190][INFO ][node                     ] [Watoomb] started
+[2018-05-10 15:16:12,359][INFO ][gateway                  ] [Watoomb] recovered [0] indices into cluster_state
+[2018-05-10 15:24:05,549][INFO ][node                     ] [Watoomb] stopping ...
+[2018-05-10 15:24:05,556][INFO ][node                     ] [Watoomb] stopped
+[2018-05-10 15:24:05,556][INFO ][node                     ] [Watoomb] closing ...
+[2018-05-10 15:24:05,559][INFO ][node                     ] [Watoomb] closed
+[2018-05-10 15:28:04,734][INFO ][node                     ] [Mark Gervaisnight Shade] version[2.4.6], pid[2917], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-10 15:28:04,745][INFO ][node                     ] [Mark Gervaisnight Shade] initializing ...
+[2018-05-10 15:28:05,883][INFO ][plugins                  ] [Mark Gervaisnight Shade] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-10 15:28:06,160][INFO ][env                      ] [Mark Gervaisnight Shade] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [10gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-10 15:28:06,160][INFO ][env                      ] [Mark Gervaisnight Shade] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-10 15:28:10,896][INFO ][node                     ] [Mark Gervaisnight Shade] initialized
+[2018-05-10 15:28:10,896][INFO ][node                     ] [Mark Gervaisnight Shade] starting ...
+[2018-05-10 15:28:11,124][INFO ][transport                ] [Mark Gervaisnight Shade] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-10 15:28:11,138][INFO ][discovery                ] [Mark Gervaisnight Shade] elasticsearch/buorU5luQkallP9y5vma9g
+[2018-05-10 15:28:14,191][INFO ][cluster.service          ] [Mark Gervaisnight Shade] new_master {Mark Gervaisnight Shade}{buorU5luQkallP9y5vma9g}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-10 15:28:14,210][INFO ][http                     ] [Mark Gervaisnight Shade] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-10 15:28:14,211][INFO ][node                     ] [Mark Gervaisnight Shade] started
+[2018-05-10 15:28:14,394][INFO ][gateway                  ] [Mark Gervaisnight Shade] recovered [0] indices into cluster_state
+[2018-05-10 16:15:12,442][INFO ][node                     ] [Mark Gervaisnight Shade] stopping ...
+[2018-05-10 16:15:12,451][INFO ][node                     ] [Mark Gervaisnight Shade] stopped
+[2018-05-10 16:15:12,451][INFO ][node                     ] [Mark Gervaisnight Shade] closing ...
+[2018-05-10 16:15:12,455][INFO ][node                     ] [Mark Gervaisnight Shade] closed
+[2018-05-10 16:15:14,342][INFO ][node                     ] [Yellowjacket] version[2.4.6], pid[5800], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-10 16:15:14,342][INFO ][node                     ] [Yellowjacket] initializing ...
+[2018-05-10 16:15:14,774][INFO ][plugins                  ] [Yellowjacket] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-10 16:15:14,827][INFO ][env                      ] [Yellowjacket] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9.8gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-10 16:15:14,827][INFO ][env                      ] [Yellowjacket] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-10 16:15:16,290][INFO ][node                     ] [Yellowjacket] initialized
+[2018-05-10 16:15:16,290][INFO ][node                     ] [Yellowjacket] starting ...
+[2018-05-10 16:15:16,362][INFO ][transport                ] [Yellowjacket] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-10 16:15:16,365][INFO ][discovery                ] [Yellowjacket] elasticsearch/DGJZyUvyRWmxGykMNFc_2Q
+[2018-05-10 16:15:19,411][INFO ][cluster.service          ] [Yellowjacket] new_master {Yellowjacket}{DGJZyUvyRWmxGykMNFc_2Q}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-10 16:15:19,426][INFO ][http                     ] [Yellowjacket] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-10 16:15:19,427][INFO ][node                     ] [Yellowjacket] started
+[2018-05-10 16:15:19,553][INFO ][gateway                  ] [Yellowjacket] recovered [0] indices into cluster_state
+[2018-05-10 16:45:34,085][INFO ][cluster.metadata         ] [Yellowjacket] [userprofile] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2018-05-10 16:45:34,730][INFO ][cluster.metadata         ] [Yellowjacket] [userprofile] create_mapping [userprofile]
+[2018-05-10 16:45:35,462][INFO ][cluster.routing.allocation] [Yellowjacket] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][4]] ...]).
+[2018-05-10 16:45:35,549][INFO ][cluster.metadata         ] [Yellowjacket] [activity] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2018-05-10 16:45:35,884][INFO ][cluster.metadata         ] [Yellowjacket] [activity] create_mapping [activity]
+[2018-05-10 16:45:36,683][INFO ][cluster.routing.allocation] [Yellowjacket] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[activity][4]] ...]).

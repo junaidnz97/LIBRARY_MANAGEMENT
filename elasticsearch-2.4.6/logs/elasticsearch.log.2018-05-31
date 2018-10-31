@@ -1,0 +1,22 @@
+[2018-05-31 16:32:40,763][INFO ][node                     ] [Sabretooth] stopping ...
+[2018-05-31 16:32:41,064][INFO ][node                     ] [Sabretooth] stopped
+[2018-05-31 16:32:41,064][INFO ][node                     ] [Sabretooth] closing ...
+[2018-05-31 16:32:41,079][INFO ][node                     ] [Sabretooth] closed
+[2018-05-31 16:43:59,794][INFO ][node                     ] [James Jaspers] version[2.4.6], pid[3732], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-31 16:43:59,803][INFO ][node                     ] [James Jaspers] initializing ...
+[2018-05-31 16:44:01,109][INFO ][plugins                  ] [James Jaspers] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-31 16:44:01,232][INFO ][env                      ] [James Jaspers] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [7.3gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-31 16:44:01,232][INFO ][env                      ] [James Jaspers] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-31 16:44:03,722][INFO ][node                     ] [James Jaspers] initialized
+[2018-05-31 16:44:03,722][INFO ][node                     ] [James Jaspers] starting ...
+[2018-05-31 16:44:03,795][INFO ][transport                ] [James Jaspers] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-31 16:44:03,799][INFO ][discovery                ] [James Jaspers] elasticsearch/nX3HIcKxQVGpcscVWyw1CQ
+[2018-05-31 16:44:06,837][INFO ][cluster.service          ] [James Jaspers] new_master {James Jaspers}{nX3HIcKxQVGpcscVWyw1CQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-31 16:44:06,851][INFO ][http                     ] [James Jaspers] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-31 16:44:06,851][INFO ][node                     ] [James Jaspers] started
+[2018-05-31 16:44:07,533][INFO ][gateway                  ] [James Jaspers] recovered [2] indices into cluster_state
+[2018-05-31 16:44:11,364][INFO ][cluster.routing.allocation] [James Jaspers] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][0]] ...]).
+[2018-05-31 21:44:02,405][INFO ][node                     ] [James Jaspers] stopping ...
+[2018-05-31 21:44:02,588][INFO ][node                     ] [James Jaspers] stopped
+[2018-05-31 21:44:02,588][INFO ][node                     ] [James Jaspers] closing ...
+[2018-05-31 21:44:02,592][INFO ][node                     ] [James Jaspers] closed

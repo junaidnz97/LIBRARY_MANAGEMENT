@@ -1,0 +1,32 @@
+[2018-05-18 07:56:05,757][INFO ][node                     ] [Hangman] stopping ...
+[2018-05-18 07:56:05,848][INFO ][node                     ] [Hangman] stopped
+[2018-05-18 07:56:05,848][INFO ][node                     ] [Hangman] closing ...
+[2018-05-18 07:56:05,853][INFO ][node                     ] [Hangman] closed
+[2018-05-18 07:59:52,739][INFO ][node                     ] [Timeshadow] version[2.4.6], pid[2810], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-18 07:59:52,777][INFO ][node                     ] [Timeshadow] initializing ...
+[2018-05-18 07:59:59,233][INFO ][plugins                  ] [Timeshadow] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-18 08:00:00,240][INFO ][env                      ] [Timeshadow] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9.1gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-18 08:00:00,240][INFO ][env                      ] [Timeshadow] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-18 08:00:15,689][INFO ][node                     ] [Timeshadow] initialized
+[2018-05-18 08:00:15,689][INFO ][node                     ] [Timeshadow] starting ...
+[2018-05-18 08:00:16,598][INFO ][transport                ] [Timeshadow] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-18 08:00:16,660][INFO ][discovery                ] [Timeshadow] elasticsearch/jKHgbETJQ4a0COcP6GYn0w
+[2018-05-18 08:00:19,697][INFO ][cluster.service          ] [Timeshadow] new_master {Timeshadow}{jKHgbETJQ4a0COcP6GYn0w}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-18 08:00:19,705][INFO ][http                     ] [Timeshadow] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-18 08:00:19,705][INFO ][node                     ] [Timeshadow] started
+[2018-05-18 08:00:20,995][INFO ][gateway                  ] [Timeshadow] recovered [2] indices into cluster_state
+[2018-05-18 08:00:26,244][INFO ][cluster.routing.allocation] [Timeshadow] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][2]] ...]).
+[2018-05-18 09:31:39,499][INFO ][node                     ] [Moonhunter] version[2.4.6], pid[2666], build[5376dca/2017-07-18T12:17:44Z]
+[2018-05-18 09:31:39,507][INFO ][node                     ] [Moonhunter] initializing ...
+[2018-05-18 09:31:40,520][INFO ][plugins                  ] [Moonhunter] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2018-05-18 09:31:40,929][INFO ][env                      ] [Moonhunter] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [9.1gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-05-18 09:31:40,929][INFO ][env                      ] [Moonhunter] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-05-18 09:31:44,543][INFO ][node                     ] [Moonhunter] initialized
+[2018-05-18 09:31:44,543][INFO ][node                     ] [Moonhunter] starting ...
+[2018-05-18 09:31:44,730][INFO ][transport                ] [Moonhunter] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-18 09:31:44,752][INFO ][discovery                ] [Moonhunter] elasticsearch/Kk3F6EgpS42i5xehzjK6ig
+[2018-05-18 09:31:47,811][INFO ][cluster.service          ] [Moonhunter] new_master {Moonhunter}{Kk3F6EgpS42i5xehzjK6ig}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-05-18 09:31:47,831][INFO ][http                     ] [Moonhunter] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-18 09:31:47,831][INFO ][node                     ] [Moonhunter] started
+[2018-05-18 09:31:48,573][INFO ][gateway                  ] [Moonhunter] recovered [2] indices into cluster_state
+[2018-05-18 09:31:53,294][INFO ][cluster.routing.allocation] [Moonhunter] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][3]] ...]).

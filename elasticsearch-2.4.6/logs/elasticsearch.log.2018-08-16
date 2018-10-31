@@ -1,0 +1,474 @@
+[2018-08-16 00:00:13,461][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:00:43,463][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:01:13,464][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:01:43,465][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:02:13,466][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:02:43,467][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:03:13,467][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:03:43,468][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:04:13,469][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:04:43,470][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:05:13,471][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:05:43,471][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:06:13,472][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:06:43,473][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:07:13,474][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:07:43,474][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:08:13,475][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:08:43,476][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:09:13,476][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:09:43,477][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:10:13,478][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:10:43,479][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:11:13,480][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:11:43,481][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.3%], replicas will not be assigned to this node
+[2018-08-16 00:12:13,481][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:12:43,482][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:13:13,483][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:13:43,484][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:14:13,485][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:14:43,486][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:15:13,487][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:15:43,488][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:16:13,488][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:16:43,489][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:17:13,490][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:17:43,491][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:18:13,492][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:18:43,492][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:19:13,499][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:19:43,500][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:20:13,501][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:20:43,502][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:21:13,503][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:21:43,503][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:22:13,504][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:22:43,505][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:41:18,057][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:41:48,058][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:42:18,059][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:42:48,060][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:42:50,157][INFO ][node                     ] [Shrunken Bones] version[2.4.6], pid[32128], build[5376dca/2017-07-18T12:17:44Z]
+[2018-08-16 00:42:50,157][INFO ][node                     ] [Shrunken Bones] initializing ...
+[2018-08-16 00:42:50,618][INFO ][plugins                  ] [Shrunken Bones] modules [reindex, lang-expression, lang-groovy], plugins [license, marvel-agent], sites []
+[2018-08-16 00:42:50,665][INFO ][env                      ] [Shrunken Bones] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [5gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-08-16 00:42:50,665][INFO ][env                      ] [Shrunken Bones] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-08-16 00:42:52,143][INFO ][node                     ] [Shrunken Bones] initialized
+[2018-08-16 00:42:52,143][INFO ][node                     ] [Shrunken Bones] starting ...
+[2018-08-16 00:42:52,203][INFO ][transport                ] [Shrunken Bones] publish_address {127.0.0.1:9301}, bound_addresses {[::1]:9301}, {127.0.0.1:9301}
+[2018-08-16 00:42:52,207][INFO ][discovery                ] [Shrunken Bones] elasticsearch/syXpKxRSQZaemEYGY4Ldbg
+[2018-08-16 00:42:55,312][INFO ][cluster.service          ] [Wysper] added {{Shrunken Bones}{syXpKxRSQZaemEYGY4Ldbg}{127.0.0.1}{127.0.0.1:9301},}, reason: zen-disco-join(join from node[{Shrunken Bones}{syXpKxRSQZaemEYGY4Ldbg}{127.0.0.1}{127.0.0.1:9301}])
+[2018-08-16 00:42:55,325][INFO ][cluster.service          ] [Shrunken Bones] detected_master {Wysper}{jOYQHt5iTCCxAuzFSP9GLg}{127.0.0.1}{127.0.0.1:9300}, added {{Wysper}{jOYQHt5iTCCxAuzFSP9GLg}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-receive(from master [{Wysper}{jOYQHt5iTCCxAuzFSP9GLg}{127.0.0.1}{127.0.0.1:9300}])
+[2018-08-16 00:42:55,609][INFO ][license.plugin.core      ] [Shrunken Bones] license [e43ea408-d45a-44f7-9405-b17fc3055484] - valid
+[2018-08-16 00:42:55,611][ERROR][license.plugin.core      ] [Shrunken Bones] 
+#
+# License will expire on [Friday, September 14, 2018]. If you have a new license, please update it.
+# Otherwise, please reach out to your support contact.
+# 
+# Commercial plugins operate with reduced functionality on license expiration:
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-08-16 00:42:56,294][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [syXpKxRSQZaemEYGY4Ldbg][Shrunken Bones][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/1] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:42:56,294][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:42:56,298][INFO ][http                     ] [Shrunken Bones] publish_address {127.0.0.1:9201}, bound_addresses {[::1]:9201}, {127.0.0.1:9201}
+[2018-08-16 00:42:56,299][INFO ][node                     ] [Shrunken Bones] started
+[2018-08-16 00:43:18,061][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [syXpKxRSQZaemEYGY4Ldbg][Shrunken Bones][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/1] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:43:18,061][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:44:13,067][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [syXpKxRSQZaemEYGY4Ldbg][Shrunken Bones][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/1] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:44:13,067][INFO ][cluster.routing.allocation.decider] [Wysper] low disk watermark [85%] exceeded on [jOYQHt5iTCCxAuzFSP9GLg][Wysper][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5gb[13.2%], replicas will not be assigned to this node
+[2018-08-16 00:44:13,069][INFO ][node                     ] [Wysper] stopping ...
+[2018-08-16 00:44:13,081][INFO ][discovery.zen            ] [Shrunken Bones] master_left [{Wysper}{jOYQHt5iTCCxAuzFSP9GLg}{127.0.0.1}{127.0.0.1:9300}], reason [shut_down]
+[2018-08-16 00:44:13,082][WARN ][discovery.zen            ] [Shrunken Bones] master left (reason = shut_down), current nodes: {{Shrunken Bones}{syXpKxRSQZaemEYGY4Ldbg}{127.0.0.1}{127.0.0.1:9301},}
+[2018-08-16 00:44:13,083][INFO ][cluster.service          ] [Shrunken Bones] removed {{Wysper}{jOYQHt5iTCCxAuzFSP9GLg}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-master_failed ({Wysper}{jOYQHt5iTCCxAuzFSP9GLg}{127.0.0.1}{127.0.0.1:9300})
+[2018-08-16 00:44:13,103][WARN ][discovery.zen.ping.unicast] [Shrunken Bones] failed to send ping to [{#zen_unicast_1#}{127.0.0.1}{127.0.0.1:9300}]
+RemoteTransportException[[Wysper][127.0.0.1:9300][internal:discovery/zen/unicast]]; nested: IllegalStateException[received ping request while not started];
+Caused by: java.lang.IllegalStateException: received ping request while not started
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing.handlePingRequest(UnicastZenPing.java:497)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing.access$2400(UnicastZenPing.java:83)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:522)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:518)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:77)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleRequest(MessageChannelHandler.java:227)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:116)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-08-16 00:44:13,141][ERROR][marvel.agent             ] [Wysper] background thread had an uncaught exception
+ElasticsearchException[failed to flush exporter bulks]
+	at org.elasticsearch.marvel.agent.exporter.ExportBulk$Compound.flush(ExportBulk.java:104)
+	at org.elasticsearch.marvel.agent.exporter.ExportBulk.close(ExportBulk.java:53)
+	at org.elasticsearch.marvel.agent.AgentService$ExportingWorker.run(AgentService.java:201)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: ElasticsearchException[failed to flush [default_local] exporter bulk]; nested: ElasticsearchException[failure in bulk execution:
+[0]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y2], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[1]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y3], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[2]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y4], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[3]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y5], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[4]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y6], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[5]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y7], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[6]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y8], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[7]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[8]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[9]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[10]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[11]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[12]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[13]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[14]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[15]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[16]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[17]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[18]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[19]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[20]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[21]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[22]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[23]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[24]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[25]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[26]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[27]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:.marvel-es-data-1:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[28]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:.marvel-es-data-1:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[29]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:blogs:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[30]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:blogs:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[31]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:blogs:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[32]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:blogs:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[33]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:blogs:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[34]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:blogs:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[35]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[36]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[37]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[38]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[39]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[40]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[41]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[42]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[43]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[44]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[45]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:.marvel-es-1-2018.08.15:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[46]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:.marvel-es-1-2018.08.15:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[47]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[48]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[49]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[50]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[51]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[52]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[53]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[54]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[55]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[56]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[57]: index [.marvel-es-1-2018.08.15], type [node_stats], id [AWU_An_a0JAZo8xvz9y9], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[58]: index [.marvel-es-1-2018.08.15], type [indices_stats], id [AWU_An_a0JAZo8xvz9y-], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[59]: index [.marvel-es-data-1], type [cluster_info], id [xXGzFvPASAyohmf-ckrtLQ], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[60]: index [.marvel-es-1-2018.08.15], type [cluster_stats], id [AWU_An_a0JAZo8xvz9y_], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[61]: index [.marvel-es-1-2018.08.15], type [index_recovery], id [AWU_An_a0JAZo8xvz9zA], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[62]: index [.marvel-es-1-2018.08.15], type [cluster_state], id [AWU_An_a0JAZo8xvz9zB], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[63]: index [.marvel-es-1-2018.08.15], type [node], id [AWU_An_a0JAZo8xvz9zC], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[64]: index [.marvel-es-data-1], type [node], id [jOYQHt5iTCCxAuzFSP9GLg], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[65]: index [.marvel-es-1-2018.08.15], type [node], id [AWU_An_a0JAZo8xvz9zD], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[66]: index [.marvel-es-data-1], type [node], id [syXpKxRSQZaemEYGY4Ldbg], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]];
+		at org.elasticsearch.marvel.agent.exporter.ExportBulk$Compound.flush(ExportBulk.java:106)
+		... 3 more
+	Caused by: ElasticsearchException[failure in bulk execution:
+[0]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y2], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[1]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y3], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[2]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y4], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[3]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y5], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[4]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y6], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[5]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y7], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[6]: index [.marvel-es-1-2018.08.15], type [index_stats], id [AWU_An_a0JAZo8xvz9y8], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[7]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[8]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[9]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[10]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[11]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[12]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[13]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[14]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[15]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:megacorp:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[16]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:megacorp:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[17]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[18]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[19]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[20]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[21]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[22]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[23]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[24]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[25]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:activity:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[26]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:activity:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[27]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:.marvel-es-data-1:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[28]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:.marvel-es-data-1:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[29]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:blogs:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[30]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:blogs:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[31]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:blogs:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[32]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:blogs:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[33]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:blogs:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[34]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:blogs:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[35]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[36]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[37]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[38]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[39]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[40]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[41]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[42]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[43]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:userprofile:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[44]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:userprofile:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[45]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:.marvel-es-1-2018.08.15:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[46]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:.marvel-es-1-2018.08.15:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[47]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:4:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[48]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:4:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[49]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:3:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[50]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:3:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[51]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:1:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[52]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:1:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[53]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:2:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[54]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:2:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[55]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:jOYQHt5iTCCxAuzFSP9GLg:team:0:p], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[56]: index [.marvel-es-1-2018.08.15], type [shards], id [taXdQE10TVy6VLUBpQpNBA:_na:team:0:r], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[57]: index [.marvel-es-1-2018.08.15], type [node_stats], id [AWU_An_a0JAZo8xvz9y9], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[58]: index [.marvel-es-1-2018.08.15], type [indices_stats], id [AWU_An_a0JAZo8xvz9y-], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[59]: index [.marvel-es-data-1], type [cluster_info], id [xXGzFvPASAyohmf-ckrtLQ], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[60]: index [.marvel-es-1-2018.08.15], type [cluster_stats], id [AWU_An_a0JAZo8xvz9y_], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[61]: index [.marvel-es-1-2018.08.15], type [index_recovery], id [AWU_An_a0JAZo8xvz9zA], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[62]: index [.marvel-es-1-2018.08.15], type [cluster_state], id [AWU_An_a0JAZo8xvz9zB], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[63]: index [.marvel-es-1-2018.08.15], type [node], id [AWU_An_a0JAZo8xvz9zC], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[64]: index [.marvel-es-data-1], type [node], id [jOYQHt5iTCCxAuzFSP9GLg], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[65]: index [.marvel-es-1-2018.08.15], type [node], id [AWU_An_a0JAZo8xvz9zD], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]
+[66]: index [.marvel-es-data-1], type [node], id [syXpKxRSQZaemEYGY4Ldbg], message [SendRequestTransportException[[Wysper][127.0.0.1:9300][indices:data/write/bulk[s][p]]]; nested: TransportException[TransportService is closed stopped can't send request];]]
+		at org.elasticsearch.marvel.agent.exporter.local.LocalBulk.flush(LocalBulk.java:118)
+		at org.elasticsearch.marvel.agent.exporter.ExportBulk$Compound.flush(ExportBulk.java:101)
+		... 3 more
+[2018-08-16 00:44:13,154][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.jboss.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.jboss.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.jboss.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.jboss.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.jboss.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.jboss.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.jboss.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:577)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:347)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:110)
+	at org.elasticsearch.transport.netty.NettyTransportChannel.sendResponse(NettyTransportChannel.java:80)
+	at org.elasticsearch.transport.DelegatingTransportChannel.sendResponse(DelegatingTransportChannel.java:58)
+	at org.elasticsearch.transport.RequestHandlerRegistry$TransportChannelWrapper.sendResponse(RequestHandlerRegistry.java:140)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$OperationTransportHandler$1.onResponse(TransportReplicationAction.java:256)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$OperationTransportHandler$1.onResponse(TransportReplicationAction.java:252)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase.finishOnSuccess(TransportReplicationAction.java:607)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase$1.handleResponse(TransportReplicationAction.java:532)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReroutePhase$1.handleResponse(TransportReplicationAction.java:518)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processResponse(TransportService.java:838)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:822)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:812)
+	at org.elasticsearch.transport.DelegatingTransportChannel.sendResponse(DelegatingTransportChannel.java:58)
+	at org.elasticsearch.transport.RequestHandlerRegistry$TransportChannelWrapper.sendResponse(RequestHandlerRegistry.java:140)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReplicationPhase.doFinish(TransportReplicationAction.java:1007)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$ReplicationPhase.doRun(TransportReplicationAction.java:878)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$PrimaryPhase.finishAndMoveToReplication(TransportReplicationAction.java:733)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$PrimaryPhase.doRun(TransportReplicationAction.java:677)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$PrimaryOperationTransportHandler.messageReceived(TransportReplicationAction.java:287)
+	at org.elasticsearch.action.support.replication.TransportReplicationAction$PrimaryOperationTransportHandler.messageReceived(TransportReplicationAction.java:279)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:77)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:378)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-08-16 00:44:13,156][WARN ][discovery.zen.ping.unicast] [Shrunken Bones] failed to send ping to [{#zen_unicast_6#}{0:0:0:0:0:0:0:1}{[::1]:9300}]
+RemoteTransportException[[Wysper][[::1]:9300][internal:discovery/zen/unicast]]; nested: IllegalStateException[received ping request while not started];
+Caused by: java.lang.IllegalStateException: received ping request while not started
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing.handlePingRequest(UnicastZenPing.java:497)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing.access$2400(UnicastZenPing.java:83)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:522)
+	at org.elasticsearch.discovery.zen.ping.unicast.UnicastZenPing$UnicastPingRequestHandler.messageReceived(UnicastZenPing.java:518)
+	at org.elasticsearch.transport.TransportRequestHandler.messageReceived(TransportRequestHandler.java:33)
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:77)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleRequest(MessageChannelHandler.java:227)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:116)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.OpenChannelsHandler.handleUpstream(OpenChannelsHandler.java:75)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-08-16 00:44:13,995][INFO ][node                     ] [Wysper] stopped
+[2018-08-16 00:44:13,995][INFO ][node                     ] [Wysper] closing ...
+[2018-08-16 00:44:14,004][INFO ][node                     ] [Wysper] closed
+[2018-08-16 00:44:16,154][INFO ][cluster.routing.allocation] [Shrunken Bones] Cluster health status changed from [YELLOW] to [RED] (reason: [nodes joined]).
+[2018-08-16 00:44:16,155][INFO ][cluster.service          ] [Shrunken Bones] new_master {Shrunken Bones}{syXpKxRSQZaemEYGY4Ldbg}{127.0.0.1}{127.0.0.1:9301}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-08-16 00:44:33,232][INFO ][node                     ] [Shrunken Bones] stopping ...
+[2018-08-16 00:44:33,237][ERROR][marvel.agent             ] [Shrunken Bones] background thread had an uncaught exception
+ElasticsearchException[failed to flush exporter bulks]
+	at org.elasticsearch.marvel.agent.exporter.ExportBulk$Compound.flush(ExportBulk.java:104)
+	at org.elasticsearch.marvel.agent.exporter.ExportBulk.close(ExportBulk.java:53)
+	at org.elasticsearch.marvel.agent.AgentService$ExportingWorker.run(AgentService.java:201)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: ElasticsearchException[failed to flush [default_local] exporter bulk]; nested: ElasticsearchException[failure in bulk execution:
+[0]: index [.marvel-es-1-2018.08.15], type [node_stats], id [AWU_AjCANfvBa9_38P9A], message [NodeClosedException[node closed {Shrunken Bones}{syXpKxRSQZaemEYGY4Ldbg}{127.0.0.1}{127.0.0.1:9301}]]];
+		at org.elasticsearch.marvel.agent.exporter.ExportBulk$Compound.flush(ExportBulk.java:106)
+		... 3 more
+	Caused by: ElasticsearchException[failure in bulk execution:
+[0]: index [.marvel-es-1-2018.08.15], type [node_stats], id [AWU_AjCANfvBa9_38P9A], message [NodeClosedException[node closed {Shrunken Bones}{syXpKxRSQZaemEYGY4Ldbg}{127.0.0.1}{127.0.0.1:9301}]]]
+		at org.elasticsearch.marvel.agent.exporter.local.LocalBulk.flush(LocalBulk.java:118)
+		at org.elasticsearch.marvel.agent.exporter.ExportBulk$Compound.flush(ExportBulk.java:101)
+		... 3 more
+[2018-08-16 00:44:33,241][INFO ][node                     ] [Shrunken Bones] stopped
+[2018-08-16 00:44:33,241][INFO ][node                     ] [Shrunken Bones] closing ...
+[2018-08-16 00:44:33,246][INFO ][node                     ] [Shrunken Bones] closed
+[2018-08-16 00:44:35,747][INFO ][node                     ] [Dreaming Celestial] version[2.4.6], pid[32271], build[5376dca/2017-07-18T12:17:44Z]
+[2018-08-16 00:44:35,747][INFO ][node                     ] [Dreaming Celestial] initializing ...
+[2018-08-16 00:44:36,212][INFO ][plugins                  ] [Dreaming Celestial] modules [reindex, lang-expression, lang-groovy], plugins [license, marvel-agent], sites []
+[2018-08-16 00:44:36,266][INFO ][env                      ] [Dreaming Celestial] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [5.1gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-08-16 00:44:36,266][INFO ][env                      ] [Dreaming Celestial] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-08-16 00:44:38,055][INFO ][node                     ] [Dreaming Celestial] initialized
+[2018-08-16 00:44:38,055][INFO ][node                     ] [Dreaming Celestial] starting ...
+[2018-08-16 00:44:38,154][INFO ][transport                ] [Dreaming Celestial] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-08-16 00:44:38,160][INFO ][discovery                ] [Dreaming Celestial] elasticsearch/3HbvzKquR5msF4Jrur63aQ
+[2018-08-16 00:44:41,203][INFO ][cluster.service          ] [Dreaming Celestial] new_master {Dreaming Celestial}{3HbvzKquR5msF4Jrur63aQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-08-16 00:44:41,219][INFO ][http                     ] [Dreaming Celestial] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-08-16 00:44:41,219][INFO ][node                     ] [Dreaming Celestial] started
+[2018-08-16 00:44:41,498][INFO ][license.plugin.core      ] [Dreaming Celestial] license [e43ea408-d45a-44f7-9405-b17fc3055484] - valid
+[2018-08-16 00:44:41,500][ERROR][license.plugin.core      ] [Dreaming Celestial] 
+#
+# License will expire on [Friday, September 14, 2018]. If you have a new license, please update it.
+# Otherwise, please reach out to your support contact.
+# 
+# Commercial plugins operate with reduced functionality on license expiration:
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-08-16 00:44:42,192][INFO ][gateway                  ] [Dreaming Celestial] recovered [7] indices into cluster_state
+[2018-08-16 00:44:46,902][INFO ][cluster.routing.allocation] [Dreaming Celestial] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][3], [userprofile][3]] ...]).
+[2018-08-16 00:45:11,209][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.5%], replicas will not be assigned to this node
+[2018-08-16 00:45:41,211][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.5%], replicas will not be assigned to this node
+[2018-08-16 00:46:11,213][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:46:41,214][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:47:11,220][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:47:41,224][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:48:11,226][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:48:41,227][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:49:11,229][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:49:41,231][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:50:11,233][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:50:41,234][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:51:11,235][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:51:41,237][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:52:11,238][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:52:41,240][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:53:11,242][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:53:41,243][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:54:11,244][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:54:41,255][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:55:11,257][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:55:41,258][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:56:11,259][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:56:41,260][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:57:11,261][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:57:41,263][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 00:58:11,264][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 09:36:29,661][INFO ][cluster.metadata         ] [Dreaming Celestial] [.marvel-es-1-2018.08.16] creating index, cause [auto(bulk api)], templates [.marvel-es-1], shards [1]/[1], mappings [_default_, shards, node, index_stats, index_recovery, cluster_state, cluster_stats, node_stats, indices_stats]
+[2018-08-16 09:36:30,336][INFO ][cluster.routing.allocation] [Dreaming Celestial] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.marvel-es-1-2018.08.16][0]] ...]).
+[2018-08-16 09:36:30,491][INFO ][cluster.metadata         ] [Dreaming Celestial] [.marvel-es-1-2018.08.16] update_mapping [node_stats]
+[2018-08-16 09:36:30,664][INFO ][cluster.metadata         ] [Dreaming Celestial] [.marvel-es-1-2018.08.16] update_mapping [indices_stats]
+[2018-08-16 09:36:30,824][INFO ][cluster.metadata         ] [Dreaming Celestial] [.marvel-es-1-2018.08.16] update_mapping [cluster_stats]
+[2018-08-16 09:36:32,618][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 09:37:02,619][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 09:37:32,627][INFO ][cluster.routing.allocation.decider] [Dreaming Celestial] low disk watermark [85%] exceeded on [3HbvzKquR5msF4Jrur63aQ][Dreaming Celestial][/home/junaid/elasticsearch-2.4.6/data/elasticsearch/nodes/0] free: 5.1gb[13.4%], replicas will not be assigned to this node
+[2018-08-16 09:37:59,015][INFO ][node                     ] [Dreaming Celestial] stopping ...
+[2018-08-16 09:38:02,629][DEBUG][action.admin.cluster.node.stats] [Dreaming Celestial] failed to execute on node [3HbvzKquR5msF4Jrur63aQ]
+SendRequestTransportException[[Dreaming Celestial][127.0.0.1:9300][cluster:monitor/nodes/stats[n]]]; nested: TransportException[TransportService is closed stopped can't send request];
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:340)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:165)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$100(TransportNodesAction.java:107)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:77)
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:46)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:137)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:85)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:289)
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:325)
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:310)
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$600(InternalClusterInfoService.java:69)
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob$1.run(InternalClusterInfoService.java:255)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: TransportException[TransportService is closed stopped can't send request]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:320)
+	... 14 more
+[2018-08-16 09:38:02,629][DEBUG][action.admin.indices.stats] [Dreaming Celestial] failed to execute [indices:monitor/stats] on node [3HbvzKquR5msF4Jrur63aQ]
+SendRequestTransportException[[Dreaming Celestial][127.0.0.1:9300][indices:monitor/stats[n]]]; nested: TransportException[TransportService is closed stopped can't send request];
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:340)
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:299)
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction$AsyncAction.sendNodeRequest(TransportBroadcastByNodeAction.java:327)
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction$AsyncAction.start(TransportBroadcastByNodeAction.java:315)
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction.doExecute(TransportBroadcastByNodeAction.java:238)
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction.doExecute(TransportBroadcastByNodeAction.java:79)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:137)
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:85)
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:303)
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:354)
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:310)
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$600(InternalClusterInfoService.java:69)
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob$1.run(InternalClusterInfoService.java:255)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: TransportException[TransportService is closed stopped can't send request]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:320)
+	... 15 more
+[2018-08-16 09:38:02,780][INFO ][node                     ] [Dreaming Celestial] stopped
+[2018-08-16 09:38:02,780][INFO ][node                     ] [Dreaming Celestial] closing ...
+[2018-08-16 09:38:02,787][INFO ][node                     ] [Dreaming Celestial] closed

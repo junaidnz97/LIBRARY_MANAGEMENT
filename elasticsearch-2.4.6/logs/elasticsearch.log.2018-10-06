@@ -1,0 +1,24 @@
+[2018-10-06 23:55:35,160][INFO ][node                     ] [Doctor Arthur Nagan] version[2.4.6], pid[25637], build[5376dca/2017-07-18T12:17:44Z]
+[2018-10-06 23:55:35,162][INFO ][node                     ] [Doctor Arthur Nagan] initializing ...
+[2018-10-06 23:55:37,278][INFO ][plugins                  ] [Doctor Arthur Nagan] modules [reindex, lang-expression, lang-groovy], plugins [license, marvel-agent], sites []
+[2018-10-06 23:55:37,521][INFO ][env                      ] [Doctor Arthur Nagan] using [1] data paths, mounts [[/ (/dev/sda4)]], net usable_space [6.2gb], net total_space [38.3gb], spins? [possibly], types [ext4]
+[2018-10-06 23:55:37,521][INFO ][env                      ] [Doctor Arthur Nagan] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-10-06 23:55:41,837][INFO ][node                     ] [Doctor Arthur Nagan] initialized
+[2018-10-06 23:55:41,837][INFO ][node                     ] [Doctor Arthur Nagan] starting ...
+[2018-10-06 23:55:42,118][INFO ][transport                ] [Doctor Arthur Nagan] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-10-06 23:55:42,123][INFO ][discovery                ] [Doctor Arthur Nagan] elasticsearch/lL9I-mAqTh-Ew7uM7f2WOA
+[2018-10-06 23:55:45,177][INFO ][cluster.service          ] [Doctor Arthur Nagan] new_master {Doctor Arthur Nagan}{lL9I-mAqTh-Ew7uM7f2WOA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2018-10-06 23:55:45,197][INFO ][http                     ] [Doctor Arthur Nagan] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-10-06 23:55:45,198][INFO ][node                     ] [Doctor Arthur Nagan] started
+[2018-10-06 23:55:47,189][INFO ][license.plugin.core      ] [Doctor Arthur Nagan] license [e43ea408-d45a-44f7-9405-b17fc3055484] - expired
+[2018-10-06 23:55:47,197][ERROR][license.plugin.core      ] [Doctor Arthur Nagan] 
+#
+# LICENSE EXPIRED ON [Friday, September 14, 2018]. IF YOU HAVE A NEW LICENSE, PLEASE
+# UPDATE IT. OTHERWISE, PLEASE REACH OUT TO YOUR SUPPORT CONTACT.
+# 
+# COMMERCIAL PLUGINS OPERATING WITH REDUCED FUNCTIONALITY
+# - marvel
+#  - The agent will stop collecting cluster and indices metrics
+#  - The agent will stop automatically cleaning indices older than [marvel.history.duration]
+[2018-10-06 23:55:48,979][INFO ][gateway                  ] [Doctor Arthur Nagan] recovered [14] indices into cluster_state
+[2018-10-06 23:56:02,798][INFO ][cluster.routing.allocation] [Doctor Arthur Nagan] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[userprofile][2]] ...]).

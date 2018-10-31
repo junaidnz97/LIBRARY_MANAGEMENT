@@ -1,54 +1,50 @@
 import React, { Component } from 'react';
 import { Table,thead } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-import Historybook from './Historybook.js';
+import Currentbook from './Currentbook.js';
 import * as axios from 'axios';
 
+class Currenttable extends Component {
 
-class Historytable extends Component {
-    
     constructor() {
         super();
         this.state = {
-            previousbooks : []
+            currentbooks : []
         }
     }
 
     componentDidMount() {
         let getData = async () => {            
-              let previousbooks = await axios({
+              let currentbooks = await axios({
               method: 'get',
-              url: '/books-history'
+              url: '/books-in-possession'
             });
-            if(previousbooks.data.output){
+            if(currentbooks.data.output){
                 this.props.history.push('/login');
             }
             else{
-                console.log(previousbooks.data);
-                this.setState({previousbooks: previousbooks.data});
+                console.log(currentbooks.data);
+                this.setState({currentbooks: currentbooks.data});
             }
         }
         getData();
     }
-
-
-
+    
     render() {
 
-        const previousbooks = this.state.previousbooks;
-        const Bookarray = previousbooks.map((book) =>{
+        const currentbooks = this.state.currentbooks;
+        const Bookarray = currentbooks.map((book) =>{
             return (
-                <Historybook 
+                <Currentbook 
                     key={book.id} 
                     book={book} 
                 />
             );
         });
 
-
         return (
             <div>
-                <h2>Previous books in Possession </h2>
+                <h2>Current books in Possession</h2>
                 <Table responsive>
                     <thead>
                         <tr>
@@ -58,6 +54,7 @@ class Historytable extends Component {
                         <th>Publisher</th>
                         <th>Date of issue</th>
                         <th>Date of return</th>
+                        <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,7 +65,7 @@ class Historytable extends Component {
                         <td>Hawk Books</td>
                         <td>22/10/2018</td>
                         <td>24/10/2018</td>
-                        
+                        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>
                         </tr>
                         <tr>
                         <td>2</td>
@@ -77,7 +74,7 @@ class Historytable extends Component {
                         <td>Hawk Books</td>
                         <td>22/10/2018</td>
                         <td>24/10/2018</td>
-                            </tr>
+                        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>    </tr>
                         <tr>
                         <td>3</td>
                         <td>Theory of Everything</td>
@@ -85,7 +82,7 @@ class Historytable extends Component {
                         <td>Hawk Books</td>
                         <td>22/10/2018</td>
                         <td>24/10/2018</td>
-                           </tr>
+                        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>    </tr>
                     </tbody>
                 </Table>
             </div>
@@ -94,5 +91,5 @@ class Historytable extends Component {
     }
 }
 
-export default Historytable;
+export default Currenttable;
 

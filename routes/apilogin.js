@@ -10,7 +10,7 @@ var apilogin = function (app,con){
         		if (!error && response.statusCode == 200) {
             		console.log(body);
             		userDetails = body;
-					console.log(userDetails.student[0].Student_ID);
+					console.log(userDetails.student[0].Student_Image);
             		req.session.username=userDetails.student[0].Student_ID;
             		req.session.userid=userDetails.student[0].Id;
             		//var q="insert into StudentApi values";

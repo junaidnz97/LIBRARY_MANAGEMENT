@@ -85,8 +85,9 @@ class Admin extends Component {
                 <Listcontainer>
                     {/*ApproveTable*/}    
                     {/*<UsersTable/>*/}
-                    {/*<ViewBooks/>*/}
                     {/*<AddBook/>*/}
+                    {/*<ViewBooks/>*/}
+                    
 
                 </Listcontainer>
                 </div>

@@ -3,12 +3,12 @@ var userBookRecords = function(app,con){
 
 	const {query} = require('../database/db');
 
-	app.get("/books-in-possesion",async(req,res)=>{
+	app.get("/books-in-possession",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
 			var userid = req.session.userid
 			var q = "select * from BookLogTrigger where UId="+userid+
-					" where DOR is NULL";
+					" and DOR is NULL";
 			console.log(q);
 			var result = await query(q,con);
 			var Details = [];

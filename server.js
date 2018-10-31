@@ -25,6 +25,8 @@ var shareBookRequest = require("./routes/shareBookRequest.js")
 var pay_fine = require("./routes/pay-fine");
 var returnbook = require("./routes/return");
 
+var requestBook = require("./routes/requestBook.js");
+
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -98,3 +100,4 @@ shareBookRequest.shareBookRequest(app,con);
 
 returnbook.returnbook(app,con)
 
+requestBook.requestBook(app,con)

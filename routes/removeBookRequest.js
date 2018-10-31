@@ -14,7 +14,7 @@ var removeBookRequest = function(app,con){
 	// 	{
 	// 		res.send({"output":"notloggedin"});
 	// 	}
-	// });
+	 });
 
 }
 

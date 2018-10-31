@@ -9,12 +9,11 @@ import Admin from './Admin.js'
 import App from './App.js';
 import Book from './Book.js'
 import { BrowserRouter } from 'react-router-dom'
-
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
 	<BrowserRouter>
-		<App/>
+		<Admin/>
 	</BrowserRouter>
 ), document.getElementById('root'));
 registerServiceWorker();

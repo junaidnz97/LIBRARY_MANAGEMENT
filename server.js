@@ -19,7 +19,11 @@ var adminlog=require("./routes/adminlog.js");
 var updateBookRecord = require("./routes/updateBookRecord.js")
 var deleteBookRecord = require("./routes/deleteBookRecord.js")
 
+var shareBookList = require("./routes/shareBookList.js")
+var shareBookRequest = require("./routes/shareBookRequest.js")
+
 var pay_fine = require("./routes/pay-fine");
+var returnbook = require("./routes/return");
 
 app.use(cookieParser());
 
@@ -87,3 +91,10 @@ deleteBookRecord.deleteBookRecord(app,con);
 
 pay_fine.pay_fine(app,con);
 apilogin.apilogin(app,con);
+
+
+shareBookList.shareBookList(app,con);
+shareBookRequest.shareBookRequest(app,con);
+
+returnbook.returnbook(app,con)
+

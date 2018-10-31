@@ -40,11 +40,14 @@ var borrow = function(app,con){
 			console.log(q3);
 			HBookId = await query(q3,con);
 			console.log(HBookId)
-			var q4 = "update CurrentBookStatus set issuedate = now(), EReturnDate = now()+interval 14 day,UserId = "
-					+userid+" where HBookId="+HBookId[0].HBookId;
-			console.log(q4);
-			output = await query(q4,con);
-			res.send({"status":"borrow request successfull","bid":bookid,"HBookId":HBookId[0].HBookId,"uid":userid});
+			var q5 = "insert into BorrowRequest values ("+HBookId[0].HBookId+","+bookid+","+userid+",NOW())";
+			result = await query(q5,con);
+			res.send({"status":"borrow request successfull"});
+			// var q4 = "update CurrentBookStatus set issuedate = now(), EReturnDate = now()+interval 14 day,UserId = "
+			// 		+userid+" where HBookId="+HBookId[0].HBookId;
+			// console.log(q4);
+			// output = await query(q4,con);
+			// res.send({"status":"borrow request successfull","bid":bookid,"HBookId":HBookId[0].HBookId,"uid":userid});
 			
 		}
 		else
@@ -52,6 +55,49 @@ var borrow = function(app,con){
 			 res.send({"output":"notloggedin"});
 		}
 		
+	});
+	app.post("/view-request-admin",async(req,res)=>{
+		if(req.session.adminusername && req.cookies.user_sid)
+        {
+        	var disp = req.body.disp;
+        	if(disp)
+        	{
+        		var q = "select * from BorrowRequest";
+        		console.log(q);
+        		var result = await query(q,con);
+        		res.send(result); 
+        	}
+        	else{
+	        	var type = req.body.type;
+				if(type)
+				{
+					var HBookId = req.body.hbookid;
+					var UserId = req.body.userid;
+					var q = "update CurrentBookStatus set issuedate = now(), EReturnDate = now()+interval 14 day,UserId = "
+					 		+UserId+" where HBookId="+HBookId;
+					var result = await query(q,con);
+					var q1 ="delete from BorrowRequest where UserId ="+UserId+" and HBookId="+
+							HBookId;
+					var res1 = await query(q1,con);
+					res.send({"status":"book issued"});
+				}
+				else
+				{
+					var HBookId = req.body.hbookid;
+					var UserId = req.body.userid;
+					var q1 ="delete from BorrowRequest where UserId ="+UserId+" and HBookId="+
+							HBookId;
+					var res1 = await query(q1,con);
+					console.log(res1);
+					res.send({"status":"book not issued"});
+				}
+
+			}
+		}
+		else
+		{
+			res.send({"output":"notloggedin"});
+		}
 	});
 }
 

@@ -12,7 +12,12 @@ var apilogin = function (app,con){
             		userDetails = body;
 					console.log(userDetails.student[0].Student_ID);
             		req.session.username=userDetails.student[0].Student_ID;
-            		res.send(userDetails);
+            		//var q="insert into StudentApi values";
+            		//q=q+"Student_ID="
+            		//res.send(userDetails);
+            		res.redirect("http://localhost:3000/catalogue");
+            		//res.redirect(302, 'http://loca');
+
         	}
     	});
 		

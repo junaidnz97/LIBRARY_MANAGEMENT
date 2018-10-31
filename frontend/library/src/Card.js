@@ -27,12 +27,3 @@ const Cardcomp = (props) => {
 }
 
 export default Cardcomp;
-
-
-{/*<div className="br3 pa3 ma3 dib grow bw2 shadow-5" style={{width:'200px'}}>
-			<img alt="robots" src={`${props.bookdesc.Img_url_m}`} />
-			<div>
-				<h2> {props.bookdesc.BookName} </h2>
-				<p> {props.bookdesc.BookDescription} </p>
-			</div>
-		</div>*/}

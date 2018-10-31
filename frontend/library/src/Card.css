@@ -1,3 +1,12 @@
+.card {
+  height: 310px;
+  background-color: #FEFEFE;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
+}
+
 .cont {
 	display:flex;
 }

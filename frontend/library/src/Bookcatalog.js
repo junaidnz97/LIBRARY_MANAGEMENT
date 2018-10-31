@@ -51,8 +51,7 @@ class Bookcatalog extends Component {
                 <Container fluid>
                     <Cardlist books = {this.state.books} />
                     <center>
-                        <Pagination>
-                            
+                        <Pagination>                          
 
                         {(() => {
                             switch(this.state.c) {

@@ -16,22 +16,24 @@ var pay_fine = function(app,con){
 			var q = "select Dues from Student where UserId="+userId;
 			console.log(q);
 			var dues = await query(q,con);
-			var q1 = "select * from DuesDetail where UserId ="+userId+
-						" and DuesPaid = 0";
-			let result = await query(q1,con);
-			console.log(result);
+			var q1 = "select * from CurrentBookStatus where UserId ="+userId+
+						" and DuesGenerated > 0";
 			var Details = [];
-			for (let i of result) {
-				console.log(i.HbookId);
-				var q2 = "select * from CurrentBookStatus,"+
-						"(select BookName,BookId from BookDetail) as T"+
-						" where UserId=" + userId +
-						" and CurrentBookStatus.HBookId="+ i.HbookId +
-						" and CurrentBookStatus.BookId=T.BookId";		
-				console.log(q2);
-				Details.push(await query(q2,con));
-			}
-				console.log(Details);
+			Details.push(await query(q1,con));
+			// let result = await query(q1,con);
+			// console.log(result);
+			// var Details = [];
+			// for (let i of result) {
+			// 	console.log(i.HbookId);
+			// 	var q2 = "select * from CurrentBookStatus,"+
+			// 			"(select BookName,BookId from BookDetail) as T"+
+			// 			" where UserId=" + userId +
+			// 			" and CurrentBookStatus.HBookId="+ i.HbookId +
+			// 			" and CurrentBookStatus.BookId=T.BookId";		
+			// 	console.log(q2);
+			// 	Details.push(await query(q2,con));
+			// }
+			// 	console.log(Details);
 				res.send({"Dues":dues,"Details":Details});
 			
 		}

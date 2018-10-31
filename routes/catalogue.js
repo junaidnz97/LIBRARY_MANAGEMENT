@@ -13,6 +13,7 @@ var catalogue = function(app,con){
 	app.get("/catalogue",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
+			console.log("cookies= "+req.session.username);
 			var q = "select * from BookDetail";
 			var output = await query(q,con);
 			if(output.length == 0)

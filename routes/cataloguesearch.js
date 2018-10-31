@@ -6,8 +6,8 @@ var cataloguesearch = function (app,con,client) {
         var searchquery=req.query.query;
 
         client.search({
-            index: 'megacorp',
-            type: 'employee',
+            index: 'myindex',
+            type: 'mytype',
             body: {
                 query: {
                     match: {

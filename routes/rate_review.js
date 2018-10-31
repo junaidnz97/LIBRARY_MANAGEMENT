@@ -14,7 +14,7 @@ var rate_review = function(app,con){
 	app.post("/rate_review",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
-			userId = req.body.userId;
+			userId = req.session.userid;
 			bookId = req.body.bookId;
 			rating = req.body.rating;
 			review = req.body.review;

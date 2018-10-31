@@ -13,7 +13,7 @@ var catalogue = function(app,con){
 	app.get("/catalogue",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
-			var q = "select * from BookDetail";
+			var q = "select *,Author from BookDetail,BookAuthor where BookDetail.BookId = BookAuthor.BookId";
 			var output = await query(q,con);
 			if(output.length == 0)
 					res.send({"status":"No books found"});

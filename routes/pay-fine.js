@@ -12,7 +12,7 @@ var pay_fine = function(app,con){
 	app.post("/fine-amount",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
 		{
-			userId = req.body.userId;
+			userId = req.session.userid;
 			var q = "select Dues from Student where UserId="+userId;
 			console.log(q);
 			var dues = await query(q,con);
@@ -45,7 +45,7 @@ var pay_fine = function(app,con){
 	app.post("/pay-fine",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
 		{
-			userId = req.body.userId;
+			userId = req.session.userid;
 			dueAmount = req.body.DueAmount;
 			paidAmount = req.body.PaidAmount;
 			paymentMethod = req.body.PaymentMethod;

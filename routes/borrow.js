@@ -14,7 +14,7 @@ var borrow = function(app,con){
 		if(req.session.username && req.cookies.user_sid)
         {
 			bookid = req.body.bid;
-			userid = req.body.uid;
+			userid = req.session.userid;
 			var q0 = "select AvailableQuantity from BookDetail where BookID = " + bookid;
 			console.log(q0);
 			quantity = await query(q0,con);

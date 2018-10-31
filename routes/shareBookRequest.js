@@ -8,7 +8,7 @@ var shareBookRequest = function(app,con){
     if(req.session.username && req.cookies.user_sid)
     {
       bookid = req.body.bid;
-      userid_sender = req.body.uid_sender;
+      userid_sender = req.session.userid;
       userid_reciever = req.body.uid_reciever;
 
       var sender_info_query = "select * from Student where UserID=" + userid_sender;

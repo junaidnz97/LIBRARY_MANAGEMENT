@@ -4,12 +4,12 @@ import {Button} from 'react-bootstrap';
 const Currentbook = (props) => {
 	return (
 		<tr>
-	        <td>1</td>
-	        <td>Theory of Everything</td>
-	        <td>Stephen.H</td>
-	        <td>Hawk Books</td>
-	        <td>22/10/2018</td>
-	        <td>24/10/2018</td>
+	        <td>{props.index + 1}</td>
+	        <td>{props.book.BookName}</td>
+	        <td>{props.book.BookAuthor}</td>
+	        <td>{props.book.BookAuthor}</td>
+	        <td>{props.book.IssueDate}</td>
+	        <td>{props.book.ReturnDate}</td>
 	        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>
         </tr>
 	);

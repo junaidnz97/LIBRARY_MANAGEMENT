@@ -24,8 +24,8 @@ class Historytable extends Component {
                 this.props.history.push('/login');
             }
             else{
-                console.log(previousbooks.data);
-                this.setState({previousbooks: previousbooks.data});
+                console.log(previousbooks.data.Details);
+                this.setState({previousbooks: previousbooks.data.Details});
             }
         }
         getData();
@@ -36,11 +36,12 @@ class Historytable extends Component {
     render() {
 
         const previousbooks = this.state.previousbooks;
-        const Bookarray = previousbooks.map((book) =>{
+        const Bookarray = previousbooks.map((book, i) =>{
             return (
                 <Historybook 
                     key={book.id} 
-                    book={book} 
+                    book={book}
+                    index={i} 
                 />
             );
         });
@@ -61,31 +62,7 @@ class Historytable extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <td>1</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        
-                        </tr>
-                        <tr>
-                        <td>2</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                            </tr>
-                        <tr>
-                        <td>3</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                           </tr>
+                        {Bookarray}
                     </tbody>
                 </Table>
             </div>

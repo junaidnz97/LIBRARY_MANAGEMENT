@@ -23,8 +23,8 @@ class Currenttable extends Component {
                 this.props.history.push('/login');
             }
             else{
-                console.log(currentbooks.data);
-                this.setState({currentbooks: currentbooks.data});
+                console.log(currentbooks.data.Details);
+                this.setState({currentbooks: currentbooks.data.Details});
             }
         }
         getData();
@@ -58,31 +58,7 @@ class Currenttable extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <td>1</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>
-                        </tr>
-                        <tr>
-                        <td>2</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>    </tr>
-                        <tr>
-                        <td>3</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        <td><Button bsStyle="primary">REISSUE</Button><Button bsStyle="primary">RETURN</Button></td>    </tr>
+                        {Bookarray}
                     </tbody>
                 </Table>
             </div>

@@ -31,6 +31,9 @@ var requestedBookList = require("./routes/requestedBookList.js");
 var removeBookRequest = require("./routes/removeBookRequest.js");
 //var addindex=require("./routes/addindex.js");
 
+var userList = require("./routes/userlist");
+var userBookRecords = require("./routes/userBookRecords");
+
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -130,5 +133,11 @@ requestBook.requestBook(app,con);
 requestedBookList.requestedBookList(app,con);
 removeBookRequest.removeBookRequest(app,con);
 
+
 cataloguesearch.cataloguesearch(app,con,client);
+
 //addindex.addindex(app,con,client);
+
+userList.userList(app,con);
+userBookRecords.userBookRecords(app,con);
+

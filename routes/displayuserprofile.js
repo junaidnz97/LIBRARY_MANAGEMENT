@@ -41,6 +41,10 @@ var displayuserprofile = function (app, con) {
             });
 
         }
+        else
+        {
+            res.send({"output":"notloggedin"});
+        }
     });
 
 };

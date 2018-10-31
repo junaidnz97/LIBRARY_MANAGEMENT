@@ -26,6 +26,10 @@ var pay_fine = require("./routes/pay-fine");
 var returnbook = require("./routes/return");
 var cataloguesearch=require("./routes/cataloguesearch");
 
+var requestBook = require("./routes/requestBook.js");
+var requestedBookList = require("./routes/requestedBookList.js");
+var removeBookRequest = require("./routes/removeBookRequest.js");
+
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -97,6 +101,10 @@ apilogin.apilogin(app,con);
 shareBookList.shareBookList(app,con);
 shareBookRequest.shareBookRequest(app,con);
 
-returnbook.returnbook(app,con)
+returnbook.returnbook(app,con);
+
+requestBook.requestBook(app,con);
+requestedBookList.requestedBookList(app,con);
+removeBookRequest.removeBookRequest(app,con);
 
 cataloguesearch.cataloguesearch(app,con);

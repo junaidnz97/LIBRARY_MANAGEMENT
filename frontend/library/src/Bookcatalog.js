@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container} from 'reactstrap'
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import * as axios from 'axios';
 import Header from './Header.js'
 import Listcontainer from './Listcontainer.js'
@@ -21,24 +21,19 @@ class Bookcatalog extends Component {
     
 
     componentDidMount() {
-        let getData = async () => {
-            let res = await axios({
-                method: 'post',
-                url: '/login',
-                data: {
-                        username: '20160010060',
-                        password: 'mynamedahiya'
-                    }
-            });
-            console.log(res);
-            let books = await axios({
+        let getData = async () => {            
+              let books = await axios({
               method: 'get',
               url: '/catalogue'
             });
-        
-            console.log(books.data["book-details"]);
-            //let boks = books.data.bookDetails;
-            this.setState({books: books.data["book-details"]});
+            if(books.data.output){
+                this.props.history.push('/login');
+                console.log("went in", books.data.output);
+            }
+            else{
+                console.log(books.data["book-details"]);
+                this.setState({books: books.data["book-details"]});
+            }
         }
         getData();
     }

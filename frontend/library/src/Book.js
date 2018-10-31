@@ -23,7 +23,6 @@ class Book extends Component {
                 <Header />
                 <Bookcontainer>
                 	<Bookinfo book={this.props.location.state.book}/>
-                	<Bookdynamic />
                 </Bookcontainer>
                 <Listcontainer>
                     <ReviewList />

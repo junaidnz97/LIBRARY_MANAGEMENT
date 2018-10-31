@@ -80,6 +80,28 @@ var server=app.listen("9090",function(){
 	console.log("server working");
 });
 
+var elasticsearch=require("elasticsearch");
+var client=new elasticsearch.Client({
+
+    host: "localhost:9200",
+    log : "trace"
+});
+
+client.ping({
+    // ping usually has a 3000ms timeout
+    requestTimeout: 1000
+}, function (error) {
+    if (error) {
+        console.trace('elasticsearch cluster is down!');
+    } else {
+        console.log('All is well');
+    }
+});
+
+
+
+
+
 signup.signup(app,con);
 booksummary.booksummary(app,con);
 borrow.borrow(app,con);
@@ -107,4 +129,4 @@ requestBook.requestBook(app,con);
 requestedBookList.requestedBookList(app,con);
 removeBookRequest.removeBookRequest(app,con);
 
-cataloguesearch.cataloguesearch(app,con);
+cataloguesearch.cataloguesearch(app,con,client);

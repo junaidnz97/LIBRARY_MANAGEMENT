@@ -5,7 +5,7 @@ var requestBook = function(app,con){
 
 
 	app.post("/request-book",async(req,res)=>{
-		// if(req.session.username && req.cookies.user_sid)
+		if(req.session.username && req.cookies.user_sid)
 		{
       bookname = req.body.bname;
       userid = req.body.userid;
@@ -41,15 +41,11 @@ var requestBook = function(app,con){
 				res.send("Book request successful");
 			}
 
-
-
-
-    	// console.log(q);
 		}
-		// else
-		// {
-		// 	res.send({"output":"notloggedin"});
-		// }
+		else
+		{
+			res.send({"output":"notloggedin"});
+		}
 	});
 
 }

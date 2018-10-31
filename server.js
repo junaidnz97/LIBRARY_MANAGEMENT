@@ -24,6 +24,7 @@ var shareBookRequest = require("./routes/shareBookRequest.js")
 
 var pay_fine = require("./routes/pay-fine");
 var returnbook = require("./routes/return");
+var cataloguesearch=require("./routes/cataloguesearch");
 
 var requestBook = require("./routes/requestBook.js");
 
@@ -101,3 +102,5 @@ shareBookRequest.shareBookRequest(app,con);
 returnbook.returnbook(app,con)
 
 requestBook.requestBook(app,con)
+
+cataloguesearch.cataloguesearch(app,con);

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Bookdynamic.css';
 import Rating from './Rating.js';
-import {ButtonToolbar,Button,FormControl,FormGroup,ControlLabel} from 'react-bootstrap';
+import {ButtonToolbar,Button,FormControl,FormGroup,ControlLabel,SplitButton,MenuItem} from 'react-bootstrap';
 
 
 class Bookdynamic extends Component {
@@ -21,7 +21,15 @@ class Bookdynamic extends Component {
                         <br/>
                         <ButtonToolbar>
                             <Button bsStyle="primary">Borrow Book</Button>
-                            <Button bsStyle="primary">Share Books</Button>
+                            <SplitButton
+                                bsStyle="primary"
+                                title="Share Books"
+                            >
+                                <MenuItem eventKey="1">User1</MenuItem>
+                                <MenuItem eventKey="2">User2</MenuItem>
+                                <MenuItem eventKey="3">User3</MenuItem>
+                                
+                             </SplitButton>
                         </ButtonToolbar>
                     </div>
                       <form>

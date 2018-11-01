@@ -141,3 +141,6 @@ cataloguesearch.cataloguesearch(app,con,client);
 userList.userList(app,con);
 userBookRecords.userBookRecords(app,con);
 
+module.exports={
+    app:app
+};

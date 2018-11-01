@@ -44,7 +44,8 @@ var mysql=require("mysql");
                         BookEdition: resp[i].BookEdition,
                         BookDescription: resp[i].BookDescription,
                         Publisher: resp[i].Publisher,
-                        BookAuthor: resp[i].BookAuthor }
+                        BookAuthor: resp[i].BookAuthor,
+                        Img_url_m:resp[i].Img_url_m}
 
 
                 }).then(function (body) {
@@ -76,11 +77,12 @@ var mysql=require("mysql");
         "include_in_all": false,
             "properties": {
             "BookName": { "type": "text", "include_in_all": true },
-            "BookType "type": "integer" },
-            "BookEdition": { "type": "text", "include_in_all": false },
+            "BookType ":{"type": "text", "include_in_all": true  },
+            "BookEdition": { "type": "text", "include_in_all": true },
             "BookDescription": { "type": "text", "include_in_all": true },
-            "Publisher ":{"type": "integer" },
-            "BookAuthor": { "type": "text", "include_in_all": false },
+            "Publisher ":{"type": "text", "include_in_all": true  },
+            "BookAuthor": { "type": "text", "include_in_all": true },
+            "Img_url_m" :{"type": "text", "include_in_all": false }
 
         }
     }

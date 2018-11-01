@@ -68,3 +68,21 @@ var mysql=require("mysql");
 //module.exports={
   //  addindex:addindex
 //};
+
+/*
+{
+    "mappings": {
+    "user": {
+        "include_in_all": false,
+            "properties": {
+            "BookName": { "type": "text", "include_in_all": true },
+            "BookType "type": "integer" },
+            "BookEdition": { "type": "text", "include_in_all": false },
+            "BookDescription": { "type": "text", "include_in_all": true },
+            "Publisher ":{"type": "integer" },
+            "BookAuthor": { "type": "text", "include_in_all": false },
+
+        }
+    }
+}
+}*/

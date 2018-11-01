@@ -13,13 +13,13 @@ var returnbook = function(app,con){
 	app.post("/return",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
         {
-			bookid = req.body.bid;
-			hbookid = req.body.hid;
+			bookid = req.body.bookId;
+			hbookid = req.body.hbookId;
 			userid = req.session.userid;
 			var q = "select * from BookLogTrigger where HId = "+hbookid +" and DOR is NULL";
 			var pass = await query(q,con)
 			if(!pass.length){
-				res.send({"status":"not found in history"});
+				res.status(200).send({"status":"not found in history"});
 			}
 			else{
 				var q0 = "update BookLogTrigger set DOR = NOW() where HId = "+hbookid +" and DOR is NULL";
@@ -29,7 +29,7 @@ var returnbook = function(app,con){
 				var r2 = await query(q2,con);
 				console.log(r2.length);
 				console.log(r0);
-				var q1 = "update CurrentBookStatus set IssueDate =NULL,EReturnDate = NULL, UserId = NULL where HBookId ="+hbookid;
+				var q1 = "update CurrentBookStatus set IssueDate =NULL,EReturnDate = NULL, UserId = NULL,DuesGenerated=0 where HBookId ="+hbookid;
 				var r1 = await query(q1,con);
 				console.log(r1);
 				var q3 = "update BookDetail set AvailableQuantity = AvailableQuantity + 1 where BookId="+bookid;
@@ -37,10 +37,10 @@ var returnbook = function(app,con){
 
 				if(r2.length)
 				{
-					res.send({"DuesGenerated": r2.DuesGenerated,"status":"return successfull"});
+					res.status(200).send({"DuesGenerated": r2.DuesGenerated,"status":"return successfull"});
 				}
 				else{
-					res.send({"status":"return successfull"});
+					res.status(200).send({"status":"return successfull"});
 				}
 				
 			}
@@ -48,7 +48,7 @@ var returnbook = function(app,con){
 		}
 		else
 		{
-			 res.send({"output":"notloggedin"});
+			 res.status(400).send({"output":"notloggedin"});
 		}
 		
 	});

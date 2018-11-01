@@ -33,7 +33,7 @@ var booksummary=function (app,con) {
             q = "select count(*) as count from BorrowRequest where UserId="+req.session.userid;
             console.log(q);
             var count2 = await query(q,con)
-            res.send({"BookDetails":finalresp,"CurrentBookCount":count1[0].count+count2[0].count});
+            res.status(200).send({"BookDetails":finalresp,"CurrentBookCount":count1[0].count+count2[0].count});
             // con.query(query,function (err,response) {
 
             //     if(err)
@@ -46,7 +46,7 @@ var booksummary=function (app,con) {
         else
         {
 
-            res.send({"output":"notloggedin"});
+            res.status(400).send({"output":"notloggedin"});
         }
 
     });
@@ -59,7 +59,7 @@ var booksummary=function (app,con) {
                     " and T.UserId=RatingAndReview.UserId";
            console.log(q);
            var result = await query(q,con);
-           res.send({"details":result});
+           res.status(200).send({"details":result});
            // con.query(q,function(err,resp){
            //      if(err)
            //          throw err;
@@ -70,7 +70,7 @@ var booksummary=function (app,con) {
         }
         else
         {
-            res.send({"output":"notloggedin"});
+            res.status(400).send({"output":"notloggedin"});
         } 
     });
     

@@ -34,7 +34,7 @@ var displayuserprofile = function (app, con) {
 
                     console.log(finalresp);
                     details.Dues = finalresp[0].Dues;
-                    res.send(details);
+                    res.status(200).send(details);
                 });
 
 
@@ -43,7 +43,7 @@ var displayuserprofile = function (app, con) {
         }
         else
         {
-            res.send({"output":"notloggedin"});
+            res.status(400).send({"output":"notloggedin"});
         }
     });
 

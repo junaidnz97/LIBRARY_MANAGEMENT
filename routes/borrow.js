@@ -20,7 +20,7 @@ var borrow = function(app,con){
 			quantity = await query(q0,con);
 			console.log(quantity[0]);
 			if(quantity[0].AvailableQuantity == 0){
-					res.send("book not available");
+					res.status(200).send("book not available");
 					return;
 			}
 			var q1 = "select Premium from BookDetail where BookID = " + bookid;
@@ -28,7 +28,7 @@ var borrow = function(app,con){
 			status = await query(q1,con);
 			console.log(status[0]);
 			if (status[0].Premium == 1){
-				res.send({"book-status" : "premium", "bid" : bookid, "uid" :userid})
+				res.status(200).send({"book-status" : "premium", "bid" : bookid, "uid" :userid})
 				return;
 			}
 			var q2 = "update BookDetail set AvailableQuantity = AvailableQuantity - 1 where BookId = " + bookid;
@@ -42,7 +42,7 @@ var borrow = function(app,con){
 			console.log(HBookId)
 			var q5 = "insert into BorrowRequest values ("+HBookId[0].HBookId+","+bookid+","+userid+",NOW())";
 			result = await query(q5,con);
-			res.send({"status":"borrow request successfull"});
+			res.status(200).send({"status":"borrow request successfull"});
 			// var q4 = "update CurrentBookStatus set issuedate = now(), EReturnDate = now()+interval 14 day,UserId = "
 			// 		+userid+" where HBookId="+HBookId[0].HBookId;
 			// console.log(q4);
@@ -52,7 +52,7 @@ var borrow = function(app,con){
 		}
 		else
 		{
-			 res.send({"output":"notloggedin"});
+			 res.status(400).send({"output":"notloggedin"});
 		}
 		
 	});

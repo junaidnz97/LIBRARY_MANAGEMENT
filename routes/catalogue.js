@@ -11,7 +11,7 @@ var catalogue = function(app,con){
 	// });
 
 	app.get("/catalogue",async(req,res)=>{
-		console.log(req.session.username ," ",req.cookies.user_sid);
+		//console.log(req.session.username ," ",req.cookies.user_sid);
 		if(req.session.username && req.cookies.user_sid)
 		{
 			console.log("cookie working");

@@ -34,12 +34,12 @@ var pay_fine = function(app,con){
 			// 	Details.push(await query(q2,con));
 			// }
 			// 	console.log(Details);
-				res.send({"Dues":dues,"Details":Details});
+				res.status(200).send({"Dues":dues,"Details":Details});
 			
 		}
 		else
 		{
-			res.send({"output":"notloggedin"});
+			res.status(400).send({"output":"notloggedin"});
 		}
 	});
 	app.post("/pay-fine",async(req,res)=>{

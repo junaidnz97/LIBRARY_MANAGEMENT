@@ -64,6 +64,126 @@ describe("test",function () {
             });
     });
 
+    it("booksummaryloggedin",function(done){
+        chai.request(app)
+            .get("/booksummary?bookId=21")
+            .set('Cookie', cookievalue)
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("booksummarynotloggedin",function(done){
+        chai.request(app)
+            .get("/booksummary?bookId=21")
+            .then(function(res){
+                assert.equal(res.status,400);
+                done();
+            });
+    });
+
+    it("reviewloggedin",function(done){
+        chai.request(app)
+            .get("/review?bookId=21")
+            .set('Cookie', cookievalue)
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("reviewnotloggedin",function(done){
+        chai.request(app)
+            .get("/review?bookId=21")
+            .then(function(res){
+                assert.equal(res.status,400);
+                done();
+            });
+    });
+
+    /*it("borrowloggedin",function(done){
+        chai.request(app)
+            .post("/borrow")
+            .set('Cookie', cookievalue)
+            .send({"bookId":21})
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+    */
+    it("borrownotloggedin",function(done){
+        chai.request(app)
+            .post("/borrow")
+            .send({"bookId":989})
+            .then(function(res){
+                assert.equal(res.status,400);
+                done();
+            });
+    });
+
+    /*it("returnloggedin",function(done){
+        chai.request(app)
+            .post("/return")
+            .set('Cookie', cookievalue)
+            .send({"bookId":21,"hbookId":7231})
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("returnnotloggedin",function(done){
+        chai.request(app)
+            .post("/return")
+            .send({"bookId":21,"hbookId":7231})
+            .then(function(res){
+                assert.equal(res.status,400);
+                done();
+            });
+    });*/
+
+    it("displayuserprofileloggedin",function(done){
+        chai.request(app)
+            .get("/displayuserprofile")
+            .set('Cookie', cookievalue)
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+    it("displayuserprofilenotloggedin",function(done){
+        chai.request(app)
+            .get("/displayuserprofile")
+            .then(function(res){
+                assert.equal(res.status,400);
+                done();
+            });
+    });
+    
+    it("fineamountloggedin",function(done){
+        chai.request(app)
+            .post("/fine-amount")
+            .set('Cookie', cookievalue)
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("fineamountnotloggedin",function(done){
+        chai.request(app)
+            .post("/fine-amount")
+            .then(function(res){
+                assert.equal(res.status,400);
+                done();
+            });
+    });
+
+
+
+
 
 });
 

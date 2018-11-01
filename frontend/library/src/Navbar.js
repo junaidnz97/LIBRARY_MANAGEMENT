@@ -5,6 +5,7 @@ import './Navbar.css';
 import placeholderprofile from'./placeholderprofile.png';
 
 
+
 const Navigation = () => {
 
 	return (
@@ -21,7 +22,7 @@ const Navigation = () => {
 	 		</Navbar.Header>
 	  		<Navbar.Collapse>
 			    <Nav>
-					<NavItem eventKey={2} href="#">
+					<NavItem eventKey={2} onClick={_ => window.history.back()}   href="#">
 			    		<i class="fa fa-chevron-left"></i> Back
 			    	</NavItem>
 			      	<NavDropdown eventKey={3} title="Categories" id="basic-nav-dropdown">
@@ -44,7 +45,7 @@ const Navigation = () => {
 			    	</NavItem>
 			    	<NavDropdown eventKey={3} 
 			    		title={ <span>
-			    				<i class="fa fa-user"></i> Welcome, Paras!
+			    				<i class="fa fa-user"></i> Welcome User !
 			    			</span>
 			    		} 
 			    		id="basic-nav-dropdown">

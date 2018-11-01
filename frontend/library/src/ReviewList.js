@@ -21,12 +21,9 @@ class ReviewList extends Component {
               }
             });
             if(reviews.data.output){
-                console.log("yayyyy")
                 this.props.history.push('/login');
             }
             else{
-                console.log("else")
-                console.log(reviews.data.details);
                 this.setState({reviews: reviews.data.details});
             }
         }

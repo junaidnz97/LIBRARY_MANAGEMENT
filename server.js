@@ -34,6 +34,8 @@ var removeBookRequest = require("./routes/removeBookRequest.js");
 var userList = require("./routes/userlist");
 var userBookRecords = require("./routes/userBookRecords");
 
+var addBookRecord = require("./routes/addBookRecord.js");
+
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -141,3 +143,4 @@ cataloguesearch.cataloguesearch(app,con,client);
 userList.userList(app,con);
 userBookRecords.userBookRecords(app,con);
 
+addBookRecord.addBookRecord(app,con);

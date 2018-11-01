@@ -27,12 +27,21 @@ var requestBook = function(app,con){
 			else {
 				if(link == '')
 				link = "NULL";
+				else{
+					link = "'" + link + "'";
+				}
 				if(publisher == '')
 				publisher = "NULL";
+				else{
+					publisher = "'" + publisher + "'";
+				}
 				if(edition == '')
 				edition = "NULL";
 				if(author == '')
 				author = "NULL";
+				else{
+					author = "'" + author + "'"; 
+				}
 
 				var q = "insert into RequestedBook (BookName,UserId,Link,Publisher,Edition,Author) values ("
 				+ bookname + "," + userid + "," + link + "," + publisher + "," + edition + "," + author +  ");";

@@ -26,7 +26,9 @@ var booksummary=function (app,con) {
              //   finalresp[0].authors.push(authorresp[i]);
             //console.log(authorresp);
             //console.log(authorresp[0]);
-            res.send(finalresp);
+            q = "select count(*) as count from BookLogTrigger where UId="+req.session.userid+" and DOR is NULL"
+            var count = await query(q,con);
+            res.send({"BookDetails":finalresp,"CurrentBookCount":count[0].count});
             // con.query(query,function (err,response) {
 
             //     if(err)

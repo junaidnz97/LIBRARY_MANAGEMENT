@@ -18,7 +18,7 @@ var booksummary=function (app,con) {
             var q="select * from BookDetail where BookId="+bookId;
             var finalresp = await query(q,con);
             finalresp=JSON.parse(JSON.stringify(finalresp));
-            q="select BookAuthor from bookauthor where BookId = "+bookId;
+            q="select BookAuthor from BookAuthor where BookId = "+bookId;
             var authorresp=await query(q,con);
             authorresp=JSON.parse(JSON.stringify(authorresp));
             finalresp[0].authors=authorresp;

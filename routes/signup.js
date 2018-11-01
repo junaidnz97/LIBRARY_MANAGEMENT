@@ -49,8 +49,8 @@ app.post("/signup",async(req,res)=>{
 
 app.post("/login",async(req,res)=>{
 
-		console.log(req.session.username);
-		console.log(req.cookies.user_sid);
+		//console.log(req.session.username);
+		//console.log(req.cookies.user_sid);
 		if(req.session.username && req.cookies.user_sid)
 				res.send({"status":"already logged in"});
 		else{
@@ -62,7 +62,7 @@ app.post("/login",async(req,res)=>{
 					req.session.username=req.body.username;
 				 	req.session.adminusername=null;
 				 	req.session.userid = resp[0].UserId;
-				 	res.send({"success":"login successful"});
+				 	res.status(200).send({"success":"login successful"});
 				}
 				// con.query(q,function(err,resp){
 				// 	if(err)

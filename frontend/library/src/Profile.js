@@ -8,8 +8,8 @@ import ProfileDetails from './ProfileDetails.js';
 import * as axios from 'axios';
 
 class Profile extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             profiledetails : {}
         }

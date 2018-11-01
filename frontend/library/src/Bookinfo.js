@@ -23,7 +23,7 @@ class Bookinfo extends Component {
                 <Bookstatic book = {this.props.book}/>
               </Col>
               <Col md={6}>
-                <Bookdynamic quantity = {this.props.book.AvailableQuantity} BookId = {this.props.book.BookId}/>
+                <Bookdynamic history={this.props.history} quantity = {this.props.book.AvailableQuantity} BookId = {this.props.book.BookId}/>
               </Col>
             </Row>
            </Grid> 

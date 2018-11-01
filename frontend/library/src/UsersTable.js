@@ -1,12 +1,49 @@
 import React, { Component } from 'react';
-import { Table,thead } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-
+import UserInfo from './UserInfo';
+import * as axios from 'axios';
 
 
 class UsersTable extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            users : []
+        }
+    }
     
+    componentDidMount() {
+        let getData = async () => {            
+              let users = await axios({
+              method: 'get',
+              url: '/view-user-list'
+            });
+            if(users.data.output){
+                console.log("if");
+                this.props.history.push('/login');
+            }
+            else{
+                console.log(users.data.users);
+                this.setState({users: users.data.users});
+            }
+        }
+        getData();
+    }
     render() {
+
+        const users = this.state.users;
+        const Userarray = users.map((user, i) =>{
+            return (
+                <UserInfo 
+                    key={user.UserId} 
+                    user={user}
+                    index={i} 
+                />
+            );
+        });
+
         return (
             <div>
                 <h2>View Users</h2>
@@ -23,33 +60,7 @@ class UsersTable extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <td>1</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        <td><Button bsSize="small" bsStyle="primary">View Profile</Button></td>
-                        </tr>
-                        <tr>
-                        <td>2</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        <td><Button bsSize="small" bsStyle="primary">View Profile</Button></td>
-                        </tr>
-                        <tr>
-                        <td>3</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        <td><Button bsSize="small" bsStyle="primary">View Profile</Button></td>
-                        </tr>
+                        {Userarray}
                     </tbody>
                 </Table>
             </div>

@@ -35,9 +35,9 @@ class Bookdynamic extends Component {
                 console.log("Updating book");
                 this.setState({availableBooks: booksnUser.data.BookDetails[0].AvailableQuantity,booksPossessed: booksnUser.data.CurrentBookCount});    
                 console.log("After set state", this.state.availableBooks, this.state.booksPossessed);
-                if((this.state.availableBooks > 0) && (this.state.booksPossessed <=2)){
+                if((this.state.availableBooks > 0) && (this.state.booksPossessed <=1)){
                     console.log("Yay");
-                    this.setState({buttonDisabled: false});
+                    
                 }
             }
         }

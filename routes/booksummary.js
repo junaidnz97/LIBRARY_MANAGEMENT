@@ -14,7 +14,7 @@ var booksummary=function (app,con) {
         if(req.session.username && req.cookies.user_sid)
         {
             console.log(req.query);
-            var bookId=req.query.bookid;
+            var bookId=req.query.bookId;
             var q="select * from BookDetail where BookId="+bookId;
             var finalresp = await query(q,con);
             finalresp=JSON.parse(JSON.stringify(finalresp));

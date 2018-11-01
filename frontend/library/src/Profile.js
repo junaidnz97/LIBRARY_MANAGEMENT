@@ -1,74 +1,45 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar.js'
 import Header from './Header.js'
 import {PageHeader, Button, Table} from 'react-bootstrap'
 import Listcontainer from './Listcontainer.js'
-//import Cardlist from './Cardlist.js';
-import Footer from './Footer.js'
-import Historytable from './Historytable.js'
-import ProfileDetails from './ProfileDetails.js'
-//import Searchbox from './Searchbox,js';
-//import {robots} from './robots.js';
+import Currenttable from './Currenttable.js';
+import Historytable from './Historytable.js';
+import ProfileDetails from './ProfileDetails.js';
+import * as axios from 'axios';
 
 class Profile extends Component {
-    // constructor() {
-    //     // super();
-    //     // this.state = {
-    //     //     robots : robots,
-    //     //     //searchfield = ''
-    //     // }
-    // }
+    constructor() {
+        super();
+        this.state = {
+            profiledetails : {}
+        }
+    }
+
+    componentDidMount() {
+        let getData = async () => {            
+              let profiledetails = await axios({
+              method: 'get',
+              url: '/displayuserprofile'
+            });
+            if(profiledetails.data.output){
+                this.props.history.push('/login');
+            }
+            else{
+                console.log(profiledetails.data);
+                this.setState({profiledetails: profiledetails.data});
+            }
+        }
+        getData();
+    }
 
     render() {
         return (
             <div>
                 <Header />
                 <Listcontainer>
-                    <ProfileDetails />
-                    <Historytable />   
-                    <div>
-                <h2>Previous books in Possession </h2>
-                <Table responsive>
-                    <thead>
-                        <tr>
-                        <th>S.No</th>
-                        <th>Book name</th>
-                        <th>Author</th>
-                        <th>Publisher</th>
-                        <th>Date of issue</th>
-                        <th>Date of return</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td>1</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                        
-                        </tr>
-                        <tr>
-                        <td>2</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                            </tr>
-                        <tr>
-                        <td>3</td>
-                        <td>Theory of Everything</td>
-                        <td>Stephen.H</td>
-                        <td>Hawk Books</td>
-                        <td>22/10/2018</td>
-                        <td>24/10/2018</td>
-                           </tr>
-                    </tbody>
-                </Table>
-            </div>
-
+                    <ProfileDetails profiledetails = {this.state.profiledetails}/>
+                    <Currenttable />   
+                    <Historytable />
                 </Listcontainer>
             </div>
         );

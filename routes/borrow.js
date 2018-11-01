@@ -13,7 +13,7 @@ var borrow = function(app,con){
 	app.post("/borrow",async(req,res)=>{
 		if(req.session.username && req.cookies.user_sid)
         {
-			bookid = req.body.bid;
+			bookid = req.body.bookId;
 			userid = req.session.userid;
 			var q0 = "select AvailableQuantity from BookDetail where BookID = " + bookid;
 			console.log(q0);

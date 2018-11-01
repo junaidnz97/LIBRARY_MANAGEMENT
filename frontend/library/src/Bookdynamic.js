@@ -5,24 +5,23 @@ import {ButtonToolbar,Button,FormControl,FormGroup,ControlLabel} from 'react-boo
 
 
 class Bookdynamic extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         robots : robots,
-    //         //searchfield = ''
-    //     }
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            availableBooks: this.props.quantity
+        }
+    }
 
     render() {
         return (
             <div class="card">
                     <div class="card__content2">
                     <div>
-                        <h3>Books available</h3>
+                        <h3>Books available: {this.state.availableBooks}</h3>
                         <br/>
                         <ButtonToolbar>
-                        <Button bsStyle="primary">Borrow Book</Button>
-                        <Button bsStyle="primary">Share Books</Button>
+                            <Button bsStyle="primary">Borrow Book</Button>
+                            <Button bsStyle="primary">Share Books</Button>
                         </ButtonToolbar>
                     </div>
                       <form>

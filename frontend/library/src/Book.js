@@ -15,7 +15,9 @@ class Book extends Component {
     //         //searchfield = ''
     //     }
     // }
-
+    componentDidMount() {
+      window.scrollTo(0, 0)
+    }
     render() {
         return (
             <div>
@@ -25,7 +27,7 @@ class Book extends Component {
                 	<Bookinfo book={this.props.location.state.book}/>
                 </Bookcontainer>
                 <Listcontainer>
-                    <ReviewList />
+                    <ReviewList BookId={this.props.location.state.book.BookId}/>
                 </Listcontainer>
             </div>
         );

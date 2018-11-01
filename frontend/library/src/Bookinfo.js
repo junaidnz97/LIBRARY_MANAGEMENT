@@ -20,10 +20,10 @@ class Bookinfo extends Component {
             <Grid>
               <Row className="show-grid">
               <Col md={6}>
-                <Bookstatic />
+                <Bookstatic book = {this.props.book}/>
               </Col>
               <Col md={6}>
-                <Bookdynamic />
+                <Bookdynamic quantity = {this.props.book.AvailableQuantity}/>
               </Col>
             </Row>
            </Grid> 

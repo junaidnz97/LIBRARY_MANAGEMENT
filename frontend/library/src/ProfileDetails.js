@@ -28,13 +28,13 @@ const ProfileDetails = (props) => {
   </thead>
   <tbody>
     <tr>
-      <td>Paras Dahiya</td>
-      <td>3</td>
-      <td>S20160010060</td>
-      <td>14</td>
+      <td>{props.profiledetails.UserName}</td>
+      <td>{props.profiledetails.CurrentYear}</td>
+      <td>{props.profiledetails.UserId}</td>
+      <td>{props.profiledetails.Dues}</td>
       <td>
         <Link to='/fine'>
-          <Button bsStyle="primary">PAY FINE</Button>
+          <Button bsStyle="primary">View Dues</Button>
         </Link>
       </td></tr>
     </tbody>

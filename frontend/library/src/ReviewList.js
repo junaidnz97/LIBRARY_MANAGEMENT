@@ -1,36 +1,57 @@
 import React, { Component } from 'react';
 import Listcontainer from './Listcontainer.js';
 import Review from './Review.js';
+import * as axios from 'axios';
 
 class ReviewList extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         robots : robots,
-    //         //searchfield = ''
-    //     }
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            reviews : []
+        }
+    }
 
+    componentDidMount() {
+        let getData = async () => {            
+              let reviews = await axios({
+              method: 'get',
+              url: '/review',
+              params: {
+                bookId: this.props.BookId
+              }
+            });
+            if(reviews.data.output){
+                console.log("yayyyy")
+                this.props.history.push('/login');
+            }
+            else{
+                console.log("else")
+                console.log(reviews.data.details);
+                this.setState({reviews: reviews.data.details});
+            }
+        }
+        getData();
+    }
 
 
     render() {
-        // const Reviewarray = robots.map((user, i) =>{
-        //     return (
-        //         <Review 
-        //             // key={robots[i].id} 
-        //             // id={robots[i].id} 
-        //             // name={robots[i].name} 
-        //             // email={robots[i].email} 
-        //         />
-        //     );
-        // });
+
+        const reviews = this.state.reviews;
+        const Reviewarray = reviews.map((review, i) =>{
+            return (
+                <Review 
+                    key = {review.UserId}
+                    review = {review}
+                    index = {i}
+                />
+            );
+        });
 
         return (
             <div>
+                {console.log(this.props.BookId)}
                 <h3 style={{textAlign:"center"}}> Reviews & Ratings </h3>
-                <Review />
-                <Review />
-                <Review />
+                {Reviewarray}
             </div>
         );
     }

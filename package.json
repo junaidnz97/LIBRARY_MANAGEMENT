@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,14 @@
   "homepage": "https://github.com/junaidnz97/LIBRARY_MANAGEMENT#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
     "elasticsearch": "^15.2.0",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "mocha": "^5.2.0",
     "mysql": "^2.16.0",
     "nodemon": "^1.18.4",
     "request": "^2.88.0",

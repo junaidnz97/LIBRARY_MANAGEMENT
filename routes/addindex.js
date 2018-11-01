@@ -73,7 +73,7 @@ var mysql=require("mysql");
 /*
 {
     "mappings": {
-    "user": {
+    "mytype": {
         "include_in_all": false,
             "properties": {
             "BookName": { "type": "text", "include_in_all": true },

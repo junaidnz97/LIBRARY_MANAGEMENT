@@ -18,7 +18,7 @@ var booksummary=function (app,con) {
             var q="select * from BookDetail where BookId="+bookId;
             var finalresp = await query(q,con);
             finalresp=JSON.parse(JSON.stringify(finalresp));
-            q="select BookAuthor from bookauthor where BookId = "+bookId;
+            q="select BookAuthor from BookAuthor where BookId = "+bookId;
             var authorresp=await query(q,con);
             authorresp=JSON.parse(JSON.stringify(authorresp));
             finalresp[0].authors=authorresp;
@@ -26,7 +26,9 @@ var booksummary=function (app,con) {
              //   finalresp[0].authors.push(authorresp[i]);
             //console.log(authorresp);
             //console.log(authorresp[0]);
-            res.send(finalresp);
+            q = "select count(*) as count from BookLogTrigger where UId="+req.session.userid+" and DOR is NULL"
+            var count = await query(q,con);
+            res.send({"BookDetails":finalresp,"CurrentBookCount":count[0].count});
             // con.query(query,function (err,response) {
 
             //     if(err)
@@ -48,7 +50,7 @@ var booksummary=function (app,con) {
         {
            console.log(req.query);
            var bookId = req.query.bookId;
-           var q = "select * from RatingAndReview,(select UserId,UserName from Student) as T where BookId="+bookId+
+           var q = "select * from RatingAndReview,(select UserId,FirstName,LastName from Student) as T where BookId="+bookId+
                     " and T.UserId=RatingAndReview.UserId";
            console.log(q);
            var result = await query(q,con);

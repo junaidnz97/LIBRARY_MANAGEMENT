@@ -34,7 +34,7 @@ const ProfileDetails = (props) => {
       <td>{props.profiledetails.Dues}</td>
       <td>
         <Link to='/fine'>
-          <Button bsStyle="primary">PAY FINE</Button>
+          <Button bsStyle="primary">View Dues</Button>
         </Link>
       </td></tr>
     </tbody>

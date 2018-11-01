@@ -15,6 +15,7 @@ var deleteBookRecord = function(app,con){
 		{
       bookid = req.body.bid;
 
+
 			var q = "delete from BookDetail where BookId=" + bookid +";";
 			output = await query(q,con);
 			res.send(output);
@@ -22,7 +23,7 @@ var deleteBookRecord = function(app,con){
 			// 	if(err)
 			// 		throw err;
 			// 	output = JSON.parse(JSON.stringify(resp));
-	
+
 			// 	res.send(output);
 			// });
 		}

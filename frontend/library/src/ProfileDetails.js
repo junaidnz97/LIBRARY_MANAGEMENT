@@ -4,6 +4,7 @@ import { Table,thead } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import {Image, Col} from 'react-bootstrap';
 import './ProfileDetails.css'
+import placeholderprofile from'./placeholderprofile.png';
 
 const ProfileDetails = (props) => {
 	
@@ -11,7 +12,7 @@ const ProfileDetails = (props) => {
     <div className="row">
         <div>
             <Col md={4}>
-              <Image src="/placeholder-profile.png" circle />
+              <Image src={placeholderprofile} circle />
             </Col>
         </div>
         <br /><br /><br />

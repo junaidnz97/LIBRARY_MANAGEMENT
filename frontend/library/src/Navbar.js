@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl} from 'react-bootstrap';
 import './Navbar.css';
+import placeholderprofile from'./placeholderprofile.png';
+
 
 const Navigation = () => {
 
@@ -66,7 +68,7 @@ const Navigation = () => {
 			      	</NavDropdown>
 					<Navbar.Brand>
 	      			<Link to='/profile'>
-	      				<img className="sricity" src="http://pronksiapartments.ee/wp-content/uploads/2015/10/placeholder-face-big.png"  />	
+	      				<img className="sricity" src={placeholderprofile}  />	
 	      			</Link>
 					</Navbar.Brand>
 			    </Nav>

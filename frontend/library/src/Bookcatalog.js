@@ -28,7 +28,7 @@ class Bookcatalog extends Component {
             });
             if(books.data.output){
                 this.props.history.push('/login');
-                console.log("went in", books.data.output);
+                console.log("went in catalogue", books.data.output);
             }
             else{
                 console.log(books.data["book-details"]);

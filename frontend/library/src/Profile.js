@@ -35,7 +35,11 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <Header />
+                <div className='bg-success'>
+                <PageHeader>
+                    Welcome to your Profile <small>{this.state.profiledetails.UserName}</small>
+                </PageHeader>
+            </div>
                 <Listcontainer>
                     <ProfileDetails profiledetails = {this.state.profiledetails}/>
                     <Currenttable />   

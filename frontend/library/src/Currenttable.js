@@ -33,11 +33,12 @@ class Currenttable extends Component {
     render() {
 
         const currentbooks = this.state.currentbooks;
-        const Bookarray = currentbooks.map((book) =>{
+        const Bookarray = currentbooks.map((book, i) =>{
             return (
                 <Currentbook 
                     key={book.id} 
-                    book={book} 
+                    book={book}
+                    index={i} 
                 />
             );
         });

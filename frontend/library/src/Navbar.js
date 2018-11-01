@@ -2,6 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl} from 'react-bootstrap';
 import './Navbar.css';
+import * as axios from 'axios';
+
+const logout = () => {
+	let log =  axios({
+		method: 'post',
+		url: '/logout',		
+	});
+}
 
 const Navigation = () => {
 
@@ -62,7 +70,7 @@ const Navigation = () => {
 				        	</Link>
 				        </MenuItem>
 				        <MenuItem divider />
-				        <MenuItem eventKey={3.3}>Logout</MenuItem>
+				        <MenuItem eventKey={3.3} onClick={logout}>Logout</MenuItem>
 			      	</NavDropdown>
 					<Navbar.Brand>
 	      			<Link to='/profile'>

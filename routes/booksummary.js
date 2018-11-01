@@ -48,7 +48,7 @@ var booksummary=function (app,con) {
         {
            console.log(req.query);
            var bookId = req.query.bookId;
-           var q = "select * from RatingAndReview,(select UserId,UserName from Student) as T where BookId="+bookId+
+           var q = "select * from RatingAndReview,(select UserId,FirstName,LastName from Student) as T where BookId="+bookId+
                     " and T.UserId=RatingAndReview.UserId";
            console.log(q);
            var result = await query(q,con);

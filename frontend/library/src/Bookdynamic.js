@@ -18,7 +18,8 @@ class Bookdynamic extends Component {
         this.borrowBook = this.borrowBook.bind(this);
     }
 
-    updateBookDynamic(){
+    updateBookDynamic() {
+        console.log("in updateDynamic");
         let getData = async () => {            
               let booksnUser = await axios({
               method: 'get',
@@ -32,17 +33,20 @@ class Bookdynamic extends Component {
             }
             else{
                 console.log("Updating book");
-                this.setState({availableBooks: booksnUser.data.BookDetails.AvailableQuantity,booksPossessed: booksnUser.data.CurrentBookCount});
+                this.setState({availableBooks: booksnUser.data.BookDetails[0].AvailableQuantity,booksPossessed: booksnUser.data.CurrentBookCount});    
+                console.log("After set state", this.state.availableBooks, this.state.booksPossessed);
+                if((this.state.availableBooks > 0) && (this.state.booksPossessed <=2)){
+                    console.log("Yay");
+                    this.setState({buttonDisabled: false});
+                }
             }
         }
-        getData();
-
-        if(this.state.availableBooks > 0 && this.state.booksPossessed <=2){
-            this.setState({buttonDisabled: false});
-        }
+        getData();    
+        
     }
 
     componentDidMount() {
+        console.log("in comp mount")
         this.updateBookDynamic();
     }
 
@@ -60,11 +64,10 @@ class Bookdynamic extends Component {
             }
             else{
                 console.log("success", status.data.status);
+                this.updateBookDynamic();
             }
         }
-        borrow();
-        console.log("yayyy", this.state.booksPossessed)
-        this.updateBookDynamic();
+        borrow();      
     }
 
     render() {

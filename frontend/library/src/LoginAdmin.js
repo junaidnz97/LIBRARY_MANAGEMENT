@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 //import Logo from './Logo.png'
 import "./Login.css";
 
-const Login = () => {
+const LoginAdmin = () => {
 
     const particleOptions = {
       
@@ -27,23 +27,30 @@ const Login = () => {
         <Well>
 
           <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/IIIT_Sri_City_Logo.png/220px-IIIT_Sri_City_Logo.png" width={200} height={200} /></center><br/>
-          <Button
-            block
-            bsSize="large"
-            href="https://serene-wildwood-35121.herokuapp.com/login/5bd46914c77c1c0015cd830a"
-          >
-            Student Login 
-          </Button>
-          <Button
-            block
-            bsSize="large"
-            href="#"
-          >
-            Admin Login
-          </Button>
+          <Form horizontal>
+                  <br/>
+              <FormGroup controlId="formHorizontalEmail">
+                <Col sm={12}>
+                <FormControl type="text" placeholder="Username" />
+                </Col>
+              </FormGroup>
+              <FormGroup controlId="formHorizontalPassword">
+                  <Col sm={12}>
+                  <FormControl type="password" placeholder="Password" />
+                  </Col>
+              </FormGroup>
+              <FormGroup>
+                <center>
+                <Col sm={12}>
+                <Button type="submit">Login</Button>
+                </Col>
+                </center>
+            </FormGroup>
+                
+            </Form>
           </Well>
         </form>
       </div>
     );
 }
-export default Login;
+export default LoginAdmin;

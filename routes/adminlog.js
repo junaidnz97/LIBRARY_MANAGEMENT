@@ -1,13 +1,23 @@
 var adminlog=function (app,con) {
 
+    /*
+        Request is made for admin login
+     */
+
     app.post("/admin/login",function (req,res) {
 
+        /*
+            checking if admin is already loggedin
+         */
         if (req.session.adminusername == 'admin' && req.cookies.user_sid) {
             res.status(200).send({"status":"already logged in"});
         }
 
         else
         {
+            /*
+                Verifying if the details entered by admin is valid
+             */
             var q = "select * from  AdminDetails where UserName ='" + req.body.username + "' and Password = '"+req.body.password+"'"
             con.query(q,function (err,resp) {
 
@@ -16,6 +26,9 @@ var adminlog=function (app,con) {
                 if(!JSON.parse(JSON.stringify(resp)).length)
                     res.status(200).send({"status":"login unsuccessful"});
                 else{
+                    /*
+                        Cookies are set if the details entered are valid
+                     */
                     req.session.adminusername=req.body.username;
                     req.session.username=null;
                     res.status(200).send({"status":"login successful"});

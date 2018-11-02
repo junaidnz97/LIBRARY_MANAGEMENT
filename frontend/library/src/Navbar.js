@@ -6,10 +6,17 @@ import placeholderprofile from './placeholderprofile.png';
 import * as axios from 'axios';
 
 const logout = () => {
-	let log =  axios({
-		method: 'post',
-		url: '/logout',		
-	});
+	let getData = async () => {
+        let log =  await axios({
+            method: 'post',
+            url: '/logout'
+        });
+        console.log(log.data);
+        if(log.data.output){
+            window.location.replace("/admin");
+        }
+    }
+    getData();
 }
 
 

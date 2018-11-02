@@ -1,3 +1,9 @@
+// User: Admin
+// Function: Delete books from the library books
+// Input: BookId
+// Output: Book deletion status (For successful insertion)
+
+
 const mysql = require('mysql');
 var deleteBookRecord = function(app,con){
 

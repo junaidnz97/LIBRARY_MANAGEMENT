@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Bookdynamic.css';
 import Rating from './Rating.js';
-import {SplitButton, ButtonToolbar,Button,FormControl,FormGroup,ControlLabel,MenuItem} from 'react-bootstrap';
 import * as axios from 'axios';
-    
+import {ButtonToolbar,Button,FormControl,FormGroup,ControlLabel} from 'react-bootstrap';
+
 
 class Bookdynamic extends Component {
     constructor(props) {
@@ -35,9 +35,9 @@ class Bookdynamic extends Component {
                 console.log("Updating book");
                 this.setState({availableBooks: booksnUser.data.BookDetails[0].AvailableQuantity,booksPossessed: booksnUser.data.CurrentBookCount});    
                 console.log("After set state", this.state.availableBooks, this.state.booksPossessed);
-                if((this.state.availableBooks > 0) && (this.state.booksPossessed <=2)){
-                    console.log("Yay");
+                if((this.state.availableBooks > 0) && (this.state.booksPossessed <=1)){
                     this.setState({buttonDisabled: false});
+                    
                 }
             }
         }
@@ -78,16 +78,8 @@ class Bookdynamic extends Component {
                         <h3>Books available: {this.state.availableBooks}</h3>
                         <br/>
                         <ButtonToolbar>
-                            <Button bsStyle="primary">Borrow Book</Button>
-                            <SplitButton
-                                bsStyle="primary"
-                                title="Share Books"
-                            >
-                                <MenuItem eventKey="1">User1</MenuItem>
-                                <MenuItem eventKey="2">User2</MenuItem>
-                                <MenuItem eventKey="3">User3</MenuItem>
-                                
-                             </SplitButton>
+                            <Button bsStyle="primary" disabled={this.state.buttonDisabled} onClick={this.borrowBook}>Borrow Book</Button>
+                            <Button bsStyle="primary">Share Books</Button>
                         </ButtonToolbar>
                     </div>
                       <form>

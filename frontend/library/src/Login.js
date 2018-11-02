@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel, Well } from "react-bootstrap";
+import {Link} from 'react-router-dom';
 import Particles from 'react-particles-js';
+import LoginAdmin from './LoginAdmin.js';
 //import Logo from './Logo.png'
 import "./Login.css";
 
 const Login = () => {
 
-    const particleOptions = {
-      
-    }
     return (
       <div className="Login">
         <Particles
@@ -34,13 +33,15 @@ const Login = () => {
           >
             Student Login 
           </Button>
-          <Button
-            block
-            bsSize="large"
-            href="#"
-          >
+          <Link to='/admin/login'>
+            <Button
+              block
+              bsSize="large"
+            >
             Admin Login
           </Button>
+          </Link>
+
           </Well>
         </form>
       </div>

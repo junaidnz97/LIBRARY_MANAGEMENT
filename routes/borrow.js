@@ -63,7 +63,7 @@ var borrow = function(app,con){
         	var disp = req.body.disp;
         	if(disp)
         	{
-        		var q = "select *,FirstName,LastName from BorrowRequest,Student where BorrowRequest.UserId=Student.UserId";
+        		var q = "select *,FirstName,LastName,BookName,BookAuthor from BorrowRequest,Student,BookDetail,BookAuthor where BorrowRequest.UserId=Student.UserId and BookDetail.BookId = BookAuthor.BookId and BookDetail.BookId = BorrowRequest.BookId";
         		console.log(q);
         		var result = await query(q,con);
         		res.status(200).send(result); 

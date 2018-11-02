@@ -1,3 +1,8 @@
+// User: Student
+// Function: To request another student to share the book
+// Input: BookId,UserId
+// Output: Notification will be sent for share request
+
 const mysql = require('mysql');
 var shareBookRequest = function(app,con){
 

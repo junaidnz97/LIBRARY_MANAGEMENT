@@ -24,7 +24,7 @@ var adminlog=function (app,con) {
                 if(err)
                     throw err;
                 if(!JSON.parse(JSON.stringify(resp)).length)
-                    res.send({"status":"login unsuccessful"});
+                    res.status(200).send({"status":"login unsuccessful"});
                 else{
                     /*
                         Cookies are set if the details entered are valid

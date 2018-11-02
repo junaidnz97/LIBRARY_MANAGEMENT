@@ -12,6 +12,7 @@ import Suggest from './Suggest.js';
 import Donate from './Donate.js';
 import Payfine from './Payfine.js';
 import Book from './Book.js';
+import Bookcatalogsearch from './Bookcatalogsearch.js';
 
 const Structure = ({ Comp, hist, loc }) => (
 	<React.Fragment>
@@ -22,12 +23,13 @@ const Structure = ({ Comp, hist, loc }) => (
 	</React.Fragment>
 )
 
-const AllRoutes = () => {
+const AllRoutes = (props) => {
 	return(
 		<Switch> 
 		    <Route exact path="/login" component={Login} />
-			<Route exact path='/catalogue' component={p => <Structure Comp={Bookcatalog} hist={p.history}/>}/>
+			<Route exact path='/catalogue' component={p => <Structure Comp={Bookcatalog} hist={p.history} />}/>
 		    <Route exact path="/" component={p => <Structure Comp={Bookcatalog} hist={p.history}/>} />
+			<Route path='/cataloguesearch' component={p => <Structure Comp={Bookcatalogsearch} hist={p.history} />}/>
 			<Route path='/profile' component={p => <Structure Comp={Profile} hist={p.history}/>}/>
 			<Route path="/admin" component={Admin} />
 			<Route path='/book' component={p => <Structure Comp={Book} hist={p.history} loc={p.location}/>} />

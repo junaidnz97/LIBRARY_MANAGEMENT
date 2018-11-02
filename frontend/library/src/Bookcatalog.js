@@ -6,8 +6,7 @@ import Header from './Header.js'
 import Listcontainer from './Listcontainer.js'
 import {Pagination} from 'react-bootstrap';
 import Cardlist from './Cardlist.js';
-//import Searchbox from './Searchbox,js';
-import {robots} from './robots.js';
+import Navbar from './Navbar.js';
 
 class Bookcatalog extends Component {
     constructor() {

@@ -84,7 +84,7 @@ var borrow = function(app,con){
 							HBookId;
 					var res1 = await query(q1,con);
 					console.log(q1,res1);
-					res.status(200).send({"status":"book issued"});
+					res.status(200).send({"output":"book issued"});
 				}
 				else
 				{
@@ -94,7 +94,7 @@ var borrow = function(app,con){
 							HBookId;
 					var res1 = await query(q1,con);
 					console.log(res1);
-					res.send({"status":"book not issued"});
+					res.send({"output":"book not issued"});
 				}
 
 			}

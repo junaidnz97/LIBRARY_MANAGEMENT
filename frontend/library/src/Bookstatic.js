@@ -9,7 +9,7 @@ const Bookstatic = (props) => {
               <div class="card__content">
                 <h3>{props.book.BookName}</h3>
                 <p>
-                    <strong>Author(s):</strong> Aditya
+                    <strong>Author(s):</strong> {props.book.BookAuthor}
                 </p>
                 <p>
                     <strong>Publisher:</strong> {props.book.Publisher}

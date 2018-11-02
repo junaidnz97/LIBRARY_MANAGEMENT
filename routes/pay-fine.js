@@ -16,8 +16,9 @@ var pay_fine = function(app,con){
 			var q = "select Dues from Student where UserId="+userId;
 			console.log(q);
 			var dues = await query(q,con);
-			var q1 = "select * from CurrentBookStatus where UserId ="+userId+
-						" and DuesGenerated > 0";
+			var q1 = "select *,BookName,BookAuthor from CurrentBookStatus,BookDetail,BookAuthor where UserId ="+userId+
+						" and DuesGenerated > 0 and BookDetail.BookId = BookAuthor.BookId and CurrentBookStatus.BookId = BookAuthor.BookId";
+
 			var Details = [];
 			Details.push(await query(q1,con));
 			// let result = await query(q1,con);

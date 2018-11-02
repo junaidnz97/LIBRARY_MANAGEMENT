@@ -7,7 +7,7 @@ const Review = (props) => {
 	return (
 		<div className="br3 pa3 ma3 dib bw2 shadow-5" style={{width:'100%'}}>
 			<div className="contain">
-				<h3>Name</h3>
+				<h3>{props.review.FirstName + " " +props.review.LastName}</h3>
 				<p> {props.review.Review} </p>
 			</div>
 			<div className="card__">

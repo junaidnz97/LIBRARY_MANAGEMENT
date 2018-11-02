@@ -11,11 +11,14 @@ class Bookdynamic extends Component {
         this.state = {
             availableBooks: 0,
             buttonDisabled: true,
-            booksPossessed: 0
+            booksPossessed: 0,
+            reviewArea: ''
         }
 
         this.updateBookDynamic = this.updateBookDynamic.bind(this);
         this.borrowBook = this.borrowBook.bind(this);
+        this.review = this.review.bind(this);
+        this.handleReviewChange = this.handleReviewChange.bind(this);
     }
 
     updateBookDynamic() {
@@ -70,6 +73,31 @@ class Bookdynamic extends Component {
         borrow();      
     }
 
+    review() {
+        let reviewGive = async () => {            
+              let reviewGive = await axios({
+              method: 'post',
+              url: '/rate_review',
+              data: {
+                bookId: this.props.BookId,
+                rating: 4,
+                review: this.state.reviewArea
+              }
+            });
+            if(reviewGive.data.output){
+                this.props.history.push('/login');
+            }
+            else{
+                console.log("success", reviewGive.data.status);
+            }
+        }
+        reviewGive(); 
+    }
+
+    handleReviewChange(e) {
+       this.setState({reviewArea: e.target.value});
+    }
+
     render() {
         return (
             <div class="card">
@@ -88,10 +116,9 @@ class Bookdynamic extends Component {
                             
 
                         </ControlLabel>
-
-                        <FormControl bsSize="large" componentClass="textarea" placeholder="Write your review here..." />
+                        <FormControl bsSize="large" componentClass="textarea" onChange={this.handleReviewChange} placeholder="Write your review here..." />
                         <Rating/><br/> 
-                        <Button bsStyle="primary" style={{float:"right"}} type="submit">Submit</Button>
+                        <Button bsStyle="primary" style={{float:"right"}} onClick={this.review}>Submit</Button>
 
                         </FormGroup>
                       </form>    

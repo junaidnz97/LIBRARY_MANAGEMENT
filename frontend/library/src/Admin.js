@@ -8,6 +8,7 @@ import Footer from './Footer.js'
 import UsersTable from './UsersTable'
 import Listcontainer from './Listcontainer';
 import ViewBooks from './ViewBooks';
+import LoginAdmin from './LoginAdmin.js';
 
 const Structure = ({ Comp, hist, loc }) => (
 	<React.Fragment>
@@ -89,6 +90,7 @@ const Admin = () => {
         return (
                 <Switch>
                     <Route exact path="/admin" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
+                    <Route exact path="/admin/login" component={LoginAdmin} />
                     <Route path="/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
                     <Route path="/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
                     <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />

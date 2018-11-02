@@ -21,13 +21,13 @@ class Bookcatalog extends Component {
     
 
     componentDidMount() {
-        console.log(this.props);
+        // console.log(this.props.history.location.state.searchVal);
         let getData = async () => {            
               let books = await axios({
               method: 'get',
               url: '/cataloguesearch',
               params: {
-                query: this.props.location.state.searchVal
+                query: this.props.history.location.state.searchVal
               }
             });
             if(books.data.output){

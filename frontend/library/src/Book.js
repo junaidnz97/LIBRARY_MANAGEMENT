@@ -21,10 +21,10 @@ class Book extends Component {
     render() {
         return (
             <div>
-                {console.log(this.props.location.state.book)}
+                {/* {console.log(this.props.location.state.book)} */}
                 <Header />
                 <Bookcontainer>
-                	<Bookinfo book={this.props.location.state.book}/>
+                	<Bookinfo history={this.props.history} book={this.props.location.state.book}/>
                 </Bookcontainer>
                 <Listcontainer>
                     <ReviewList BookId={this.props.location.state.book.BookId}/>

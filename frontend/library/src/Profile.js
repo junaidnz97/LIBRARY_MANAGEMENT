@@ -8,8 +8,8 @@ import ProfileDetails from './ProfileDetails.js';
 import * as axios from 'axios';
 
 class Profile extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             profiledetails : {}
         }
@@ -35,7 +35,11 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <Header />
+                <div className='bg-success'>
+                <PageHeader>
+                    Welcome to your Profile <small>{this.state.profiledetails.UserName}</small>
+                </PageHeader>
+            </div>
                 <Listcontainer>
                     <ProfileDetails profiledetails = {this.state.profiledetails}/>
                     <Currenttable />   

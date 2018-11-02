@@ -2,7 +2,15 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl} from 'react-bootstrap';
 import './Navbar.css';
-import placeholderprofile from'./placeholderprofile.png';
+import placeholderprofile from './placeholderprofile.png';
+import * as axios from 'axios';
+
+const logout = () => {
+	let log =  axios({
+		method: 'post',
+		url: '/logout',		
+	});
+}
 
 
 const Navigation = () => {
@@ -21,15 +29,15 @@ const Navigation = () => {
 	 		</Navbar.Header>
 	  		<Navbar.Collapse>
 			    <Nav>
-					<NavItem eventKey={2} href="#">
+					<NavItem eventKey={2} onClick={_ => window.history.back()}   href="#">
 			    		<i class="fa fa-chevron-left"></i> Back
 			    	</NavItem>
 			      	<NavDropdown eventKey={3} title="Categories" id="basic-nav-dropdown">
-			        	<MenuItem eventKey={3.1}>Action</MenuItem>
-				        <MenuItem eventKey={3.2}>Another action</MenuItem>
-				        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+			        	<MenuItem eventKey={3.1}>Mathematics</MenuItem>
+				        <MenuItem eventKey={3.2}>Electronics</MenuItem>
+				        <MenuItem eventKey={3.3}>Programming</MenuItem>
 				        <MenuItem divider />
-				        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+				        <MenuItem eventKey={3.3}>Journals</MenuItem>
 			      	</NavDropdown>
 				    <Navbar.Form pullLeft>
 				     	<FormGroup>
@@ -44,7 +52,7 @@ const Navigation = () => {
 			    	</NavItem>
 			    	<NavDropdown eventKey={3} 
 			    		title={ <span>
-			    				<i class="fa fa-user"></i> Welcome, Paras!
+			    				<i class="fa fa-user"></i> Welcome User !
 			    			</span>
 			    		} 
 			    		id="basic-nav-dropdown">
@@ -64,7 +72,7 @@ const Navigation = () => {
 				        	</Link>
 				        </MenuItem>
 				        <MenuItem divider />
-				        <MenuItem eventKey={3.3}>Logout</MenuItem>
+				        <MenuItem eventKey={3.3} onClick={logout}>Logout</MenuItem>
 			      	</NavDropdown>
 					<Navbar.Brand>
 	      			<Link to='/profile'>

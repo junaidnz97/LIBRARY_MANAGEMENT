@@ -4,7 +4,8 @@ import { Table,thead } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import {Image, Col} from 'react-bootstrap';
 import './ProfileDetails.css'
-import placeholderprofile from'./placeholderprofile.png';
+import placeholderprofile from './placeholderprofile.png';
+
 
 const ProfileDetails = (props) => {
 	

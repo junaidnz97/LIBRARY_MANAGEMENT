@@ -14,7 +14,7 @@ class Bookcatalog extends Component {
         super();
         this.state = {
             books : [],
-            c: 1
+            c: 1,
         }
     }
 
@@ -27,6 +27,7 @@ class Bookcatalog extends Component {
               url: '/catalogue'
             });
             if(books.data.output){
+                console.log(this.props)
                 this.props.history.push('/login');
                 console.log("went in", books.data.output);
             }
@@ -84,6 +85,7 @@ class Bookcatalog extends Component {
                 </Container>                        
                 </Listcontainer>
             </div>
+
         );
 
     }

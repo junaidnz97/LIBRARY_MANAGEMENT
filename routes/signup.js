@@ -12,6 +12,11 @@ const {query} = require('../database/db');
 app.post("/signup",async(req,res)=>{
 
 
+    /*
+        Incase a new user needs to be registered,we can sign him/her up.
+        We are not using this api since currently common api is being used.
+     */
+
 	var q='select count(*) as count from Authorization where UserName="'+req.body.username+'" or EmailId="'+req.body.emailid+'"';
 	var x = await query(q,con);
 	x = x[0].count;
@@ -51,6 +56,12 @@ app.post("/login",async(req,res)=>{
 
 		//console.log(req.session.username);
 		//console.log(req.cookies.user_sid);
+
+		/*
+			A temporary login function is used for testing purposes.
+			If the details entered by the user is matched,it is going to make him loggedin.
+		 */
+
 		if(req.session.username && req.cookies.user_sid)
 				res.send({"status":"already logged in"});
 		else{
@@ -81,8 +92,12 @@ app.post("/login",async(req,res)=>{
 
 app.post("/logout",function(req,res){
 
+			/*
+				A logout function.
+				When a user wishes to logout, the cookies stored are cleared.
+			 */
 			res.clearCookie('user_sid');
-			res.send("logut successful");
+			res.status(200).send("logut successful");
 });
 
 app.get("/",function(req,res){

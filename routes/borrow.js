@@ -59,32 +59,37 @@ var borrow = function(app,con){
 	app.post("/view-request-admin",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
         {
+        	console.log("in fn");
         	var disp = req.body.disp;
         	if(disp)
         	{
         		var q = "select *,FirstName,LastName from BorrowRequest,Student where BorrowRequest.UserId=Student.UserId";
         		console.log(q);
         		var result = await query(q,con);
-        		res.send(result); 
+        		res.status(200).send(result); 
         	}
         	else{
 	        	var type = req.body.type;
+	        	console.log("in else");
 				if(type)
 				{
-					var HBookId = req.body.hbookid;
-					var UserId = req.body.userid;
+					console.log("in type");
+					var HBookId = req.body.hbookId;
+					var UserId = req.body.userId;
 					var q = "update CurrentBookStatus set issuedate = now(), EReturnDate = now()+interval 14 day,UserId = "
 					 		+UserId+" where HBookId="+HBookId;
 					var result = await query(q,con);
+
 					var q1 ="delete from BorrowRequest where UserId ="+UserId+" and HBookId="+
 							HBookId;
 					var res1 = await query(q1,con);
-					res.send({"status":"book issued"});
+					console.log(q1,res1);
+					res.status(200).send({"status":"book issued"});
 				}
 				else
 				{
-					var HBookId = req.body.hbookid;
-					var UserId = req.body.userid;
+					var HBookId = req.body.hbookId;
+					var UserId = req.body.userId;
 					var q1 ="delete from BorrowRequest where UserId ="+UserId+" and HBookId="+
 							HBookId;
 					var res1 = await query(q1,con);
@@ -96,7 +101,8 @@ var borrow = function(app,con){
 		}
 		else
 		{
-			res.send({"output":"notloggedin"});
+			console.log("in else");
+			res.status(200).send({"output":"notloggedin"});
 		}
 	});
 }

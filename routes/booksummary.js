@@ -1,6 +1,10 @@
 const mysql = require('mysql');
 var booksummary=function (app,con) {
 
+    /*
+        Function to return the details of a book
+
+     */
     const {query} = require('../database/db');
     
     // var con = mysql.createConnection({
@@ -14,20 +18,44 @@ var booksummary=function (app,con) {
         if(req.session.username && req.cookies.user_sid)
         {
             console.log(req.query);
+            /*
+                bookid is passed along with the request
+             */
+
             var bookId=req.query.bookId;
             var q="select * from BookDetail where BookId="+bookId;
             console.log(q);
+
+            /*
+                The query is run and output is stored in the variable final response
+             */
+
             var finalresp = await query(q,con);
             finalresp=JSON.parse(JSON.stringify(finalresp));
+
+            /*
+                Since the Book Authors can be multiple,Author is stored in a seperate table
+                and a query is  run to get the autor details of the respective book
+             */
+
             q="select BookAuthor from BookAuthor where BookId = "+bookId;
             console.log(q);
             var authorresp=await query(q,con);
             authorresp=JSON.parse(JSON.stringify(authorresp));
+
+            /*
+                The author details is added to the final response Json object
+             */
+
             finalresp[0].authors=authorresp;
             //for(var i=0;i<authorresp.length;i++);
              //   finalresp[0].authors.push(authorresp[i]);
             //console.log(authorresp);
             //console.log(authorresp[0]);
+
+            /*
+
+             */
             q = "select count(*) as count from BookLogTrigger where UId="+req.session.userid+" and DOR is NULL";
             var count1 = await query(q,con);
             q = "select count(*) as count from BorrowRequest where UserId="+req.session.userid;

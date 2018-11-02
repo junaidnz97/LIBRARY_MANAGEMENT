@@ -1,5 +1,14 @@
 //var addindex=function (app,con,client) {
+/*
+    A simple nodejs script to index the book details to elastic search.
+    This block of code won't run along with the project,but has to be ran
+    seperately incase any data loss happens in elastic search.
+ */
+
 var mysql=require("mysql");
+        /*
+            Creating mysql connection
+         */
         var con = mysql.createPool({
             host: "addbinstance2.cfdhbd9aqiv2.us-east-1.rds.amazonaws.com",
             user: "AdMenon",
@@ -9,11 +18,18 @@ var mysql=require("mysql");
         });
 
         var elasticsearch=require("elasticsearch");
+        /*
+            Connecting to elastic search
+         */
         var client=new elasticsearch.Client({
 
             host: "localhost:9200",
             log : "trace"
         });
+
+        /*
+            Checking if the connection got added successfully or if the cluster is down.
+         */
 
         client.ping({
             // ping usually has a 3000ms timeout
@@ -26,11 +42,22 @@ var mysql=require("mysql");
             }
         });
 
+        /*
+            Running the query to get bookdetails
+         */
+
         var query = "select *,BookAuthor from BookDetail,BookAuthor where BookDetail.BookId = BookAuthor.BookId";
         con.query(query, function (err, resp) {
 
             resp=JSON.parse(JSON.stringify(resp));
             console.log(resp.length);
+
+            /*
+                Each row of the returned details is converted into
+                a JSON object and is indexed into elasticsearch under the index 'myindex'
+                and type 'mytype'
+             */
+
             for(var i =0;i<resp.length;i++)
             {
 

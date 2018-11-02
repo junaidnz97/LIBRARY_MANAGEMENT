@@ -1,3 +1,9 @@
+// User: Admin
+// Function: Remove book request from the list of request
+// Input: BookName
+// Output: Request deletion status (For successful insertion)
+
+
 const mysql = require('mysql');
 var removeBookRequest = function(app,con){
 

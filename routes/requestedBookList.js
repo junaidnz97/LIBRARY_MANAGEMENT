@@ -1,3 +1,9 @@
+// User: Admin
+// Function: View all the books requested by students
+// Input: NULL
+// Output: list of requested books
+
+
 const mysql = require('mysql');
 var requestedBookList = function(app,con){
 

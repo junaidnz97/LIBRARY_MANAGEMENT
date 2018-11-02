@@ -1,3 +1,11 @@
+// User: Admin
+// Function: Add new books to the library books
+// Input: BookName,BookType,BookEdition,quantity,BookDescription,premium,publisher,ISBN,img_url_s,img_url_m,img_url_l
+// Output: Book insertion status (For successful insertion)
+// 				ISBN required (if no ISBN provided)
+// 				BookName required (if no BookNameprovided)
+// 				quantity required (if no quantity provided)
+
 const mysql = require('mysql');
 var updateBookRecord = function(app,con){
 

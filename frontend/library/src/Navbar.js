@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button} from 'react-bootstrap';
 import './Navbar.css';
 import placeholderprofile from './placeholderprofile.png';
 import * as axios from 'axios';
@@ -13,7 +13,22 @@ const logout = () => {
 }
 
 
-const Navigation = () => {
+class Navigation extends Component {
+
+	constructor() {
+        super();
+        this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+            value: ''
+        }
+    }
+
+    handleChange(e) {
+	    this.setState({ value: e.target.value });
+	  }
+
+    render() {
 
 	return (
 		<Navbar inverse collapseOnSelect fixedTop>
@@ -41,7 +56,15 @@ const Navigation = () => {
 			      	</NavDropdown>
 				    <Navbar.Form pullLeft>
 				     	<FormGroup>
-				    		<FormControl type="text"  placeholder="Search" />
+				    		<FormControl
+				    			type="text"
+					            value={this.state.value}
+					            placeholder="Search"
+					            onChange={this.handleChange}
+				    		 />
+				    		 <Link to = {{ pathname: '/cataloguesearch', state: { searchVal: this.state.value} }}>
+				    		 	<Button>Search Now</Button>
+				    		 </Link>
 				    	</FormGroup>{' '}
 				    </Navbar.Form>
 				    
@@ -83,6 +106,8 @@ const Navigation = () => {
 	  		</Navbar.Collapse>
 		</Navbar>
 	);
+
+}
 }
 
 export default Navigation;

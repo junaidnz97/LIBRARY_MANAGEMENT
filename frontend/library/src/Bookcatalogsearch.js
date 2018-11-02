@@ -8,6 +8,7 @@ import {Pagination} from 'react-bootstrap';
 import Cardlist from './Cardlist.js';
 import Navbar from './Navbar.js';
 
+
 class Bookcatalog extends Component {
     constructor() {
         super();
@@ -20,10 +21,14 @@ class Bookcatalog extends Component {
     
 
     componentDidMount() {
+        console.log(this.props);
         let getData = async () => {            
               let books = await axios({
               method: 'get',
-              url: '/catalogue'
+              url: '/cataloguesearch',
+              params: {
+                query: this.props.location.state.searchVal
+              }
             });
             if(books.data.output){
                 console.log(this.props)
@@ -31,8 +36,8 @@ class Bookcatalog extends Component {
                 console.log("went in", books.data.output);
             }
             else{
-                console.log(books.data["book-details"]);
-                this.setState({books: books.data["book-details"]});
+                console.log(books.data);
+                this.setState({books: books.data});
             }
         }
         getData();

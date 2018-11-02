@@ -14,7 +14,7 @@ var adminlog=function (app,con) {
                 if(err)
                     throw err;
                 if(!JSON.parse(JSON.stringify(resp)).length)
-                    res.send({"status":"login unsuccessful"});
+                    res.status(200).send({"status":"login unsuccessful"});
                 else{
                     req.session.adminusername=req.body.username;
                     req.session.username=null;

@@ -102,7 +102,7 @@ describe("test",function () {
             });
     });
 
-    /*it("borrowloggedin",function(done){
+    it("borrowloggedin",function(done){
         chai.request(app)
             .post("/borrow")
             .set('Cookie', cookievalue)
@@ -112,37 +112,15 @@ describe("test",function () {
                 done();
             });
     });
-    */
     it("borrownotloggedin",function(done){
         chai.request(app)
             .post("/borrow")
-            .send({"bookId":989})
+            .send({"bookId":21})
             .then(function(res){
                 assert.equal(res.status,200);
                 done();
             });
     });
-
-    /*it("returnloggedin",function(done){
-        chai.request(app)
-            .post("/return")
-            .set('Cookie', cookievalue)
-            .send({"bookId":21,"hbookId":7231})
-            .then(function(res){
-                assert.equal(res.status,200);
-                done();
-            });
-    });
-
-    it("returnnotloggedin",function(done){
-        chai.request(app)
-            .post("/return")
-            .send({"bookId":21,"hbookId":7231})
-            .then(function(res){
-                assert.equal(res.status,200);
-                done();
-            });
-    });*/
 
     it("displayuserprofileloggedin",function(done){
         chai.request(app)
@@ -181,6 +159,182 @@ describe("test",function () {
             });
     });
 
+    it("booksinpossessionloggedin",function(done){
+        chai.request(app)
+            .get("/books-in-possession")
+            .set('Cookie', cookievalue)
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("booksinpossessionnotloggedin",function(done){
+        chai.request(app)
+            .get("/books-in-possession")
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("bookshistoryloggedin",function(done){
+        chai.request(app)
+            .get("/books-history")
+            .set('Cookie', cookievalue)
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+    it("bookshistorynotloggedin",function(done){
+        chai.request(app)
+            .get("/books-history")
+            .then(function(res){
+                assert.equal(res.status,200);
+                done();
+            });
+    });
+
+
+    it("userlogout",(done)=>{
+        chai.request(app)
+            .post("/logout")
+            .then((res)=>{
+                assert.equal(res.status,200);
+                cookievalue = "";
+                console.log(cookievalue);
+                done();
+            })
+    });
+
+    it("adminlogin",(done)=>{
+        chai.request(app)
+            .post("/admin/login")
+            .send({"username":"admin","password":"iiits123"})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                cookievalue = res.headers['set-cookie'].pop().split(';')[0];
+                console.log(cookievalue);
+                done();
+            })
+    });
+
+    it("userlistloggedin",(done)=>{
+        chai.request(app)
+            .get("/view-user-list")
+            .set('Cookie', cookievalue)
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+
+    it("userlistnotloggedin",(done)=>{
+        chai.request(app)
+            .get("/view-user-list")
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+    it("viewrequestlistloggedin",(done)=>{
+        chai.request(app)
+            .post("/view-request-admin")
+            .set('Cookie', cookievalue)
+            .send({"disp":1})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+    it("viewrequestlistnotloggedin",(done)=>{
+        chai.request(app)
+            .post("/view-request-admin")
+            .send({"disp":1})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+    it("approveborrowloggedin",(done)=>{
+        chai.request(app)
+            .post("/view-request-admin")
+            .set('Cookie', cookievalue)
+            .send({"type":1,"hbookId":7231,"userId":46})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+    it("approveborrownotloggedin",(done)=>{
+        chai.request(app)
+            .post("/view-request-admin")
+            .send({"type":1,"hbookId":7231,"userId":46})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+    
+    it("rejectborrowloggedin",(done)=>{
+        chai.request(app)
+            .post("/view-request-admin")
+            .set('Cookie', cookievalue)
+            .send({"hbookId":7231,"userId":51})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+    it("rejectborrownotloggedin",(done)=>{
+        chai.request(app)
+            .post("/view-request-admin")
+            .send({"hbookId":7231,"userId":51})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+    it("returnloggedin",(done)=>{
+        chai.request(app)
+            .post("/return")
+            .set('Cookie', cookievalue)
+            .send({"hbookId":7231,"userId":46,"bookId":21})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+    it("returnnotloggedin",(done)=>{
+        chai.request(app)
+            .post("/return")
+            .send({"hbookId":7231,"userId":46,"bookId":21})
+            .then((res)=>{
+                assert.equal(res.status,200);
+                done();
+            })
+    });
+
+
+    it("adminlogout",(done)=>{
+        chai.request(app)
+            .post("/admin/logout")
+            .then((res)=>{
+                assert.equal(res.status,200);
+                cookievalue = "";
+                console.log(cookievalue);
+                done();
+            })
+    });
 
 
 

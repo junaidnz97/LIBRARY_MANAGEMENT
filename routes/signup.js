@@ -82,7 +82,7 @@ app.post("/login",async(req,res)=>{
 app.post("/logout",function(req,res){
 
 			res.clearCookie('user_sid');
-			res.send("logut successful");
+			res.status(200).send("logut successful");
 });
 
 app.get("/",function(req,res){

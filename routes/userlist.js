@@ -8,11 +8,12 @@ var userList = function(app,con){
 		{
 			var q = "select * from Student";
 			var result = await query(q,con);
-			res.send({"users":result});
+			res.status(200).send({"users":result});
 		}
 		else
 		{
-			res.send({"output":"notloggedin"});
+			console.log("in else");
+			res.status(200).send({"output":"notloggedin"});
 		}
 	});
 

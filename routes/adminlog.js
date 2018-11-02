@@ -8,7 +8,7 @@ var adminlog=function (app,con) {
 
         else
         {
-            var q = "select * from  Admin where UserName ='" + req.body.username + "' and Password = '"+req.body.password+"'"
+            var q = "select * from  AdminDetails where UserName ='" + req.body.username + "' and Password = '"+req.body.password+"'"
             con.query(q,function (err,resp) {
 
                 if(err)

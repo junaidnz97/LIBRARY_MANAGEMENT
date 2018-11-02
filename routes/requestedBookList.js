@@ -16,7 +16,7 @@ var requestedBookList = function(app,con){
 		}
 		else
 		{
-			res.status(400).send({"output":"notloggedin"});
+			res.status(200).send({"output":"notloggedin"});
 		}
 	});
 

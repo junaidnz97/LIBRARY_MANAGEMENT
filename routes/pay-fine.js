@@ -39,7 +39,7 @@ var pay_fine = function(app,con){
 		}
 		else
 		{
-			res.status(400).send({"output":"notloggedin"});
+			res.status(200).send({"output":"notloggedin"});
 		}
 	});
 	app.post("/pay-fine",async(req,res)=>{

@@ -46,7 +46,7 @@ var booksummary=function (app,con) {
         else
         {
 
-            res.status(400).send({"output":"notloggedin"});
+            res.status(200).send({"output":"notloggedin"});
         }
 
     });
@@ -70,7 +70,7 @@ var booksummary=function (app,con) {
         }
         else
         {
-            res.status(400).send({"output":"notloggedin"});
+            res.status(200).send({"output":"notloggedin"});
         } 
     });
     

@@ -59,7 +59,7 @@ describe("test",function () {
             .get("/catalogue")
             .then(function (res) {
                 //console.log(res.status);
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });
@@ -78,7 +78,7 @@ describe("test",function () {
         chai.request(app)
             .get("/booksummary?bookId=21")
             .then(function(res){
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });
@@ -97,7 +97,7 @@ describe("test",function () {
         chai.request(app)
             .get("/review?bookId=21")
             .then(function(res){
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });
@@ -118,7 +118,7 @@ describe("test",function () {
             .post("/borrow")
             .send({"bookId":989})
             .then(function(res){
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });
@@ -139,7 +139,7 @@ describe("test",function () {
             .post("/return")
             .send({"bookId":21,"hbookId":7231})
             .then(function(res){
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });*/
@@ -157,7 +157,7 @@ describe("test",function () {
         chai.request(app)
             .get("/displayuserprofile")
             .then(function(res){
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });
@@ -176,7 +176,7 @@ describe("test",function () {
         chai.request(app)
             .post("/fine-amount")
             .then(function(res){
-                assert.equal(res.status,400);
+                assert.equal(res.status,200);
                 done();
             });
     });

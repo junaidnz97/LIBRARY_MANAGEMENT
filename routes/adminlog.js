@@ -3,7 +3,7 @@ var adminlog=function (app,con) {
     app.post("/admin/login",function (req,res) {
 
         if (req.session.adminusername == 'admin' && req.cookies.user_sid) {
-            res.send({"status":"already logged in"});
+            res.status(200).send({"status":"already logged in"});
         }
 
         else
@@ -18,7 +18,7 @@ var adminlog=function (app,con) {
                 else{
                     req.session.adminusername=req.body.username;
                     req.session.username=null;
-                    res.send({"status":"login successful"});
+                    res.status(200).send({"status":"login successful"});
                 }
             });
         }
@@ -27,7 +27,7 @@ var adminlog=function (app,con) {
     app.post("/admin/logout",function (req,res) {
 
         res.clearCookie('user_sid');
-        res.send({"status":"logut successful"});
+        res.status(200).send({"status":"logut successful"});
     });
 
     app.post("/admin/changepassword",function(req,res){

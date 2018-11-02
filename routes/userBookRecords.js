@@ -27,11 +27,12 @@ var userBookRecords = function(app,con){
 				Details.push({"IssueDate":result[i].DOI,"BookId":bid,"BookName":result2[0].BookName,
 						"BookAuthor":result2[0].BookAuthor});
 			}
-			res.send({"Details":Details});
+			res.status(200).send({"Details":Details});
 		}
 		else
 		{
-			res.send({"output":"notloggedin"});
+			console.log("in else");
+			res.status(200).send({"output":"notloggedin"});
 		}
 	});
 	app.get("/books-history",async(req,res)=>{
@@ -57,11 +58,12 @@ var userBookRecords = function(app,con){
 				Details.push({"IssueDate":result[i].DOI,"ReturnDate":result[i].DOR,"BookId":bid,"BookName":result2[0].BookName,
 						"BookAuthor":result2[0].BookAuthor});
 			}
-			res.send({"Details":Details});
+			res.status(200).send({"Details":Details});
 		}
 		else
 		{
-			res.send({"output":"notloggedin"});
+			console.log("in else");
+			res.status(200).send({"output":"notloggedin"});
 		}
 	});
 

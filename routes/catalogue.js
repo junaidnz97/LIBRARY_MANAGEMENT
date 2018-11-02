@@ -10,11 +10,18 @@ var catalogue = function(app,con){
  //    database:"heroku_2460774cb2e36e4",
 	// });
 
+	/*
+	 	A function to return all the books in the database.
+	 */
 	app.get("/catalogue",async(req,res)=>{
 		//console.log(req.session.username ," ",req.cookies.user_sid);
 		if(req.session.username && req.cookies.user_sid)
 		{
-			console.log("cookie working");
+			//console.log("cookie working");
+			/*
+				The query is run and and if the size of response is >0,the
+				response is returned.
+			*/
 			var q = "select *,BookAuthor from BookDetail,BookAuthor where BookDetail.BookId = BookAuthor.BookId";
 			var output = await query(q,con);
 			if(output.length == 0)

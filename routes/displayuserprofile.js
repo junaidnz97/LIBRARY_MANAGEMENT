@@ -1,8 +1,13 @@
 var displayuserprofile = function (app, con) {
 
+    /*
+    function for returning user details
+     */
     app.get("/displayuserprofile", function (req, res) {
 
+
         if (req.session.username && req.cookies.user_sid) {
+
             var request = require('request');
             var body = "select * from student where Student_ID='" + req.session.username + "'";
             console.log(body);

@@ -3,12 +3,27 @@ import './Admin.css'
 import ApproveTable from './ApproveTable'
 import AddBook from './AddBook'
 import {Link, Route, Switch} from 'react-router-dom';
-
+import * as axios from 'axios';
 import Footer from './Footer.js'
 import UsersTable from './UsersTable'
 import Listcontainer from './Listcontainer';
 import ViewBooks from './ViewBooks';
 import LoginAdmin from './LoginAdmin.js';
+
+const logout = () => {
+    let getData = async () => {
+        let log =  await axios({
+            method: 'post',
+            url: '/logout'
+        });
+        console.log(log.data);
+        if(log.data.output){
+            window.location.replace("/admin");
+        }
+    }
+    getData();
+}
+
 
 const Structure = ({ Comp, hist, loc }) => (
 	<React.Fragment>
@@ -59,7 +74,7 @@ const Structure = ({ Comp, hist, loc }) => (
                         </a>
                         </li>
                         <li>
-                        <a class="s-sidebar__nav-link" href="#0">
+                        <a class="s-sidebar__nav-link" onClick={logout}>
                             <i class="fa fa-sign-out"></i><em>Logout</em>
                         </a>
                         </li>

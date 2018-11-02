@@ -1,3 +1,9 @@
+// User: Student
+// Function: Students can request books which are not available in the library
+// Input: BookName,link,publisher,edition,author
+// Output: Book request will be added to the database and sent to the admin 
+
+
 const mysql = require('mysql');
 var requestBook = function(app,con){
 
@@ -40,7 +46,7 @@ var requestBook = function(app,con){
 				if(author == '')
 				author = "NULL";
 				else{
-					author = "'" + author + "'"; 
+					author = "'" + author + "'";
 				}
 
 				var q = "insert into RequestedBook (BookName,UserId,Link,Publisher,Edition,Author) values ("

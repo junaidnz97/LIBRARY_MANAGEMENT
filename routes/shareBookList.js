@@ -1,3 +1,9 @@
+// User: Student
+// Function: If no books are available for issue, student can request other students who have
+// issued the book to share the book.
+// Input: BookId
+// Output: List of students that have the required book
+
 const mysql = require('mysql');
 var shareBookList = function(app,con){
 

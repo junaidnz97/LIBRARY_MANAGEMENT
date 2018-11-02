@@ -40,7 +40,7 @@ var adminlog=function (app,con) {
     app.post("/admin/logout",function (req,res) {
 
         res.clearCookie('user_sid');
-        res.status(200).send({"status":"logut successful"});
+        res.status(200).send({"output":"logut successful"});
     });
 
     app.post("/admin/changepassword",function(req,res){

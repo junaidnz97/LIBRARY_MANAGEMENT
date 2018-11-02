@@ -97,7 +97,7 @@ app.post("/logout",function(req,res){
 				When a user wishes to logout, the cookies stored are cleared.
 			 */
 			res.clearCookie('user_sid');
-			res.status(200).send("logut successful");
+			res.status(200).send({"output":"logout successful"});
 });
 
 app.get("/",function(req,res){

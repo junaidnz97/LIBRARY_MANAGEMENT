@@ -36,6 +36,8 @@ var userBookRecords = require("./routes/userBookRecords");
 
 var addBookRecord = require("./routes/addBookRecord.js");
 
+var http = require('http').Server(app);
+
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -81,7 +83,7 @@ var con = mysql.createPool({
 
 // });
 
-var server=app.listen("9090",function(){
+var server=app.listen("ec2-54-204-211-146.compute-1.amazonaws:9090",function(){
 
 	console.log("server working");
 });
@@ -89,7 +91,7 @@ var server=app.listen("9090",function(){
 var elasticsearch=require("elasticsearch");
 var client=new elasticsearch.Client({
 
-    host: "localhost:9200",
+    host: "112.133.196.2:9200",
     log : "trace"
 });
 

@@ -14,10 +14,10 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HOST= 'http://ec2-54-204-211-146.compute-1.amazonaws.com' PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:9090"
+  "proxy": "http://ec2-54-204-211-146.compute-1.amazonaws.com:9090"
 }

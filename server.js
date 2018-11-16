@@ -83,7 +83,7 @@ var con = mysql.createPool({
 
 // });
 
-var server=app.listen("ec2-54-204-211-146.compute-1.amazonaws:9090",function(){
+var server=app.listen(9090,function(){
 
 	console.log("server working");
 });

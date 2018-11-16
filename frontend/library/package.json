@@ -14,10 +14,10 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HOST=10.0.32.32 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:9090"
+  "proxy": "http://10.0.32.32:9090"
 }

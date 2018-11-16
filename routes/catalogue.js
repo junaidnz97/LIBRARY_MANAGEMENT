@@ -14,7 +14,7 @@ var catalogue = function(app,con){
 	 	A function to return all the books in the database.
 	 */
 	app.get("/catalogue",async(req,res)=>{
-		//console.log(req.session.username ," ",req.cookies.user_sid);
+		console.log(req.session );
 		if(req.session.username && req.cookies.user_sid)
 		{
 			//console.log("cookie working");

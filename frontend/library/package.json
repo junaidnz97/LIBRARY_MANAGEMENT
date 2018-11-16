@@ -21,6 +21,6 @@
   },
   "proxy": "http://ec2-54-204-211-146.compute-1.amazonaws.com:9090",
   "devDependencies": {
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.0.0"
   }
 }

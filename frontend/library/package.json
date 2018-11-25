@@ -14,7 +14,7 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "start:dev": "webpack-dev-server --port 3000 --open",
+    "start:dev": "webpack-dev-server --host http://ec2-54-204-211-146.compute-1.amazonaws.com --port 3000 --open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

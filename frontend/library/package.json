@@ -14,13 +14,16 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=80&&react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "proxy": "http://ec2-54-204-211-146.compute-1.amazonaws.com:9090",
   "devDependencies": {
+    "react-app-rewired": "^1.6.2",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.0.0"
   }
 }

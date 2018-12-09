@@ -26,16 +26,16 @@ const Structure = ({ Comp, hist, loc }) => (
 const AllRoutes = (props) => {
 	return(
 		<Switch> 
-		    <Route exact path="/login" component={Login} />
-			<Route exact path='/catalogue' component={p => <Structure Comp={Bookcatalog} hist={p.history} />}/>
-		    <Route exact path="/" component={p => <Structure Comp={Bookcatalog} hist={p.history}/>} />
-			<Route path='/cataloguesearch' component={p => <Structure Comp={Bookcatalogsearch} hist={p.history} />}/>
-			<Route path='/profile' component={p => <Structure Comp={Profile} hist={p.history}/>}/>
-			<Route path="/admin" component={Admin} />
-			<Route path='/book' component={p => <Structure Comp={Book} hist={p.history} loc={p.location}/>} />
-			<Route path='/suggest' component={p => <Structure Comp={Suggest} hist={p.history}/>} />
-			<Route path='/donate' component={p => <Structure Comp={Donate} hist={p.history}/>} />
-			<Route path='/fine' component={p => <Structure Comp={Payfine} hist={p.history}/>} />
+		    <Route exact path="/fe/login" component={Login} />
+			<Route exact path='/fe/catalogue' component={p => <Structure Comp={Bookcatalog} hist={p.history} />}/>
+		    <Route exact path="/fe/" component={p => <Structure Comp={Bookcatalog} hist={p.history}/>} />
+			<Route path='/fe/cataloguesearch' component={p => <Structure Comp={Bookcatalogsearch} hist={p.history} />}/>
+			<Route path='/fe/profile' component={p => <Structure Comp={Profile} hist={p.history}/>}/>
+			<Route path="/fe/admin" component={Admin} />
+			<Route path='/fe/book' component={p => <Structure Comp={Book} hist={p.history} loc={p.location}/>} />
+			<Route path='/fe/suggest' component={p => <Structure Comp={Suggest} hist={p.history}/>} />
+			<Route path='/fe/donate' component={p => <Structure Comp={Donate} hist={p.history}/>} />
+			<Route path='/fe/fine' component={p => <Structure Comp={Payfine} hist={p.history}/>} />
 		</Switch>
 	);
 }

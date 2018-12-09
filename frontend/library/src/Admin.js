@@ -104,12 +104,12 @@ const Structure = ({ Comp, hist, loc }) => (
 const Admin = () => {
         return (
                 <Switch>
-                    <Route exact path="/admin" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
-                    <Route exact path="/admin/login" component={LoginAdmin} />
-                    <Route path="/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
-                    <Route path="/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
-                    <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
-                    <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
+                    <Route exact path="/fe/admin" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
+                    <Route exact path="/fe/admin/login" component={LoginAdmin} />
+                    <Route path="/fe/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
+                    <Route path="/fe/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
+                    <Route path="/fe/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
+                    <Route path="/fe/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
                 </Switch>
     );
 }

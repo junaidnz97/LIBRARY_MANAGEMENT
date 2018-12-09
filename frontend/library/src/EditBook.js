@@ -3,7 +3,7 @@ import { Form, Col, Checkbox, Button, FormControl, FormExample, FormGroup, HelpB
 import Listcontainer from './Listcontainer.js'
 
 
-class AddBook extends React.Component {
+class EditBook extends React.Component {
     constructor(props, context) {
       super(props, context);
   
@@ -12,10 +12,18 @@ class AddBook extends React.Component {
       return (
         <div>
                     <h1>
-                   <center> Add a Book <small>Enter details of the book you want to add</small></center>
+                   <center> Edit a Book <small>Enter Book ID and details of the book you want to edit</small></center>
                     </h1>
                 <Form horizontal>
-                        <br/><br/>
+                        <br/>Fields marked * are mandatory<br/>
+                        <FormGroup controlId="formHorizontalEmail">
+                    <Col componentClass={ControlLabel} sm={2}>
+                    Enter Book ID*
+                    </Col>
+                    <Col sm={10}>
+                    <FormControl type="text" placeholder="Eg. 15" />
+                    </Col>
+                </FormGroup>
                 <FormGroup controlId="formHorizontalEmail">
                     <Col componentClass={ControlLabel} sm={2}>
                     Enter Book's name
@@ -81,4 +89,4 @@ class AddBook extends React.Component {
   }
   
 
-  export default AddBook;
+  export default EditBook;

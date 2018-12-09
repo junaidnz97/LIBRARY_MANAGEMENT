@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Admin.css'
 import ApproveTable from './ApproveTable'
 import AddBook from './AddBook'
+import EditBook from './EditBook'
 import {Link, Route, Switch} from 'react-router-dom';
 import * as axios from 'axios';
 import Footer from './Footer.js'
@@ -58,9 +59,9 @@ const Structure = ({ Comp, hist, loc }) => (
                         </Link>
                         </li>
                         <li>
-                        <a class="s-sidebar__nav-link" href="#0">
-                            <i class="fa fa-edit"></i><em>Edit Book records</em>
-                        </a>
+                        <Link to='/admin/editbook' className="s-sidebar__nav-link">
+                            <i class="fa fa-book"></i><em>Edit a Book</em>                        
+                        </Link>
                         </li>
                         
                         <li>
@@ -109,6 +110,7 @@ const Admin = () => {
                     <Route path="/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
                     <Route path="/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
                     <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
+                    <Route path="/admin/editbook" component={p => <Structure Comp={EditBook} hist={p.history}/>} />
                     <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
                 </Switch>
     );

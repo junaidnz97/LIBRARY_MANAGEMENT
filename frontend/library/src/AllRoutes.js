@@ -13,6 +13,7 @@ import Donate from './Donate.js';
 import Payfine from './Payfine.js';
 import Book from './Book.js';
 import Bookcatalogsearch from './Bookcatalogsearch.js';
+import Cataloguefilter from './Cataloguefilter'
 
 const Structure = ({ Comp, hist, loc }) => (
 	<React.Fragment>
@@ -36,6 +37,7 @@ const AllRoutes = (props) => {
 			<Route path='/suggest' component={p => <Structure Comp={Suggest} hist={p.history}/>} />
 			<Route path='/donate' component={p => <Structure Comp={Donate} hist={p.history}/>} />
 			<Route path='/fine' component={p => <Structure Comp={Payfine} hist={p.history}/>} />
+			<Route path='/cataloguefilter' component={p => <Structure Comp={Cataloguefilter} hist={p.history}/>} />
 		</Switch>
 	);
 }

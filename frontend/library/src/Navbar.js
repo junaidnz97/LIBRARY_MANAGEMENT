@@ -25,15 +25,20 @@ class Navigation extends Component {
 	constructor() {
         super();
         this.handleChange = this.handleChange.bind(this);
-
+        this.handlefilterChange=this.handlefilterChange.bind(this);
         this.state = {
-            value: ''
+            value: '',
+            filter:''
         }
     }
 
     handleChange(e) {
 	    this.setState({ value: e.target.value });
-	  }
+	}
+
+	 handlefilterChange(e){
+	 	this.setState({ filter:e.target.value });
+	 }
 
     render() {
 
@@ -71,6 +76,20 @@ class Navigation extends Component {
 				    		 />
 				    		 <Link to = {{ pathname: '/cataloguesearch', state: { searchVal: this.state.value} }}>
 				    		 	<Button>Search Now</Button>
+				    		 </Link>
+				    	</FormGroup>{' '}
+				    </Navbar.Form>
+
+				    <Navbar.Form pullLeft>
+				    <FormGroup>
+				    		<FormControl
+				    			type="text"
+					            value={this.state.filter}
+					            placeholder="Filter"
+					            onChange={this.handlefilterChange}
+				    		 />
+				    		 <Link to = {{ pathname: '/cataloguefilter', state: { searchVal: this.state.filter} }}>
+				    		 	<Button>Filter Now</Button>
 				    		 </Link>
 				    	</FormGroup>{' '}
 				    </Navbar.Form>

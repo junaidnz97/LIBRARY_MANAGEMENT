@@ -36,6 +36,7 @@ var userBookRecords = require("./routes/userBookRecords");
 
 var addBookRecord = require("./routes/addBookRecord.js");
 var filtersearch=require("./routes/filtersearch");
+var cataloguefilter=require("./routes/cataloguefilter");
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -145,6 +146,7 @@ userBookRecords.userBookRecords(app,con);
 
 addBookRecord.addBookRecord(app,con);
 filtersearch.filtersearch(app,con);
+cataloguefilter.cataloguefilter(app,con);
 
 module.exports={
     app:app

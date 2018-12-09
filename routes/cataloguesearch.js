@@ -8,16 +8,18 @@ var cataloguesearch = function (app,con,client) {
 
     app.get("/cataloguesearch",async function (req,res) {
 
+               /* console.log("hello");
 
                 const {query} = require('../database/db');
 
                 var q = req.query.query;
+                console.log(q);
                 var arr = q.split("-");
                 arr[0] = arr[0].trim();
                 arr[1] = arr[1].trim();
                 console.log(arr);
 
-                var q = "select * from BookDetail where BookEdition>" + arr[0] + " and BookEdition<" + arr[1] ;
+                 q = "select * from BookDetail where BookEdition>" + arr[0] + " and BookEdition<" + arr[1] ;
                 console.log(q);
 
                 var finalresp = await query(q, con);
@@ -26,11 +28,13 @@ var cataloguesearch = function (app,con,client) {
 
                 console.log(finalresp);
 
+                console.log(finalresp);
+
                 res.send(finalresp);
-            //}
+            //}*/
 
 
-        /*console.log(req.query);
+        console.log(req.query);
 
         var searchquery=req.query.query;
 
@@ -54,7 +58,7 @@ var cataloguesearch = function (app,con,client) {
         }, function (err) {
             console.trace(err.message);
             res.redirect("/catalogue");
-        });*/
+        });
 
 
     });

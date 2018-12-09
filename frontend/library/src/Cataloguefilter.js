@@ -9,7 +9,106 @@ import Cardlist from './Cardlist.js';
 import Navbar from './Navbar.js';
 
 
+
+//var React = require('react');
+//var Component = React.Component;
+var CanvasJSReact = require('./canvasjs.react');
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+ 
 class Cataloguefilter extends Component {
+    constructor() {
+        super();
+        this.state = {
+            books : [],
+            c: 1,
+            points:[]
+        };
+
+    }
+
+
+
+    componentDidMount() {
+        // console.log(this.props.history.location.state.searchVal);
+        let getData = async () => {
+            let books = await axios({
+                method: 'get',
+                url: '/cataloguefilter',
+                params: {
+                    query: this.props.history.location.state.searchVal
+                }
+            });
+            if(books.data.output){
+                console.log(this.props)
+                this.props.history.push('/login');
+                console.log("went in", books.data.output);
+            }
+            else{
+                //console.log(books.data);
+                var temp=[];
+
+                for(var i=0;i<10;i++) {
+                    var temp2={
+                        label:"",
+                        y:null
+                    };
+                    //console.log((books.data[i]));
+                    temp2.label=books.data[i].BookName;
+                    temp2.y=books.data[i].BookId;
+                    console.log(temp2);
+                    console.log("hello");
+                    temp.push(temp2);
+                }
+
+                this.setState({points:temp});
+                this.setState({books: books.data});
+                for(var i=0;i<10;i++) {
+                    //console.log((books.data[i]));
+
+                    console.log(this.state.points[i]);
+                }
+            }
+        }
+        getData();
+    }
+
+
+    render() {
+
+
+
+        const options = {
+            title: {
+                text: "Basic Column Chart"
+            },
+            data: [
+                {
+                    // Change type to "doughnut", "line", "splineArea", etc.
+                    type: "column",
+                    dataPoints: this.state.points
+                }
+            ]
+        }
+		
+		return (
+		<div>
+			<p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+			<CanvasJSChart options = {options} 
+				/* onRef={ref => this.chart = ref} */
+			/>
+			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+		</div>
+		);
+	}
+}
+ 
+
+
+/*class Cataloguefilter extends Component {
     constructor() {
         super();
         this.state = {
@@ -39,7 +138,7 @@ class Cataloguefilter extends Component {
                 console.log(books.data);
                 this.setState({books: books.data});
             }
-        }
+        }	
         getData();
     }
 
@@ -93,6 +192,6 @@ class Cataloguefilter extends Component {
         );
 
     }
-}
+}*/
 
 export default Cataloguefilter;

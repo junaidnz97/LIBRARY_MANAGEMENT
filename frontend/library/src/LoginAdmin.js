@@ -26,7 +26,7 @@ class LoginAdmin extends Component {
         let getData = async () => {
             let log =  await axios({
                 method: 'post',
-                url: '/fe/admin/login',
+                url: '/admin/login',
                 data: {
                     username: this.state.username,
                     password: this.state.password

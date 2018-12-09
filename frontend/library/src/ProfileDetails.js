@@ -35,7 +35,7 @@ const ProfileDetails = (props) => {
       <td>{props.profiledetails.UserId}</td>
       <td>{props.profiledetails.Dues}</td>
       <td>
-        <Link to='/fine'>
+        <Link to='/fe/fine'>
           <Button bsStyle="primary">View Dues</Button>
         </Link>
       </td></tr>

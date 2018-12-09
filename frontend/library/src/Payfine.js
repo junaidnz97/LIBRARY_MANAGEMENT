@@ -31,7 +31,7 @@ class Payfine extends React.Component {
             });
             if(fines.data.output){
                 console.log("noooo", fines.data);
-                window.location.replace("/admin");
+                window.location.replace("/fe/admin");
             }
             else{
                 console.log(fines.data);

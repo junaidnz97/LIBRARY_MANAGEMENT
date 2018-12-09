@@ -26,7 +26,7 @@ class LoginAdmin extends Component {
         let getData = async () => {
             let log =  await axios({
                 method: 'post',
-                url: '/admin/login',
+                url: '/fe/admin/login',
                 data: {
                     username: this.state.username,
                     password: this.state.password
@@ -34,7 +34,7 @@ class LoginAdmin extends Component {
             });
             console.log(log.data);
             if(log.data.status === 'login successful'){
-                window.location.replace("/admin");
+                window.location.replace("/fe/admin");
             }
         }
         getData();

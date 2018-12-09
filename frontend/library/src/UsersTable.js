@@ -22,7 +22,7 @@ class UsersTable extends Component {
             });
             if(users.data.output){
                 console.log("if");
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log(users.data.users);

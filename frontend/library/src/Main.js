@@ -13,13 +13,13 @@ const Main = () => {
 	return (
 		<div className='Main'>
 		    <Switch>
-			    <Route exact path='/' component={Bookcatalog}/>
-			    <Route exact path='/catalogue' component={Bookcatalog}/>
-			    <Route path='/book' component={Book} />
-			    <Route path='/profile' component={Profile}/>
-			    <Route path='/suggest' component={Suggest} />
-			    <Route path='/donate' component={Donate} />
-			    <Route path='/fine' component={Payfine} />
+			    <Route exact path='/fe/' component={Bookcatalog}/>
+			    <Route exact path='/fe/catalogue' component={Bookcatalog}/>
+			    <Route path='/fe/book' component={Book} />
+			    <Route path='/fe/profile' component={Profile}/>
+			    <Route path='/fe/suggest' component={Suggest} />
+			    <Route path='/fe/donate' component={Donate} />
+			    <Route path='/fe/fine' component={Payfine} />
 		    </Switch>
 		</div>
 	);

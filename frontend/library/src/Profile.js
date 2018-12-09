@@ -22,7 +22,7 @@ class Profile extends Component {
               url: '/displayuserprofile'
             });
             if(profiledetails.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log(profiledetails.data);

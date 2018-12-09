@@ -13,7 +13,7 @@ const logout = () => {
         });
         console.log(log.data);
         if(log.data.output){
-            window.location.replace("/admin");
+            window.location.replace("/fe/admin");
         }
     }
     getData();
@@ -69,7 +69,7 @@ class Navigation extends Component {
 					            placeholder="Search"
 					            onChange={this.handleChange}
 				    		 />
-				    		 <Link to = {{ pathname: '/cataloguesearch', state: { searchVal: this.state.value} }}>
+				    		 <Link to = {{ pathname: '/fe/cataloguesearch', state: { searchVal: this.state.value} }}>
 				    		 	<Button>Search Now</Button>
 				    		 </Link>
 				    	</FormGroup>{' '}

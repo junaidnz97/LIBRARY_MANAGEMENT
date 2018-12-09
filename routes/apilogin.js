@@ -16,7 +16,7 @@ var apilogin = function (app,con){
             		//var q="insert into StudentApi values";
             		//q=q+"Student_ID="
             		//res.send(userDetails);
-            		res.redirect("http://localhost:3000/catalogue");
+            		res.redirect("http://localhost:3000/fe/catalogue");
             		//res.redirect(302, 'http://loca');
 
         	}

@@ -21,7 +21,7 @@ class ReviewList extends Component {
               }
             });
             if(reviews.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 this.setState({reviews: reviews.data.details});

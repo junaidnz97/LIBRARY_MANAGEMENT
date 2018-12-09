@@ -21,7 +21,7 @@ class Historytable extends Component {
               url: '/books-history'
             });
             if(previousbooks.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log(previousbooks.data.Details);

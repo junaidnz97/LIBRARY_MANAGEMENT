@@ -25,7 +25,7 @@ class ApproveTable extends Component {
             });
             if(requestedBooks.data.output){
                 console.log("if");
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log(requestedBooks.data);

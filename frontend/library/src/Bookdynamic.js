@@ -32,7 +32,7 @@ class Bookdynamic extends Component {
               }
             });
             if(booksnUser.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log("Updating book");
@@ -63,7 +63,7 @@ class Bookdynamic extends Component {
               }
             });
             if(status.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log("success", status.data.status);
@@ -85,7 +85,7 @@ class Bookdynamic extends Component {
               }
             });
             if(reviewGive.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log("success", reviewGive.data.status);

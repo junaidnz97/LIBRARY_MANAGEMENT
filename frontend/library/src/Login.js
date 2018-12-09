@@ -33,7 +33,7 @@ const Login = () => {
           >
             Student Login 
           </Button>
-          <Link to='/admin/login'>
+          <Link to='/fe/admin/login'>
             <Button
               block
               bsSize="large"

@@ -20,7 +20,7 @@ class Currenttable extends Component {
               url: '/books-in-possession'
             });
             if(currentbooks.data.output){
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
             }
             else{
                 console.log(currentbooks.data.Details);

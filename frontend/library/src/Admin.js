@@ -18,7 +18,7 @@ const logout = () => {
         });
         console.log(log.data);
         if(log.data.output){
-            window.location.replace("/admin");
+            window.location.replace("/fe/admin");
         }
     }
     getData();
@@ -37,23 +37,23 @@ const Structure = ({ Comp, hist, loc }) => (
                     <ul>
                     <li>
                         
-                        <Link to='/admin' className="s-sidebar__nav-link">
+                        <Link to='/fe/admin' className="s-sidebar__nav-link">
                             <img className="sricity" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/IIIT_Sri_City_Logo.png/220px-IIIT_Sri_City_Logo.png"  />
                             {' '}  Project B-02
                         </Link>
                         
                         </li>  
                         <li>
-                        <Link to='/admin' className="s-sidebar__nav-link">
+                        <Link to='/fe/admin' className="s-sidebar__nav-link">
                           <i class="fa fa-thumbs-up"></i><em>View Requests</em>                        
                         </Link>
                             
                         </li>
                         <li>
-                        <Link to='/admin/viewusers' className="s-sidebar__nav-link">
+                        <Link to='/fe/admin/viewusers' className="s-sidebar__nav-link">
                           <i class="fa fa-users"></i><em>View Users</em>
                         </Link>
-                        <Link to='/admin/addbook' className="s-sidebar__nav-link">
+                        <Link to='/fe/admin/addbook' className="s-sidebar__nav-link">
                             <i class="fa fa-book"></i><em>Add a Book</em>                        
                         </Link>
                         </li>

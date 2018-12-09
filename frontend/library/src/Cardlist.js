@@ -7,7 +7,7 @@ const Cardlist = ({books}) => {
 
 	const Cardarray = books.map((book, i) =>{
 		return (
-			<Link to={{ pathname: '/book', state: { book: book} }}>
+			<Link to={{ pathname: '/fe/book', state: { book: book} }}>
 				<Cardcomp 
 					key={book.id} 
 					bookdesc={book} 

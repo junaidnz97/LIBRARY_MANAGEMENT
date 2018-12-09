@@ -32,7 +32,7 @@ class Bookcatalog extends Component {
             });
             if(books.data.output){
                 console.log(this.props)
-                this.props.history.push('/login');
+                this.props.history.push('/fe/login');
                 console.log("went in", books.data.output);
             }
             else{

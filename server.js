@@ -35,6 +35,7 @@ var userList = require("./routes/userlist");
 var userBookRecords = require("./routes/userBookRecords");
 
 var addBookRecord = require("./routes/addBookRecord.js");
+var trial =  require('./routes/trial.js')
 
 app.use(cookieParser());
 
@@ -144,6 +145,7 @@ userList.userList(app,con);
 userBookRecords.userBookRecords(app,con);
 
 addBookRecord.addBookRecord(app,con);
+trial.trial(app,con);
 
 module.exports={
     app:app

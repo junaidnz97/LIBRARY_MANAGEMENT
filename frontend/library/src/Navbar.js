@@ -41,7 +41,7 @@ class Navigation extends Component {
 		<Navbar inverse collapseOnSelect fixedTop>
 	  		<Navbar.Header>
 	    		<Navbar.Brand>
-	      			<Link to='/'>
+	      			<Link to='/fe/'>
 	      				<img className="sricity" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/IIIT_Sri_City_Logo.png/220px-IIIT_Sri_City_Logo.png"  />
 	      				Project B-02
 	      			</Link>

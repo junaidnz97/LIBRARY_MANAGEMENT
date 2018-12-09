@@ -1,40 +1,46 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
-import UserInfo from './UserInfo';
 import * as axios from 'axios';
+import UserInfo from './UserInfo';
 
 
-class UsersTable extends Component {
+class Userlisttrial extends Component{
 
-    constructor() {
+    constructor(){
         super();
-        this.state = {
-            users : []
+        this.state={
+            users:[]
         }
     }
-    
-    componentDidMount() {
-        let getData = async () => {            
-              let users = await axios({
-              method: 'get',
-              url: '/view-user-list'
-            });
-            if(users.data.output){
-                console.log("if");
-                this.props.history.push('/login');
-            }
-            else{
-                console.log(users.data.users[10]);
+    componentDidUpdate(prevProps,prevState){
+        console.log("prevprops",prevProps,"curr",this.props)
+        if (prevProps !== this.props){
+            console.log("TRIAL2");
+            let datafetch = async() =>{
+                console.log(this.props);
+                let users = await axios({
+                    method: 'get',
+                    url : '/trial',
+                    params: {
+                        start: this.props.starting,
+                        end: this.props.ending
+                    }
+                });
+                console.log(users.data);
                 this.setState({users: users.data.users});
             }
+            datafetch();
         }
-        getData();
+            
     }
-    render() {
+    render(){
+        
+        
 
         const users = this.state.users;
+        console.log("users",users);
         const Userarray = users.map((user, i) =>{
+            console.log("in render");
             return (
                 <UserInfo 
                     key={user.UserId} 
@@ -43,7 +49,7 @@ class UsersTable extends Component {
                 />
             );
         });
-
+        
         return (
             <div>
                 <h2>View Users</h2>
@@ -65,9 +71,6 @@ class UsersTable extends Component {
                 </Table>
             </div>
         );
-
     }
 }
-
-export default UsersTable;
-
+export default Userlisttrial;

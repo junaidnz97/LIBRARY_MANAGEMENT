@@ -9,6 +9,8 @@ import UsersTable from './UsersTable'
 import Listcontainer from './Listcontainer';
 import ViewBooks from './ViewBooks';
 import LoginAdmin from './LoginAdmin.js';
+import aseadmintask from  './aseadmintask.js';
+import aseadmintaskdisplay from './aseadmintaskdisplay';
 
 const logout = () => {
     let getData = async () => {
@@ -83,6 +85,12 @@ const Structure = ({ Comp, hist, loc }) => (
                             <em>Library@IIITS</em>
                         </a>
                         </li>
+                        <li>
+                            <Link to='/admin/aseadmintask' className="s-sidebar__nav-link">
+                                <i className="fa fa-thumbs-up"></i><em>ASEADMINTASK</em>
+                            </Link>
+
+                        </li>
                     </ul>
                 </nav>
                 </div>
@@ -109,7 +117,9 @@ const Admin = () => {
                     <Route path="/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
                     <Route path="/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
                     <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
-                    <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
+                    <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} />
+                    <Route path="/admin/aseadmintask" component={p => <Structure Comp={aseadmintask} hist={p.history}/>} />
+                    <Route path="/admin/aseadmintaskdisplay" component={p => <Structure Comp={aseadmintaskdisplay} hist={p.history}/>} />
                 </Switch>
     );
 }

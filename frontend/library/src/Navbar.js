@@ -87,17 +87,17 @@ class Navigation extends Component {
 			    		} 
 			    		id="basic-nav-dropdown">
 			        	<MenuItem eventKey={3.1}>
-				        	<Link to='/suggest'>
+				        	<Link to='/fe/suggest'>
 				        		Suggest a Book
 				        	</Link>
 			        	</MenuItem>
 				        <MenuItem eventKey={3.2}>
-					        <Link to='/donate'>
+					        <Link to='/fe/donate'>
 					       		Donate a Book
 					        </Link>
 				        </MenuItem>
 				        <MenuItem eventKey={3.3}>
-				        	<Link to='/fine'>
+				        	<Link to='/fe/fine'>
 				        		View Dues
 				        	</Link>
 				        </MenuItem>
@@ -105,7 +105,7 @@ class Navigation extends Component {
 				        <MenuItem eventKey={3.3} onClick={logout}>Logout</MenuItem>
 			      	</NavDropdown>
 					<Navbar.Brand>
-	      			<Link to='/profile'>
+	      			<Link to='/fe/profile'>
 	      				<img className="sricity" src={placeholderprofile}  />	
 	      			</Link>
 					</Navbar.Brand>

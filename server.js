@@ -144,6 +144,8 @@ userList.userList(app,con);
 userBookRecords.userBookRecords(app,con);
 
 addBookRecord.addBookRecord(app,con);
+app.use(express.static('build'));
+app.get('/*', (req, res) => res.sendFile(__dirname + '/build/index.html') );
 
 module.exports={
     app:app

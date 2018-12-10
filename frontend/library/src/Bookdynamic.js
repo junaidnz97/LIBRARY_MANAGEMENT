@@ -3,6 +3,7 @@ import './Bookdynamic.css';
 import Rating from './Rating.js';
 import * as axios from 'axios';
 import {ButtonToolbar,Button,FormControl,FormGroup,ControlLabel} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 
 class Bookdynamic extends Component {
@@ -114,7 +115,9 @@ class Bookdynamic extends Component {
                         <br/>
                         <ButtonToolbar>
                             <Button bsStyle="primary" disabled={this.state.buttonDisabled} onClick={this.borrowBook}>Borrow Book</Button>
-                            <Button bsStyle="primary">Share Books</Button>
+                            <Link to = {{ pathname: '/sharebooks', state: { BookId: this.props.BookId} }}>
+                                <Button bsStyle="primary">Share Books</Button>
+                            </Link>
                         </ButtonToolbar>
                     </div>
                       <form>

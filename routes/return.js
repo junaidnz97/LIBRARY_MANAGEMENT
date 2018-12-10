@@ -13,11 +13,14 @@ var returnbook = function(app,con){
 	app.post("/return",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
         {
+			console.log(req.body)
 			bookid = req.body.bookId;
 			hbookid = req.body.hbookId;
 			userid = req.body.userid;
 			var q = "select * from BookLogTrigger where HId = "+hbookid +" and DOR is NULL";
+			console.log(q);
 			var pass = await query(q,con)
+			console.log(pass);
 			if(!pass.length){
 				res.status(200).send({"status":"not found in history"});
 			}

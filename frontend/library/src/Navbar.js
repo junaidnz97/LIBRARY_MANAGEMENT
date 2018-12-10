@@ -54,13 +54,13 @@ class Navigation extends Component {
 					<NavItem eventKey={2} onClick={_ => window.history.back()}   href="#">
 			    		<i class="fa fa-chevron-left"></i> Back
 			    	</NavItem>
-			      	<NavDropdown eventKey={3} title="Categories" id="basic-nav-dropdown">
+			      	{/* <NavDropdown eventKey={3} title="Categories" id="basic-nav-dropdown">
 			        	<MenuItem eventKey={3.1}>Mathematics</MenuItem>
 				        <MenuItem eventKey={3.2}>Electronics</MenuItem>
 				        <MenuItem eventKey={3.3}>Programming</MenuItem>
 				        <MenuItem divider />
 				        <MenuItem eventKey={3.3}>Journals</MenuItem>
-			      	</NavDropdown>
+			      	</NavDropdown> */}
 				    <Navbar.Form pullLeft>
 				     	<FormGroup>
 				    		<FormControl
@@ -77,9 +77,9 @@ class Navigation extends Component {
 				    
 			    </Nav>
 			    <Nav pullRight>
-					<NavItem eventKey={2} href="#">
+					{/* <NavItem eventKey={2} href="#">
 			    		<i class="fa fa-bell"></i> Notifications
-			    	</NavItem>
+			    	</NavItem> */}
 			    	<NavDropdown eventKey={3} 
 			    		title={ <span>
 			    				<i class="fa fa-user"></i> Welcome User !
@@ -91,11 +91,11 @@ class Navigation extends Component {
 				        		Suggest a Book
 				        	</Link>
 			        	</MenuItem>
-				        <MenuItem eventKey={3.2}>
-					        <Link to='/fe/donate'>
+				        {/* <MenuItem eventKey={3.2}>
+					        <Link to='/donate'>
 					       		Donate a Book
 					        </Link>
-				        </MenuItem>
+				        </MenuItem> */}
 				        <MenuItem eventKey={3.3}>
 				        	<Link to='/fe/fine'>
 				        		View Dues

@@ -20,7 +20,7 @@ var shareBookList = function(app,con){
 			if(output.length == 0)
 					res.send({"status":"No issued books found"});
 				else
-					res.send({"user-details":output});
+					res.send({"users":output});
 
 		}
 		else

@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import './Admin.css'
 import ApproveTable from './ApproveTable'
+import PayAdminFollow from './PayAdminFollow'
+import TotalFine from './TotalFine'
+import ReturnBook from './ReturnBook'
 import AddBook from './AddBook'
+import EditBook from './EditBook'
+import DeleteBook from './DeleteBook'
 import {Link, Route, Switch} from 'react-router-dom';
 import * as axios from 'axios';
 import Footer from './Footer.js'
@@ -9,6 +14,7 @@ import UsersTable from './UsersTable'
 import Listcontainer from './Listcontainer';
 import ViewBooks from './ViewBooks';
 import LoginAdmin from './LoginAdmin.js';
+import ProfileDetailsAdmin from './ProfileDetailsAdmin';
 
 const logout = () => {
     let getData = async () => {
@@ -50,29 +56,43 @@ const Structure = ({ Comp, hist, loc }) => (
                             
                         </li>
                         <li>
+                        <Link to='/fe/admin/returnbook' className="s-sidebar__nav-link">
+                          <i class="fa fa-exchange"></i><em>Return Book</em>                        
+                        </Link>                            
+                        </li>
+                        <li>
                         <Link to='/fe/admin/viewusers' className="s-sidebar__nav-link">
                           <i class="fa fa-users"></i><em>View Users</em>
                         </Link>
                         <Link to='/fe/admin/addbook' className="s-sidebar__nav-link">
-                            <i class="fa fa-book"></i><em>Add a Book</em>                        
+                            <i class="fa fa-plus-square"></i><em>Add a Book</em>                        
+                        </Link>
+                        </li>
+                        {/* <li>
+                        <Link to='/admin/editbook' className="s-sidebar__nav-link">
+                            <i class="fa fa-book"></i><em>Edit a Book</em>                        
+                        </Link>
+                        </li> */}
+                        <li>
+                        <Link to='/admin/deletebook' className="s-sidebar__nav-link">
+                            <i class="fa fa-minus-square"></i><em>Delete a Book</em>                        
                         </Link>
                         </li>
                         <li>
-                        <a class="s-sidebar__nav-link" href="#0">
-                            <i class="fa fa-edit"></i><em>Edit Book records</em>
-                        </a>
-                        </li>
-                        
-                        <li>
-                        <a class="s-sidebar__nav-link" href="#0">
-                            <i class="fa fa-money"></i><em>Pay Fine</em>
-                        </a>
+                        <Link to='/admin/payadminfollow' className="s-sidebar__nav-link">
+                            <i class="fa fa-money"></i><em>Pay Fine</em>                        
+                        </Link>
                         </li>
                         <li>
+                        <Link to='/admin/totalfine' className="s-sidebar__nav-link">
+                            <i class="fa fa-money"></i><em>Total Fine of all users</em>                        
+                        </Link>
+                        </li>
+                        {/* <li>
                         <a class="s-sidebar__nav-link" href="#0">
                             <i class="fa fa-key"></i><em>Change Password</em>
                         </a>
-                        </li>
+                        </li> */}
                         <li>
                         <a class="s-sidebar__nav-link" onClick={logout}>
                             <i class="fa fa-sign-out"></i><em>Logout</em>
@@ -107,9 +127,15 @@ const Admin = () => {
                     <Route exact path="/fe/admin" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
                     <Route exact path="/fe/admin/login" component={LoginAdmin} />
                     <Route path="/fe/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
+                    <Route path="/fe/admin/returnbook" component={p => <Structure Comp={ReturnBook} hist={p.history}/>} />
                     <Route path="/fe/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
                     <Route path="/fe/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
-                    <Route path="/fe/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
+                    <Route path="/fe/admin/editbook" component={p => <Structure Comp={EditBook} hist={p.history}/>} />
+                    <Route path="/fe/admin/deletebook" component={p => <Structure Comp={DeleteBook} hist={p.history}/>} />
+                    <Route path="/fe/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} />
+                    <Route path="/fe/admin/viewprofile_admin" component={ProfileDetailsAdmin} /> 
+                    <Route path="/fe/admin/payadminfollow" component={p => <Structure Comp={PayAdminFollow} hist={p.history}/>} /> 
+                    <Route path="/fe/admin/totalfine" component={p => <Structure Comp={TotalFine} hist={p.history}/>} /> 
                 </Switch>
     );
 }

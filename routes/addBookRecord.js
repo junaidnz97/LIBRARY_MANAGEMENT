@@ -13,7 +13,7 @@ var addBookRecord = function(app,con){
 	const {query} = require('../database/db');
 
 	app.post("/add-book-record",async(req,res)=>{
-		if(req.session.adminusername && req.cookies.user_sid)
+		// if(req.session.adminusername && req.cookies.user_sid)
 		{
       bookname = req.body.bname;
       booktype = req.body.btype;
@@ -29,10 +29,13 @@ var addBookRecord = function(app,con){
 
       authors = req.body.authors;
 
+
+		 console.log(req.body);
       if(isbn != '')
       {
         var existing_book_query = "select * from BookDetail where ISBN=" + isbn ;
         var existing_book = await query(existing_book_query,con);
+				console.log(existing_book);
       }
 
       if (bookname == '')
@@ -86,9 +89,10 @@ var addBookRecord = function(app,con){
 
 
 
-        var insert_query = "insert into BookDetail (BookName,BookType,BookEdition,TotalQuantity,AvailableQuantity,BookDescription,Premium,Publisher,ISBN,Img_url_s,Img_url_m,Img_url_l) values ("
-        + bookname + "," + booktype + "," + bookedition + "," + quantity + "," + quantity + "," +
+        var insert_query = "insert into BookDetail (BookName,BookType,BookEdition,TotalQuantity,AvailableQuantity,BookDescription,Premium,Publisher,ISBN,Img_url_s,Img_url_m,Img_url_l) values ('"
+        + bookname + "'," + booktype + "," + bookedition + "," + quantity + "," + quantity + "," +
         bookdesc + "," + premium + "," + publisher + "," + isbn + "," + img_url_s + "," + img_url_m + "," + img_url_l + ");";
+				console.log(insert_query);
         var output = await query(insert_query,con);
 
         if(authors != '')
@@ -120,10 +124,10 @@ var addBookRecord = function(app,con){
         res.send("Book successfully added");
       }
 		}
-		else
-		{
-			res.send({"output":"notloggedin"});
-		}
+		// else
+		// {
+		// 	res.send({"output":"notloggedin"});
+		// }
 
       //
       // var q = "insert into BookDetail values (" + bookid +");";

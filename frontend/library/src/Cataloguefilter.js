@@ -12,7 +12,7 @@ import Navbar from './Navbar.js';
 
 //var React = require('react');
 //var Component = React.Component;
-var CanvasJSReact = require('./canvasjs.react');
+/*var CanvasJSReact = require('./canvasjs.react');
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
@@ -98,17 +98,17 @@ class Cataloguefilter extends Component {
             <p></p>
             <p></p>
 			<CanvasJSChart options = {options} 
-				/* onRef={ref => this.chart = ref} */
+
 			/>
-			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+
 		</div>
 		);
 	}
 }
- 
+ */
 
 
-/*class Cataloguefilter extends Component {
+class Cataloguefilter extends Component {
     constructor() {
         super();
         this.state = {
@@ -136,6 +136,7 @@ class Cataloguefilter extends Component {
             }
             else{
                 console.log(books.data);
+                console.log("hello");
                 this.setState({books: books.data});
             }
         }	
@@ -192,6 +193,6 @@ class Cataloguefilter extends Component {
         );
 
     }
-}*/
+}
 
 export default Cataloguefilter;

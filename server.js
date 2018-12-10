@@ -35,7 +35,7 @@ var userList = require("./routes/userlist");
 var userBookRecords = require("./routes/userBookRecords");
 
 var addBookRecord = require("./routes/addBookRecord.js");
-
+var totalfine=require("./routes/totalfine");
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -144,7 +144,7 @@ userList.userList(app,con);
 userBookRecords.userBookRecords(app,con);
 
 addBookRecord.addBookRecord(app,con);
-
+totalfine.totalfine(app,con);
 module.exports={
     app:app
 };

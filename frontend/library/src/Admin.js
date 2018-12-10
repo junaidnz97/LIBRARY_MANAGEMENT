@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Admin.css'
 import ApproveTable from './ApproveTable'
+import PayAdminFollow from './PayAdminFollow'
+import TotalFine from './TotalFine'
 import ReturnBook from './ReturnBook'
 import AddBook from './AddBook'
 import EditBook from './EditBook'
@@ -76,9 +78,14 @@ const Structure = ({ Comp, hist, loc }) => (
                         </Link>
                         </li>
                         <li>
-                        <a class="s-sidebar__nav-link" href="#0">
-                            <i class="fa fa-money"></i><em>Pay Fine</em>
-                        </a>
+                        <Link to='/admin/payadminfollow' className="s-sidebar__nav-link">
+                            <i class="fa fa-money"></i><em>Pay Fine</em>                        
+                        </Link>
+                        </li>
+                        <li>
+                        <Link to='/admin/totalfine' className="s-sidebar__nav-link">
+                            <i class="fa fa-money"></i><em>Total Fine of all users</em>                        
+                        </Link>
                         </li>
                         {/* <li>
                         <a class="s-sidebar__nav-link" href="#0">
@@ -124,6 +131,8 @@ const Admin = () => {
                     <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
                     <Route path="/admin/editbook" component={p => <Structure Comp={EditBook} hist={p.history}/>} />
                     <Route path="/admin/deletebook" component={p => <Structure Comp={DeleteBook} hist={p.history}/>} />
+                    <Route path="/admin/payadminfollow" component={p => <Structure Comp={PayAdminFollow} hist={p.history}/>} /> 
+                    <Route path="/admin/totalfine" component={p => <Structure Comp={TotalFine} hist={p.history}/>} /> 
                     <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
                 </Switch>
     );

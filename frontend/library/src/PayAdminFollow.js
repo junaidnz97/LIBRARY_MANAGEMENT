@@ -17,6 +17,14 @@ class PayAdminFollow extends React.Component {
                         <br/><br/>
                 <FormGroup controlId="formHorizontalEmail">
                     <Col componentClass={ControlLabel} sm={2}>
+                    Enter User ID
+                    </Col>
+                    <Col sm={10}>
+                    <FormControl type="text" placeholder="Eg. 4" />
+                    </Col>
+                </FormGroup>
+                <FormGroup controlId="formHorizontalEmail">
+                    <Col componentClass={ControlLabel} sm={2}>
                     Enter amount being paid
                     </Col>
                     <Col sm={10}>

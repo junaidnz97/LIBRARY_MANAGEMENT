@@ -67,11 +67,11 @@ const Structure = ({ Comp, hist, loc }) => (
                             <i class="fa fa-plus-square"></i><em>Add a Book</em>                        
                         </Link>
                         </li>
-                        <li>
+                        {/* <li>
                         <Link to='/admin/editbook' className="s-sidebar__nav-link">
                             <i class="fa fa-book"></i><em>Edit a Book</em>                        
                         </Link>
-                        </li>
+                        </li> */}
                         <li>
                         <Link to='/admin/deletebook' className="s-sidebar__nav-link">
                             <i class="fa fa-minus-square"></i><em>Delete a Book</em>                        

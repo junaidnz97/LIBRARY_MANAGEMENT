@@ -20,7 +20,7 @@ class UserInfo extends Component {
 				<td>{this.props.user.Semester}</td>
 				<td>{this.props.user.Dues}</td>
 				<td>
-				<Link to = {{ pathname: '/admin/viewprofile_admin', state: { username: this.props.user.UserName} }}>
+				<Link to = {{ pathname: '/fe/admin/viewprofile_admin', state: { username: this.props.user.UserName} }}>
 					<Button bsSize="small" bsStyle="primary">
 						View Profile
 					</Button>

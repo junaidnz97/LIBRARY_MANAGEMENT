@@ -25,7 +25,7 @@ class ProfileAdmin extends Component {
               }
             });
             if(profiledetails.data.output){
-                window.location.replace("/admin");
+                window.location.replace("/fe/admin");
             }
             else{
                 console.log(profiledetails.data);

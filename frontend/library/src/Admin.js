@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './Admin.css'
 import ApproveTable from './ApproveTable'
+import ReturnBook from './ReturnBook'
 import AddBook from './AddBook'
 import EditBook from './EditBook'
+import DeleteBook from './DeleteBook'
 import {Link, Route, Switch} from 'react-router-dom';
 import * as axios from 'axios';
 import Footer from './Footer.js'
@@ -52,11 +54,16 @@ const Structure = ({ Comp, hist, loc }) => (
                             
                         </li>
                         <li>
+                        <Link to='/admin/returnbook' className="s-sidebar__nav-link">
+                          <i class="fa fa-exchange"></i><em>Return Book</em>                        
+                        </Link>                            
+                        </li>
+                        <li>
                         <Link to='/admin/viewusers' className="s-sidebar__nav-link">
                           <i class="fa fa-users"></i><em>View Users</em>
                         </Link>
                         <Link to='/admin/addbook' className="s-sidebar__nav-link">
-                            <i class="fa fa-book"></i><em>Add a Book</em>                        
+                            <i class="fa fa-plus-square"></i><em>Add a Book</em>                        
                         </Link>
                         </li>
                         <li>
@@ -64,17 +71,21 @@ const Structure = ({ Comp, hist, loc }) => (
                             <i class="fa fa-book"></i><em>Edit a Book</em>                        
                         </Link>
                         </li>
-                        
+                        <li>
+                        <Link to='/admin/deletebook' className="s-sidebar__nav-link">
+                            <i class="fa fa-minus-square"></i><em>Delete a Book</em>                        
+                        </Link>
+                        </li>
                         <li>
                         <a class="s-sidebar__nav-link" href="#0">
                             <i class="fa fa-money"></i><em>Pay Fine</em>
                         </a>
                         </li>
-                        <li>
+                        {/* <li>
                         <a class="s-sidebar__nav-link" href="#0">
                             <i class="fa fa-key"></i><em>Change Password</em>
                         </a>
-                        </li>
+                        </li> */}
                         <li>
                         <a class="s-sidebar__nav-link" onClick={logout}>
                             <i class="fa fa-sign-out"></i><em>Logout</em>
@@ -109,11 +120,13 @@ const Admin = () => {
                     <Route exact path="/admin" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
                     <Route exact path="/admin/login" component={LoginAdmin} />
                     <Route path="/admin/approve" component={p => <Structure Comp={ApproveTable} hist={p.history}/>} />
+                    <Route path="/admin/returnbook" component={p => <Structure Comp={ReturnBook} hist={p.history}/>} />
                     <Route path="/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
                     <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
                     <Route path="/admin/editbook" component={p => <Structure Comp={EditBook} hist={p.history}/>} />
+                    <Route path="/admin/deletebook" component={p => <Structure Comp={DeleteBook} hist={p.history}/>} />
                     <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} />
-                    <Route path="/fe/admin/viewprofile_admin" component={ProfileDetailsAdmin} />
+                    <Route path="/fe/admin/viewprofile_admin" component={ProfileDetailsAdmin} /> 
                 </Switch>
     );
 }

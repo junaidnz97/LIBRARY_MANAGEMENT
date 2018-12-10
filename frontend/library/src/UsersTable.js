@@ -25,7 +25,7 @@ class UsersTable extends Component {
                 this.props.history.push('/login');
             }
             else{
-                console.log(users.data.users);
+                console.log(users.data.users[10]);
                 this.setState({users: users.data.users});
             }
         }

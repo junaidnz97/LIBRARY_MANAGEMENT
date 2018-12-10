@@ -11,6 +11,9 @@ var sleep = require('sleep');
 
 describe("test",function () {
 
+    /*
+        Test for login
+     */
     it("apilogin",function (done) {
 
        /* chai.request(app)
@@ -41,6 +44,10 @@ describe("test",function () {
             });
     });
 
+
+    /*
+        Test for displaycatalogue if user is loggedin
+     */
     it("displaycatalogueloggedin",function (done) {
         //console.log("cookievalue = "+cookievalue);//JSON.stringify({user_sid: cookievalue}));
         chai.request(app)
@@ -53,6 +60,10 @@ describe("test",function () {
             });
     });
 
+    /*
+        Test for displaycatalogue if user is not loggedin
+     */
+
     it("displaycataloguenotloggedin",function (done) {
         //console.log("cookievalue = "+cookievalue);//JSON.stringify({user_sid: cookievalue}));
         chai.request(app)
@@ -64,6 +75,10 @@ describe("test",function () {
             });
     });
 
+    /*
+        Test for booksummary if user is loggedin
+     */
+
     it("booksummaryloggedin",function(done){
         chai.request(app)
             .get("/booksummary?bookId=21")
@@ -74,6 +89,10 @@ describe("test",function () {
             });
     });
 
+    /*
+        Test for booksummary if user is not loggedin
+     */
+
     it("booksummarynotloggedin",function(done){
         chai.request(app)
             .get("/booksummary?bookId=21")
@@ -82,6 +101,10 @@ describe("test",function () {
                 done();
             });
     });
+
+    /*
+        Test for review if user is loggedin
+     */
 
     it("reviewloggedin",function(done){
         chai.request(app)
@@ -93,6 +116,10 @@ describe("test",function () {
             });
     });
 
+    /*
+        Test for review if user is not loggedin
+     */
+
     it("reviewnotloggedin",function(done){
         chai.request(app)
             .get("/review?bookId=21")
@@ -101,6 +128,10 @@ describe("test",function () {
                 done();
             });
     });
+
+    /*
+        Test for borrow if user is loggedin
+     */
 
     it("borrowloggedin",function(done){
         chai.request(app)
@@ -112,6 +143,11 @@ describe("test",function () {
                 done();
             });
     });
+
+    /*
+        Test for borrow if user is not loggedin
+     */
+
     it("borrownotloggedin",function(done){
         chai.request(app)
             .post("/borrow")
@@ -122,6 +158,9 @@ describe("test",function () {
             });
     });
 
+    /*
+        Test for displayuserprofile if user is loggedin
+     */
     it("displayuserprofileloggedin",function(done){
         chai.request(app)
             .get("/displayuserprofile")
@@ -131,6 +170,9 @@ describe("test",function () {
                 done();
             });
     });
+    /*
+        Test for displayuserprofile if user is not loggedin
+     */
     it("displayuserprofilenotloggedin",function(done){
         chai.request(app)
             .get("/displayuserprofile")
@@ -139,7 +181,10 @@ describe("test",function () {
                 done();
             });
     });
-    
+
+    /*
+        Test for fineamount if user is loggedin
+     */
     it("fineamountloggedin",function(done){
         chai.request(app)
             .post("/fine-amount")
@@ -150,6 +195,9 @@ describe("test",function () {
             });
     });
 
+    /*
+       Test for fineamount if user is not loggedin
+    */
     it("fineamountnotloggedin",function(done){
         chai.request(app)
             .post("/fine-amount")
@@ -159,6 +207,9 @@ describe("test",function () {
             });
     });
 
+    /*
+       Test for booksinpossession if user is loggedin
+    */
     it("booksinpossessionloggedin",function(done){
         chai.request(app)
             .get("/books-in-possession")
@@ -169,6 +220,9 @@ describe("test",function () {
             });
     });
 
+    /*
+       Test for booksinpossession if user is not loggedin
+    */
     it("booksinpossessionnotloggedin",function(done){
         chai.request(app)
             .get("/books-in-possession")
@@ -178,6 +232,9 @@ describe("test",function () {
             });
     });
 
+    /*
+       Test for bookhistory if user is loggedin
+    */
     it("bookshistoryloggedin",function(done){
         chai.request(app)
             .get("/books-history")
@@ -188,6 +245,10 @@ describe("test",function () {
             });
     });
 
+
+    /*
+       Test for bookhistory if user is not loggedin
+    */
     it("bookshistorynotloggedin",function(done){
         chai.request(app)
             .get("/books-history")
@@ -198,6 +259,9 @@ describe("test",function () {
     });
 
 
+    /*
+       Test for user logout
+    */
     it("userlogout",(done)=>{
         chai.request(app)
             .post("/logout")

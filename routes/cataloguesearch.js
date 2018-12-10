@@ -2,19 +2,44 @@
     This function is used to search for book details.
     Full-Text search is done on basis of BookName,Publisher,Author,Description,Edition
  */
+const mysql = require('mysql');
 
 var cataloguesearch = function (app,con,client) {
 
-    app.get("/cataloguesearch",function (req,res) {
+    app.get("/cataloguesearch",async function (req,res) {
+
+               /* console.log("hello");
+
+                const {query} = require('../database/db');
+
+                var q = req.query.query;
+                console.log(q);
+                var arr = q.split("-");
+                arr[0] = arr[0].trim();
+                arr[1] = arr[1].trim();
+                console.log(arr);
+
+                 q = "select * from BookDetail where BookEdition>" + arr[0] + " and BookEdition<" + arr[1] ;
+                console.log(q);
+
+                var finalresp = await query(q, con);
+
+                finalresp = JSON.parse(JSON.stringify(finalresp));
+
+                console.log(finalresp);
+
+                console.log(finalresp);
+
+                res.send(finalresp);
+            //}*/
+
+
         console.log(req.query);
 
         var searchquery=req.query.query;
-        /*
-            The query passed by user is saved into the variable search query and
-            is searched on the _all field of elastic search.
-            Multiple documents of data is returned and is saved into the variable result
-            and is returned to user.
-         */
+
+
+
         client.search({
             index: 'myindex',
             type: 'mytype',
@@ -34,6 +59,8 @@ var cataloguesearch = function (app,con,client) {
             console.trace(err.message);
             res.redirect("/catalogue");
         });
+
+
     });
 
 };

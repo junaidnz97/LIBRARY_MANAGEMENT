@@ -35,6 +35,11 @@ var userList = require("./routes/userlist");
 var userBookRecords = require("./routes/userBookRecords");
 
 var addBookRecord = require("./routes/addBookRecord.js");
+var trial =  require('./routes/trial.js')
+
+var filtersearch=require("./routes/filtersearch");
+var cataloguefilter=require("./routes/cataloguefilter");
+var aseadmintask=require("./routes/aseadmintask");
 
 app.use(cookieParser());
 
@@ -144,6 +149,10 @@ userList.userList(app,con);
 userBookRecords.userBookRecords(app,con);
 
 addBookRecord.addBookRecord(app,con);
+trial.trial(app,con);
+filtersearch.filtersearch(app,con);
+cataloguefilter.cataloguefilter(app,con);
+aseadmintask.aseadmintask(app,con);
 
 module.exports={
     app:app

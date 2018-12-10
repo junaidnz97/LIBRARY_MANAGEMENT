@@ -14,9 +14,18 @@ class Bookcatalog extends Component {
         this.state = {
             books : [],
             c: 1,
-        }
+            currentpage:0,
+            showperpage:10
+        };
+       this.handleClick= this.handleClick.bind(this);
+
     }
 
+    handleClick(e)
+    {
+        this.setState({currentpage:Number(e.target.id)});
+
+    }
     
 
     componentDidMount() {
@@ -39,50 +48,52 @@ class Bookcatalog extends Component {
     }
 
     render() {
+        console.log("chai peelo");
+
+
+        const pageNumbers = [];
+        for (let i = 0; i <= 7; i++) {
+            pageNumbers.push(i);
+        }
+
+        const renderPageNumbers = pageNumbers.map(number => {
+            return (
+                <button
+                    key={number}
+                    id={number}
+                    onClick={this.handleClick}
+                >
+                    {number}
+                </button>
+
+
+            );
+        });
+        console.log(renderPageNumbers);
+
         return (
             <div>
                 <Header />
                 <Listcontainer>
                 <Container fluid>
-                    <Cardlist books = {this.state.books} />
-                    <center>
-                        <Pagination>                          
+                    <Cardlist books = {this.state.books} pageno={this.state.currentpage} />
+                    <center >
 
-                        {(() => {
-                            switch(this.state.c) {
-                                case 1:
-                                    return <React.Fragment><Pagination.Prev disabled/>
-                                    <Pagination.Item>{this.state.c}</Pagination.Item>
-                                    <Pagination.Ellipsis />
-                                    <Pagination.Item>{6}</Pagination.Item>
-                                    <Pagination.Next/>
-                                    <Pagination.Last/>
-                                    </React.Fragment>
-                                case 6:
-                                    return <React.Fragment><Pagination.Item>{1}</Pagination.Item>
-                                    <Pagination.Ellipsis />
-                                    <Pagination.Item>{5}</Pagination.Item>
-                                    <Pagination.Item>{6}</Pagination.Item>
-                                    <Pagination.Item disabled>{7}</Pagination.Item></React.Fragment>
-                                default:
-                                    return <React.Fragment>
-                                        <Pagination.First/>    
-                                        <Pagination.Prev/>
-                                        <Pagination.Ellipsis />
-                                        <Pagination.Item>{this.state.c-1}</Pagination.Item>
-                                        <Pagination.Item>{this.state.c}</Pagination.Item>
-                                        <Pagination.Item>{this.state.c+1}</Pagination.Item>
-                                        <Pagination.Ellipsis />
-                                        <Pagination.Next/>
-                                        <Pagination.Last/>
-                                    </React.Fragment>
-                                }
-                        })()}
- 
-                        </Pagination>
+                        {renderPageNumbers}
+
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+
                         </center>
-                </Container>                        
+                </Container>
+
                 </Listcontainer>
+
+
             </div>
 
         );

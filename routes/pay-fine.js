@@ -46,16 +46,25 @@ var pay_fine = function(app,con){
 	app.post("/pay-fine",async(req,res)=>{
 		if(req.session.adminusername && req.cookies.user_sid)
 		{
-			userId = req.session.userid;
+			console.log("subscribe to pewdiepie");
+			uname = req.body.username;
+			console.log(req.body);
+			let qget = 'SELECT UserId from Student WHERE username = '+uname;
+			console.log(qget);
+			var res1=await query(qget,con);
+			userid = res1[0].UserId;
+			console.log("in hist",userid)
+
 			dueAmount = req.body.DueAmount;
 			paidAmount = req.body.PaidAmount;
 			paymentMethod = req.body.PaymentMethod;
-			var q0 = "update student set Dues = Dues - "+paidAmount
-					+" where UserId = " + userId;
+			var q0 = "update Student set Dues = Dues - "+paidAmount
+					+" where UserId = " + userid;
 			console.log(q0);
 			let resp0 = await query(q0,con);
+			console.log(resp0);
 			var q1 = "insert into DuesBill(UserId,AmountPaid,PaymentMethod,Timestamp) values ("+
-						userId+","+paidAmount+","+paymentMethod+",NOW())";
+						userid+","+paidAmount+",'"+paymentMethod+"',NOW())";
 			console.log(q1);
 			let resp1 = await query(q1,con);
 			console.log(resp1);

@@ -53,55 +53,57 @@ var displayuserprofile = function (app, con) {
     });
 
 
-    // app.get("/displayuserprofile_admin", function (req, res) {
-    //     if(req.session.adminusername && req.cookies.user_sid)
-	// 	{
-    //         uname = req.body.username;
+    app.get("/displayuserprofile_admin", function (req, res) {
+        console.log("i am here");
+        if(req.session.adminusername && req.cookies.user_sid)
+		{
+            uname = req.query.username;
+            console.log(uname);
+            var request = require('request');
+            var body = "select * from student where Student_ID='" + uname + "'";
+            console.log(body);
 
-    //         var request = require('request');
-    //         var body = "select * from student where Student_ID='" + uname + "'";
-    //         console.log(body);
+            request.post('https://serene-wildwood-35121.herokuapp.com/query', {form: {query: body}}, function (err, response, value) {
 
-    //         request.post('https://serene-wildwood-35121.herokuapp.com/query', {form: {query: body}}, function (err, response, value) {
-
-    //             if (err)
-    //                 res.send("invalid");
+                if (err)
+                    res.send("invalid");
 
 
-    //             var temp = JSON.parse(value);
-    //             var details = {
-    //                 UserId: temp[0].Student_ID,
-    //                 UserName: temp[0].Student_First_Name + temp[0].Student_Middle_Name + temp[0].Student_Last_name,
-    //                 Email: temp[0].Student_Email,
-    //                 CurrentYear: temp[0].Student_Cur_YearofStudy,
-    //                 AcademicStatus: temp[0].Student_Academic_Status,
-    //                 Dues: ""
+                var temp = JSON.parse(value);
+                var details = {
+                    UserId: temp[0].Student_ID,
+                    UserName: temp[0].Student_First_Name + temp[0].Student_Middle_Name + temp[0].Student_Last_name,
+                    Email: temp[0].Student_Email,
+                    CurrentYear: temp[0].Student_Cur_YearofStudy,
+                    AcademicStatus: temp[0].Student_Academic_Status,
+                    Dues: ""
 
-    //             };
+                };
 
-    //             var q = "select Dues from Student where UserName='" + uname + "'";
-    //             console.log(q);
-    //             con.query(q, function (error, responseq) {
-    //                 if (err)
-    //                     throw err;
+                var q = "select Dues from Student where UserName='" + uname + "'";
+                console.log(q);
+                con.query(q, function (error, responseq) {
+                    if (err)
+                        throw err;
 
-    //                 var finalresp = JSON.parse(JSON.stringify(responseq));
+                    var finalresp = JSON.parse(JSON.stringify(responseq));
 
-    //                 console.log(finalresp);
-    //                 details.Dues = finalresp[0].Dues;
-    //                 res.status(200).send(details);
-    //             });
+                    console.log(finalresp);
+                    details.Dues = finalresp[0].Dues;
+                    console.log(details);
+                    res.status(200).send(details);
+                });
 
-    //         });
+            });
             
-    //     }
+        }
 
-    //     else
-    //     {
-    //         res.status(200).send({"output":"notloggedin"});
-    //     }
-    // }
+        else
+        {
+            res.status(200).send({"output":"notloggedin"});
+        }
+    });
 
-};
+}
 
 module.exports = {displayuserprofile: displayuserprofile};

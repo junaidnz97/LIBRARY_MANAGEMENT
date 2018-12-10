@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Header from './Header.js'
 import {PageHeader, Button, Table} from 'react-bootstrap'
 import Listcontainer from './Listcontainer.js'
-import Currenttable from './Currenttable.js';
-import Historytable from './Historytable.js';
 import ProfileDetails from './ProfileDetails.js';
 import * as axios from 'axios';
+import CurrenttableAdmin from './CurrenttableAdmin.js';
+import HistorytableAdmin from './HistorytableAdmin.js';
 
-class Profile extends Component {
+class ProfileAdmin extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,7 +25,7 @@ class Profile extends Component {
               }
             });
             if(profiledetails.data.output){
-                this.props.history.push('/login');
+                window.location.replace("/admin");
             }
             else{
                 console.log(profiledetails.data);
@@ -36,6 +36,7 @@ class Profile extends Component {
     }
 
     render() {
+        console.log("hhhhh", this.props.location.state.username)
         return (
             <div>
                 <div className='bg-success'>
@@ -45,8 +46,8 @@ class Profile extends Component {
             </div>
                 <Listcontainer>
                     <ProfileDetails profiledetails = {this.state.profiledetails}/>
-                    <Currenttable />   
-                    <Historytable />
+                    <CurrenttableAdmin username={this.props.location.state.username}/>   
+                    <HistorytableAdmin username={this.props.location.state.username}/>
                 </Listcontainer>
             </div>
         );
@@ -54,4 +55,4 @@ class Profile extends Component {
     }
 }
 
-export default Profile;
+export default ProfileAdmin;

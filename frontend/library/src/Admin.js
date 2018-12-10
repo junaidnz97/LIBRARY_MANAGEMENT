@@ -126,7 +126,7 @@ const Admin = () => {
                     <Route path="/admin/editbook" component={p => <Structure Comp={EditBook} hist={p.history}/>} />
                     <Route path="/admin/deletebook" component={p => <Structure Comp={DeleteBook} hist={p.history}/>} />
                     <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} />
-                    <Route path="/fe/admin/viewprofile_admin" component={ProfileDetailsAdmin} /> 
+                    <Route path="/admin/viewprofile_admin" component={ProfileDetailsAdmin} /> 
                 </Switch>
     );
 }

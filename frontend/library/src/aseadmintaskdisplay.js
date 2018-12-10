@@ -56,14 +56,14 @@ class aseadmintaskdisplay extends Component {
     render() {
         const outputarray = this.state.output.map((element, i) =>{
             console.log("hello");
-            console.log(element.BookId);
+            // console.log(element.BookId);
             return (
 
                 <Aseoutputtable
-                    id={element.BookId}
-                    bname={element.BookName}
-                    index={i}
-                    bedition={element.BookEdition}
+                    id={i}
+                    bname={element.UId_request}
+                    index={element.HId}
+                    bedition={element.UId_owner}
                 />
             );
         });
@@ -72,10 +72,10 @@ class aseadmintaskdisplay extends Component {
             <Table responsive>
                 <thead>
                 <tr>
-                    <th>BID</th>
-                    <th>Book Name</th>
-                    <th>Bookind</th>
-                    <th>BookEdition</th>
+                    <th>Index</th>
+                    <th>Requester ID</th>
+                    <th>Book ID</th>
+                    <th>Owner ID</th>
 
 
                 </tr>

@@ -30,19 +30,19 @@ class aseadmintask extends React.Component {
             <div>
 
                 <Form horizontal>
-                    Enter detail1
+                    Enter Student ID
                     <FormGroup>
                         <FormControl
                             type="text"
                             value={this.state.value1}
-                            placeholder="Filter"
+                            placeholder="Student ID"
                             onChange={this.handleChange1}
                         />
-                        Enter detail2
+                        Enter Book ID
                         <FormControl
                             type="text"
                             value={this.state.value2}
-                            placeholder="Filter"
+                            placeholder="Book ID"
                             onChange={this.handleChange2}
                         />
 

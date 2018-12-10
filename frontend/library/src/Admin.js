@@ -15,6 +15,7 @@ import Listcontainer from './Listcontainer';
 import ViewBooks from './ViewBooks';
 import LoginAdmin from './LoginAdmin.js';
 import ProfileDetailsAdmin from './ProfileDetailsAdmin';
+import Reservebook from './Reservebook';
 
 const logout = () => {
     let getData = async () => {
@@ -53,6 +54,12 @@ const Structure = ({ Comp, hist, loc }) => (
                         <Link to='/admin' className="s-sidebar__nav-link">
                           <i class="fa fa-thumbs-up"></i><em>View Requests</em>                        
                         </Link>
+
+                        <li>
+                        <Link to='/admin/reservebook' className="s-sidebar__nav-link">
+                          <i class="fa fa-exchange"></i><em>Reserve Book</em>                        
+                        </Link>                            
+                        </li>
                             
                         </li>
                         <li>
@@ -103,6 +110,10 @@ const Structure = ({ Comp, hist, loc }) => (
                             <em>Library@IIITS</em>
                         </a>
                         </li>
+
+                        
+
+                        
                     </ul>
                 </nav>
                 </div>
@@ -135,7 +146,8 @@ const Admin = () => {
                     <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} />
                     <Route path="/admin/viewprofile_admin" component={ProfileDetailsAdmin} /> 
                     <Route path="/admin/payadminfollow" component={p => <Structure Comp={PayAdminFollow} hist={p.history}/>} /> 
-                    <Route path="/admin/totalfine" component={p => <Structure Comp={TotalFine} hist={p.history}/>} /> 
+                    <Route path="/admin/totalfine" component={p => <Structure Comp={TotalFine} hist={p.history}/>} />
+                    <Route path="/admin/reservebook" component={p => <Structure Comp={Reservebook} hist={p.history}/>} /> 
                 </Switch>
     );
 }

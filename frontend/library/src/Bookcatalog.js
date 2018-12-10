@@ -7,6 +7,7 @@ import Listcontainer from './Listcontainer.js'
 import {Pagination} from 'react-bootstrap';
 import Cardlist from './Cardlist.js';
 import Navbar from './Navbar.js';
+import ReserveAlert from './ReserveAlert.js';
 
 class Bookcatalog extends Component {
     constructor() {
@@ -20,6 +21,7 @@ class Bookcatalog extends Component {
     
 
     componentDidMount() {
+        
         let getData = async () => {            
               let books = await axios({
               method: 'get',
@@ -41,6 +43,7 @@ class Bookcatalog extends Component {
     render() {
         return (
             <div>
+                <ReserveAlert />
                 <Header />
                 <Listcontainer>
                 <Container fluid>

@@ -118,6 +118,7 @@ class Bookdynamic extends Component {
                             <Link to = {{ pathname: '/sharebooks', state: { BookId: this.props.BookId} }}>
                                 <Button bsStyle="primary">Share Books</Button>
                             </Link>
+
                         </ButtonToolbar>
                     </div>
                       <form>

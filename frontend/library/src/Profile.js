@@ -6,6 +6,7 @@ import Currenttable from './Currenttable.js';
 import Historytable from './Historytable.js';
 import ProfileDetails from './ProfileDetails.js';
 import * as axios from 'axios';
+import ReserveAlert from './ReserveAlert.js';
 
 class Profile extends Component {
     constructor(props) {
@@ -41,7 +42,8 @@ class Profile extends Component {
                 </PageHeader>
             </div>
                 <Listcontainer>
-                    <ProfileDetails profiledetails = {this.state.profiledetails}/>
+                    {/* <ReserveAlert username = {this.state.profiledetails.UserId}/> */}
+                    {/* <ProfileDetails profiledetails = {this.state.profiledetails}/> */}
                     <Currenttable />   
                     <Historytable />
                 </Listcontainer>

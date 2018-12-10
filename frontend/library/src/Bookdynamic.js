@@ -13,13 +13,15 @@ class Bookdynamic extends Component {
             availableBooks: 0,
             buttonDisabled: true,
             booksPossessed: 0,
-            reviewArea: ''
+            reviewArea: '',
+            rating:'0'
         }
 
         this.updateBookDynamic = this.updateBookDynamic.bind(this);
         this.borrowBook = this.borrowBook.bind(this);
         this.review = this.review.bind(this);
         this.handleReviewChange = this.handleReviewChange.bind(this);
+        this.clicker = this.clicker.bind(this)
     }
 
     updateBookDynamic() {
@@ -81,7 +83,7 @@ class Bookdynamic extends Component {
               url: '/rate_review',
               data: {
                 bookId: this.props.BookId,
-                rating: 4,
+                rating: this.state.rating,
                 review: this.state.reviewArea
               }
             });
@@ -99,6 +101,11 @@ class Bookdynamic extends Component {
        this.setState({reviewArea: e.target.value});
     }
 
+    clicker(param) {
+        console.log(param);
+        this.setState({rating: param });
+        // this.setState({rating: document.getElementById()});
+     }
     render() {
         return (
             <div class="card">
@@ -120,7 +127,7 @@ class Bookdynamic extends Component {
 
                         </ControlLabel>
                         <FormControl bsSize="large" componentClass="textarea" onChange={this.handleReviewChange} placeholder="Write your review here..." />
-                        <Rating/><br/> 
+                        <Rating clicker={this.clicker}/><br/> 
                         <Button bsStyle="primary" style={{float:"right"}} onClick={this.review}>Submit</Button>
 
                         </FormGroup>

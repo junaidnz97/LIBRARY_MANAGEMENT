@@ -55,7 +55,7 @@ class Currenttable extends Component {
                         <th>Publisher</th>
                         <th>Date of issue</th>
                         <th>Date of return</th>
-                        <th>Action</th>
+                        {/* <th>Action</th> */}
                         </tr>
                     </thead>
                     <tbody>

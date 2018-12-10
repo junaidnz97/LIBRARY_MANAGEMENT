@@ -10,6 +10,7 @@ import UsersTable from './UsersTable'
 import Listcontainer from './Listcontainer';
 import ViewBooks from './ViewBooks';
 import LoginAdmin from './LoginAdmin.js';
+import ProfileDetailsAdmin from './ProfileDetailsAdmin';
 
 const logout = () => {
     let getData = async () => {
@@ -111,7 +112,8 @@ const Admin = () => {
                     <Route path="/admin/viewusers" component={p => <Structure Comp={UsersTable} hist={p.history}/>} />
                     <Route path="/admin/addbook" component={p => <Structure Comp={AddBook} hist={p.history}/>} />
                     <Route path="/admin/editbook" component={p => <Structure Comp={EditBook} hist={p.history}/>} />
-                    <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} /> 
+                    <Route path="/admin/viewbooks" component={p => <Structure Comp={ViewBooks} hist={p.history}/>} />
+                    <Route path="/fe/admin/viewprofile_admin" component={ProfileDetailsAdmin} />
                 </Switch>
     );
 }

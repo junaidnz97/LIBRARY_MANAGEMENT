@@ -73,6 +73,18 @@ var aseadmintask = function (app,con,client) {
 
         console.log(request_list);
 
+        var notification_query;
+        notification_query = "insert into Notification (Content,UserId) values ('Request for returning and issued book as another user has reserved the book'," + StudentId2 +")" ;
+        console.log(notification_query);
+        var notification = await query(notification_query, con);
+        console.log(notification);
+        request_list = JSON.parse(JSON.stringify(request_list));
+
+        //return notification
+
+
+
+
 
         res.send(request_list);
 
